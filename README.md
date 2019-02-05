@@ -14,7 +14,7 @@ The instructor-led live demo comprises three parts:
 
 1. Brief lecture on the package concept and functionality
 2. Overview of the graphical user interface
-3. Instructions to preconfigure iSEE apps
+3. Instructions to preconfigure [_iSEE_](http://bioconductor.org/packages/iSEE/) apps
 
 The hands-on lab comprises three part:
 
@@ -63,7 +63,7 @@ There is also scope for participants to apply  [_iSEE_](http://bioconductor.org/
 | **Lab**: Custom panels                        | 20m  |
 | Additional questions                          | 15m  |
 
-Total: 1h45
+**Total:** 1h45
 
 # Workshop goals and objectives
 
