@@ -2,18 +2,18 @@
 
 # Instructor(s) name(s) and contact information
 
-- Kevin Rue-Albrecht (Kennedy Institute of Rheumatology, University of Oxford, Headington, Oxford OX3 7FY, UK)
+- Kevin Rue-Albrecht (kevin.rue-albrecht@kennedy.ox.ac.uk)
 
 # Workshop Description
 
-This workshop demonstrates the use of the [_iSEE_](http://bioconductor.org/packages/iSEE/) package to create and configure interactive applications for the exploration of various types of genomics data sets.
+This workshop demonstrates the use of the [_iSEE_](http://bioconductor.org/packages/iSEE/) package to create and configure interactive applications for the exploration of various types of genomics data sets (e.g., bulk and single-cell RNA-seq, CyTOF, gene expression microarray).
 
 This workshop will be presented as a lab session that combines an instructor-led live demo, followed by hands-on experimentation guided by completely worked examples and stand-alone notes that participants may continue to peruse after the workshop.
 
 The instructor-led live demo comprises three parts:
 
-1. Brief lecture of the package concept and functionality
-2. Introduction to the user interface
+1. Brief lecture on the package concept and functionality
+2. Overview of the graphical user interface
 3. Instructions to preconfigure iSEE apps
 
 The hands-on lab comprises three part:
@@ -28,10 +28,10 @@ Participants are encouraged to ask questions at any time during the workshop.
 
 List any workshop prerequisites, for example:
 
-* Basic knowledge of R syntax and the use of data-frames
+* Basic knowledge of [_R_](https://www.r-project.org/about.html) syntax and the use of data-frames
 * Familiarity with the [`SummarizedExperiment`](http://bioconductor.org/packages/SummarizedExperiment) and [`SingleCellExperiment`](http://bioconductor.org/packages/SingleCellExperiment) classes
-* Familiarity with the [`shiny`](https://CRAN.R-project.org/package=shiny) CRAN package
-* Familiarity with the [`scRNAseq`](http://bioconductor.org/packages/scRNAseq/) package and [vignette](https://bioconductor.org/packages/release/data/experiment/vignettes/scRNAseq/inst/doc/scRNAseq.html)
+* Familiarity with the [_shiny_](https://CRAN.R-project.org/package=shiny) CRAN package
+* Familiarity with the [_scRNAseq_](http://bioconductor.org/packages/scRNAseq/) package and [vignette](https://bioconductor.org/packages/release/data/experiment/vignettes/scRNAseq/inst/doc/scRNAseq.html)
 
 Additional background reading about the programming environment, relevant packages, and example use cases:
 
@@ -63,22 +63,24 @@ There is also scope for participants to apply  [_iSEE_](http://bioconductor.org/
 | **Lab**: Custom panels                        | 20m  |
 | Additional questions                          | 15m  |
 
+Total: 1h45
+
 # Workshop goals and objectives
 
 ## Learning goals
 
-* Recognize the benefits of integrative data containers such as `SummarizedExperiment` and `SingleCellExperiment` for downstream analyses and visualization
+* Recognize the benefits of integrative data containers such as [`SummarizedExperiment`](http://bioconductor.org/packages/SummarizedExperiment) and [`SingleCellExperiment`](http://bioconductor.org/packages/SingleCellExperiment) for downstream analyses and visualization
 * Outline the unique features of [_iSEE_](http://bioconductor.org/packages/iSEE/) built upon the [RStudio Shiny](https://shiny.rstudio.com) framework
 * Identify biological data that may be combined into insightful graphical outputs
-* Utilize interactive UI components and layouts to efficiently extract information from biological data sets
+* Utilize interactive GUI components and layouts to efficiently extract information from biological data sets
 * Describe how to construct interactive apps and custom panels
 
 ## Learning objectives
 
-* Memorize the key information available in `SummarizedExperiment` and `SingleCellExperiment` objects
-* Set up a local environment for running iSEE apps
-* Interact with components of the iSEE user interface to visually inspect and discuss various data sets
-* Identify and locate configurable aspects of iSEE apps
-* Practice interactive visualization along a single-cell RNA-sequencing workflow
-* Design custom iSEE panels for advanced use cases
+* Memorize the key information available in [`SummarizedExperiment`](http://bioconductor.org/packages/SummarizedExperiment) and [`SingleCellExperiment`](http://bioconductor.org/packages/SingleCellExperiment) objects
+* Set up a local environment for running [_iSEE_](https://bioconductor.org/packages/iSEE) apps
+* Interact with components of the [_iSEE_](https://bioconductor.org/packages/iSEE) user interface to visually inspect and discuss various data sets
+* Identify and locate configurable aspects of [_iSEE_](https://bioconductor.org/packages/iSEE) apps
+* Practice interactive visualization over a single-cell RNA-sequencing workflow
+* Design custom [_iSEE_](https://bioconductor.org/packages/iSEE) panels for advanced use cases
 * Imagine use cases and future developments for interactive visualization as part of computational workflows
