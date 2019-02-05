@@ -2,7 +2,7 @@
 
 # Instructor(s) name(s) and contact information
 
-- Kevin Rue-Albrecht (Kennedy Institute of Rheumatology, University of Oxford, Headington, Oxford OX3 7FY, UK)
+- Kevin Rue-Albrecht (Kennedy Institute of Rheumatology, University of Oxford, UK)
 
 # Workshop Description
 
@@ -62,6 +62,8 @@ There is also scope for participants to apply  [_iSEE_](http://bioconductor.org/
 | **Lab**: A single-cell RNA-seq workflow       | 20m  |
 | **Lab**: Custom panels                        | 20m  |
 | Additional questions                          | 15m  |
+
+**Total:** 1h45
 
 # Workshop goals and objectives
 
