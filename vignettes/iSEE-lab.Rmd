@@ -286,7 +286,7 @@ The creation and configuration of custom panels is discussed later, in a [dedica
 But it's nice to show the capabilities of the panels too, not just the default settings.
 I added a few sentences to the introduction of this section to try to address this. --> 
 
-![](XXX_RueAlbrecht_iSEE/iSEEinterface.png)
+![](img/iSEEinterface.png)
 
 ### Reduced dimension plot {#reddimplot}
 
@@ -294,60 +294,60 @@ The reduced dimension plot can display any reduced dimension representation that
 
 Note that this slot is not defined for the base `SummarizedExperiment` class, in which case the user interface does not allow the inclusion of panels of this type.
  
-![](XXX_RueAlbrecht_iSEE/redDimPlot.png)
+![](img/redDimPlot.png)
 
 ### Column data plot {#coldataplot}
 
 The column data plot can display one or two of the provided column annotations (from the `colData` slot).
 Depending on the class of the selected annotations, the panel shows either a Hinton diagram [@Hinton1991-hintondiagram; @Bremner1994-hintonplots], a violin plot, or a scatter plot.
 
-![](XXX_RueAlbrecht_iSEE/colDataPlot.png)
+![](img/colDataPlot.png)
 
 ### Row data plot {#rowdataplot}
 
 Analogous to the [column data plot](#coldataplot) above, the row data plot displays one or two of the provided row annotations (from the `rowData` slot).
 Depending on the class of the selected annotations, the panel displays either a Hinton plot, a violin plot, or a scatter plot.
 
-![](XXX_RueAlbrecht_iSEE/rowDataPlot.png)
+![](img/rowDataPlot.png)
 
 ### Heat map {#heatmap}
 
 The heat map panel displays, for any assay, the observed values for a subset of the features across the samples.
 
-![](XXX_RueAlbrecht_iSEE/heatMap.png)
+![](img/heatMap.png)
 
 ### Feature assay plot {#featassayplot}
 
 The feature assay plot displays the observed values for one feature across the samples.
 It is also possible to plot the observed values for two features, in a scatter plot.
 
-![](XXX_RueAlbrecht_iSEE/featAssayPlot.png)
+![](img/featAssayPlot.png)
 
 ### Sample assay plot {#sampassayplot}
 
 Analogous to the [feature assay plot](#featassayplot) above, the sample assay plot shows the observed values for all features, for one of the samples.
 It is also possible to plot the observed values for two samples, in a scatter plot.
 
-![](XXX_RueAlbrecht_iSEE/sampAssayPlot.png)
+![](img/sampAssayPlot.png)
 
 ### Row statistics table {#rowstattable}
 
 The row statistics table displays all information provided in the `rowData` slot of the `SummarizedExperiment` object, leveraging the interactivity provided by the `r CRANpkg("DT")` package.
 
-![](XXX_RueAlbrecht_iSEE/rowStatTable.png)
+![](img/rowStatTable.png)
 
 ### Column statistics table {#colstattable}
 
 Analogous to the [row statistics table](#rowstattable) above, the column statistics table displays all information provided in the `colData` slot of the `SummarizedExperiment` object.
 
-![](XXX_RueAlbrecht_iSEE/colStatTable.png)
+![](img/colStatTable.png)
 
 ### 'Data parameters' collapsible box {#data-parameters-box}
 
 Each plot panel type has a `Data parameters` collapsible box.
 This box has different content for the each panel types, but in all cases it lets the user control the data that is displayed in the plot.
 
-![](XXX_RueAlbrecht_iSEE/colDataPlotDataParams.png)
+![](img/colDataPlotDataParams.png)
 
 ### 'Visual parameters' collapsible box {#visual-parameters-box}
 
@@ -355,7 +355,7 @@ In contrast to the `Data parameters` collapsible box that lets users control _wh
 
 This collapsible box contains the controls to change the size, shape, opacity, and color of the points, to facet the plot by any available categorical annotation, to subsample points for increased speed of plot rendering, and to control how legends are displayed.
 
-![](XXX_RueAlbrecht_iSEE/colDataPlotVisualParams.png)
+![](img/colDataPlotVisualParams.png)
 
 ### 'Selection parameters' collapsible box {#selection-parameter-box}
 
@@ -365,7 +365,7 @@ We discuss point transmission in more detail [later in this workshop](#transmit-
 
 <!-- TODO: Link "later" to the appropriate section when it exists -->
 
-![](XXX_RueAlbrecht_iSEE/redDimPlotSelectionParams.png)
+![](img/redDimPlotSelectionParams.png)
 
 ### Additional controls {#additional-controls}
 
@@ -374,10 +374,10 @@ Each of these is discussed in more detail later in this workshop.
 
 |                    |                                                                     |                                        |
 |--------------------|:-------------------------------------------------------------------:|----------------------------------------|
-| Panel organization | <img width="275" src="XXX_RueAlbrecht_iSEE/PanelOrganization.png"/> | [Organize panels](#configuration-ui) |
-| Diagnostics        | <img width="275" src="XXX_RueAlbrecht_iSEE/Diagnostics.png"/>       | [Examine panel chart](#transmit-point-selections), [Extract R code](#reproducibility), [Display panel settings](#configuration-ui) |
-| Documentation      | <img width="275" src="XXX_RueAlbrecht_iSEE/Documentation.png"/>     | [Quick tour](#sharing-tours), [Open the vignette](#more-resources) |
-| Additional info    | <img width="275" src="XXX_RueAlbrecht_iSEE/additionalInfo.png"/>    | [About this session](#reproducibility), [About iSEE](#more-resources) |
+| Panel organization | <img width="275" src="img/PanelOrganization.png"/> | [Organize panels](#configuration-ui) |
+| Diagnostics        | <img width="275" src="img/Diagnostics.png"/>       | [Examine panel chart](#transmit-point-selections), [Extract R code](#reproducibility), [Display panel settings](#configuration-ui) |
+| Documentation      | <img width="275" src="img/Documentation.png"/>     | [Quick tour](#sharing-tours), [Open the vignette](#more-resources) |
+| Additional info    | <img width="275" src="img/additionalInfo.png"/>    | [About this session](#reproducibility), [About iSEE](#more-resources) |
 
 <!-- Show how to change what is plotted, faceting, changing appearance/color -->
 <!-- Transmit selections -->
@@ -458,7 +458,7 @@ if (interactive()) {
 }
 ```
 
-![](XXX_RueAlbrecht_iSEE/ReducedDimensionType.png)
+![](img/ReducedDimensionType.png)
 
 ### Coloring points by row/column annotation {#color-by-annotation}
 
@@ -494,7 +494,7 @@ if (interactive()) {
 }
 ```
 
-![](XXX_RueAlbrecht_iSEE/ColorByColData.png)
+![](img/ColorByColData.png)
 
 `r Biocpkg("iSEE")` allows precise control over the color schemes used.
 More information about this can be found in the `r Biocpkg("iSEE", "ecm.html", "ExperimentColorMap")` vignette.
@@ -531,7 +531,7 @@ if (interactive()) {
 }
 ```
 
-![](XXX_RueAlbrecht_iSEE/ColorByFeature.png)
+![](img/ColorByFeature.png)
 
 ### Highlighting a single point {#highlight}
 
@@ -560,7 +560,7 @@ if (interactive()) {
 }
 ```
 
-![](XXX_RueAlbrecht_iSEE/ColorBySample.png)
+![](img/ColorBySample.png)
 
 ### Changing the size, shape and opacity of points {#change-shape-opacity}
 
@@ -592,7 +592,7 @@ if (interactive()) {
 }
 ```
 
-![](XXX_RueAlbrecht_iSEE/ConfigureVisualParameters.png)
+![](img/ConfigureVisualParameters.png)
 
 ### Changing the displayed metadata {#change-metadata-displayed}
 
@@ -636,7 +636,7 @@ if (interactive()) {
 }
 ```
 
-![](XXX_RueAlbrecht_iSEE/ConfigureDataPlotPanels.png)
+![](img/ConfigureDataPlotPanels.png)
 
 ### Displaying gene expression {#display-gene-expression}
 
@@ -680,7 +680,7 @@ if (interactive()) {
 }
 ```
 
-![](XXX_RueAlbrecht_iSEE/featAssayPlotDataParams.png)
+![](img/featAssayPlotDataParams.png)
 
 ### Linking panels and transmitting point selections {#transmit-point-selections}
 
@@ -739,7 +739,7 @@ if (interactive()) {
 Notably, iSEE can display active links transmitting point selections between panel using the "[Examine panel chart](#additional-controls)" menu.
 Visible panels that do not send or receive a selection are also shown.
 
-![](XXX_RueAlbrecht_iSEE/GraphSelectionLinks.png)
+![](img/GraphSelectionLinks.png)
 
 ### Zooming into a plot subregion {#zoom-subregion}
 
