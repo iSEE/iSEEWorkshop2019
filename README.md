@@ -3,12 +3,13 @@
 # Instructor(s) name(s) and contact information
 
 - Kevin Rue-Albrecht (kevin.rue-albrecht@kennedy.ox.ac.uk)
+- Charlotte Soneson (charlotte.soneson@fmi.ch)
 
 # Workshop Description
 
 This workshop demonstrates the use of the [_iSEE_](http://bioconductor.org/packages/iSEE/) package to create and configure interactive applications for the exploration of various types of genomics data sets (e.g., bulk and single-cell RNA-seq, CyTOF, gene expression microarray).
 
-This workshop will be presented as a lab session that combines an instructor-led live demo, followed by hands-on experimentation guided by completely worked examples and stand-alone notes that participants may continue to peruse after the workshop.
+This workshop will be presented as a lab session that combines an instructor-led live demo, followed by hands-on experimentation guided by completely worked examples and stand-alone notes that participants may continue to use after the workshop.
 
 The instructor-led live demo comprises three parts:
 
@@ -25,8 +26,6 @@ The hands-on lab comprises three part:
 Participants are encouraged to ask questions at any time during the workshop.
 
 ## Pre-requisites
-
-List any workshop prerequisites, for example:
 
 * Basic knowledge of [_R_](https://www.r-project.org/about.html) syntax and the use of data-frames
 * Familiarity with the [`SummarizedExperiment`](http://bioconductor.org/packages/SummarizedExperiment) and [`SingleCellExperiment`](http://bioconductor.org/packages/SingleCellExperiment) classes
