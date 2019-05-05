@@ -28,7 +28,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # Instructor names and contact information
 
 * Kevin Rue-Albrecht^[University of Oxford, Oxford, UK] (<kevin.rue-albrecht@kennedy.ox.ac.uk>)
-* Charlotte Soneson^[Friedrich Miescher Institute for Biomedical Research and SIB Swiss Institute of Bioinformatics]
+* Charlotte Soneson^[Friedrich Miescher Institute for Biomedical Research and SIB Swiss Institute of Bioinformatics] (<charlotte.soneson@fmi.ch>)
 
 # Workshop description {#workshop-description}
 
