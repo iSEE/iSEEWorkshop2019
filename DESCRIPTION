@@ -16,7 +16,8 @@ Imports:
 Suggests:
     knitr,
     htmltools,
-    rmarkdown
+    rmarkdown,
+    Rtsne
 Author:
     Kevin Rue-Albrecht,
     Charlotte Soneson
