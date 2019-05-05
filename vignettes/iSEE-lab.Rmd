@@ -8,6 +8,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 output:
   BiocStyle::html_document:
+    keep_md: true
     number_sections: yes
     toc: true
 ---
