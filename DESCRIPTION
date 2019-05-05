@@ -5,7 +5,17 @@ Description: This workshop covers basic usage of iSEE for
 Version: 0.0.1
 Depends:
     R (>= 3.6.0),
+    SummarizedExperiment,
+    SingleCellExperiment,
     iSEE
+Imports:
+    TENxPBMCData,
+    scater,
+    scran,
+    BiocSingular
+Suggests:
+    htmltools,
+    rmarkdown
 Author:
     Kevin Rue-Albrecht,
     Charlotte Soneson
