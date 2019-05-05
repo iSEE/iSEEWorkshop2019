@@ -688,7 +688,7 @@ if (interactive()) {
 ### Linking panels and transmitting point selections {#transmit-point-selections}
 
 When exploring data, it is often useful to be able to select a subset of points and investigate different aspects of their characteristic features. 
-In `r BiocPkg("iSEE")`, this can be achieved by _selecting_ points in one panel, and _transmitting_ this selection to one or more other panels. 
+In `r Biocpkg("iSEE")`, this can be achieved by _selecting_ points in one panel, and _transmitting_ this selection to one or more other panels. 
 
 > <i class="fa fa-wrench fa-2x"></i> **Action:** Select a set of points in one of the _Feature assay plot_ panels, by drawing a rectangle around them. 
 Then open the _Selection parameters_ collapsible box of one of the other _Feature assay plot_ panels, and select the _Feature assay plot_ panel where you made the point selection from the dropdown menu under **Receive column selection from**. 
