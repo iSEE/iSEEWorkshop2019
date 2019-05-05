@@ -2,7 +2,7 @@ Package: iSEEWorkshop
 Title: A workshop on the iSEE package
 Description: This workshop covers basic usage of iSEE for 
     interactive visualization of SummarizedExperiment objects.
-Version: 0.0.1
+Version: 0.0.2
 Depends:
     R (>= 3.6.0),
     SummarizedExperiment,
@@ -14,8 +14,10 @@ Imports:
     scran,
     BiocSingular
 Suggests:
+    knitr,
     htmltools,
-    rmarkdown
+    rmarkdown,
+    Rtsne
 Author:
     Kevin Rue-Albrecht,
     Charlotte Soneson
@@ -26,6 +28,3 @@ VignetteBuilder: knitr
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: 
-    knitr,
-    rmarkdown
