@@ -857,7 +857,26 @@ ggplot() +
 
 ## Sharing and communication {#sharing-tours}
 
-<!-- Tours -->
+One important aspect of visualization is the ability to share your insights with others. 
+A powerful way of easily getting people unfamiliar with your data up to speed is to provide a walk-through of the interface and the different types of plots that are displayed. 
+With `r Biocpkg("iSEE")`, this can be achieved using _tours_. 
+To configure a tour, you need to create a text file with two columns; named `element` and `intro`, with the former describing the UI element to highlight in each step, and the latter providing the descriptive text that will be displayed.
+
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Run the code below to generate a data frame configuring a tour for the app generated in the previous step.
+Then launch a new instance, providing the data frame to the `tour` argument.
+
+```{r}
+tour <- data.frame(element = c("#Welcome", "#redDimPlot1", "#redDimPlot2", "#Conclusion"), 
+                       intro = c("Welcome to this tour!", "This is the first reduced dimension plot", "And here is the second one", "Thank you for taking this tour!"),
+                       stringsAsFactors = FALSE)
+if (interactive()) {
+    iSEE(sce, redDimArgs = redDimArgs, initialPanels = initialPanels, tour = tour)
+}
+```
+
+To see an example of a more complex tour in action, visit [https://marionilab.cruk.cam.ac.uk/iSEE_pbmc4k/](https://marionilab.cruk.cam.ac.uk/iSEE_pbmc4k/).
+The code used to create this app and the associated tour is available from [https://github.com/LTLA/iSEE2018/tree/master/tours/pbmc4k](https://github.com/LTLA/iSEE2018/tree/master/tours/pbmc4k).
+
 <!-- If there is enough time: draft a mini tour live (challenging: anchors might be tricky - rewarding: once it works, it is surely a OOOH thing) -->
 
 # Additional resources {#more-resources}
