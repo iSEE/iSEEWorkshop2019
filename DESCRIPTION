@@ -17,7 +17,8 @@ Suggests:
     knitr,
     htmltools,
     rmarkdown,
-    Rtsne
+    Rtsne,
+    BiocStyle
 Author:
     Kevin Rue-Albrecht,
     Charlotte Soneson
