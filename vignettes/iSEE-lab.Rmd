@@ -658,7 +658,7 @@ Alternatively, the X-axis can also be used to stratify gene expression according
 
 Similarly to all other panels, _Feature assay plot_ can be preconfigured to immediately display specific information when the app is launched.
 
-> <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to set up three _Feature assay plot_ panels demonstrating configurations.
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to set up three _Feature assay plot_ panels demonstrating different configurations.
 All three panels display the same gene on the Y-axis and color data points according to their cluster label.
 On the X-axis, the first panel displays a discrete sample metadata variable, the cluster label; the second panel display a continuous sample metadata variable, the log-transformed library size; the third panel displays the expression of a second gene.
 
