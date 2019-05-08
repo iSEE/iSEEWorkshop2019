@@ -2,7 +2,7 @@
   [![Travis build status](https://travis-ci.org/kevinrue/Bioc2019-iSEE-workshop.svg?branch=master)](https://travis-ci.org/kevinrue/Bioc2019-iSEE-workshop)
 <!-- badges: end -->
 
-# iSEE: Interactive visualization of `SummarizedExperiment` objects
+# iSEE: Interactive visualization of `SummarizedExperiment` objects <img src="man/figures/logo.png" align="right" width="240" height="278">
 
 # Instructor(s) name(s) and contact information
 

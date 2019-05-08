@@ -6,6 +6,8 @@
 \alias{iSEEWorkshop-package}
 \title{iSEEWorkshop: A workshop on the iSEE package}
 \description{
+\if{html}{\figure{logo.png}{options: align='right'}}
+
 This workshop covers basic usage of iSEE for 
     interactive visualization of SummarizedExperiment objects.
 }
