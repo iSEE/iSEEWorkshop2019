@@ -756,10 +756,39 @@ Visible panels that do not send or receive a selection are also shown.
 
 ### Zooming into a plot subregion {#zoom-subregion}
 
-iSEE allows you to zoom into a subregion of a plot, by simply drawing a rectangle around the area of interest and double-clicking inside the rectangle. 
-To zoom back out to the full plot, double-click anywhere in the plot. 
+iSEE allows you to zoom into a subregion of a plot, by simply drawing a rectangle around the area of interest and double-clicking inside the rectangle.
+To zoom back out to the full plot, double-click anywhere in the plot.
 
 <!-- Describe how and add a code chunk -->
+
+To demonstrate the feature, we set up two _Reduced dimension plot_ panels.
+In the first panel, we draw a Shiny brush to indicate an area of interest in the reduced dimension plot.
+We preconfigure the second panel to display only that area.
+In both panels, we color data points by cluster label using the same color map, to help visualize the zoom relationship between the two panels.
+
+Note that in this case, the two panels are independent of each other (i.e., there is no transmission of data points between them).
+
+```{r}
+redDimArgs <- redDimPlotDefaults(sce, 2)
+redDimArgs[["Type"]] <- "TSNE"
+redDimArgs[["ColorBy"]] <- "Column data"
+redDimArgs[["ColorByColData"]] <- "Cluster"
+redDimArgs[1, "PointSize"] <- 1
+redDimArgs[2, "PointSize"] <- 2
+redDimArgs[["BrushData"]][[1]] <- list(
+    xmin = 3.4, xmax = 27.3, ymin = 0.8, ymax = 30.0, 
+    log = list(x = NULL, y = NULL), mapping = list(x = "X", y = "Y", colour = "ColorBy"),
+    direction = "xy", brushId = "redDimPlot1_Brush", outputId = "redDimPlot1")
+initialPanels <- DataFrame(
+    Name=c("Reduced dimension plot 1", "Reduced dimension plot 2"),
+    Width=rep(6L, 2L),
+    Height=rep(400, 2L)
+)
+redDimArgs[["ZoomData"]] [[2]] <- c(xmin = 3.4, xmax = 27.3, ymin = 0.8, ymax = 30.0)
+if (interactive()) {
+    iSEE(sce, redDimArgs = redDimArgs, initialPanels = initialPanels)
+}
+```
 
 ### Filtering tables {#filter-table}
 
@@ -767,9 +796,9 @@ To zoom back out to the full plot, double-click anywhere in the plot.
 
 ## Saving and restoring the state of the application {#save-and-restore-user-interface}
 
-In the previous sections we have seen how we can specify the initial state of each panel by modifying the columns of the corresponding `*Args` argument. 
+In the previous sections we have seen how we can specify the initial state of each panel by modifying the columns of the corresponding `*Args` argument.
 Often, the initial exploration of a data set, including reorganization and configuration of panels is done interactively.
-Once a satisfactory panel setup has been achieved, the corresponding settings can be exported and used to restore the state of the app at startup. 
+Once a satisfactory panel setup has been achieved, the corresponding settings can be exported and used to restore the state of the app at startup.
 
 > <i class="fa fa-wrench fa-2x"></i> **Action:** Click on the wrench icon (<i class="fa fa-wrench"></i>) in the top-right corner, and select 'Display panel settings'.
 Copy all the code shown in the pop-up window. 
@@ -780,9 +809,9 @@ Of course, it is still possible to continue exploring the data interactively - w
 
 ```{r}
 if (interactive()) {
-    iSEE(sce, redDimArgs = redDimPlotArgs, colDataArgs = colDataPlotArgs, 
+    iSEE(sce, redDimArgs = redDimPlotArgs, colDataArgs = colDataPlotArgs,
          featAssayArgs = featAssayPlotArgs, rowStatArgs = rowStatTableArgs,
-         rowDataArgs = rowDataPlotArgs, sampAssayArgs = sampAssayPlotArgs, 
+         rowDataArgs = rowDataPlotArgs, sampAssayArgs = sampAssayPlotArgs,
          colStatArgs = colStatTableArgs, customDataArgs = customDataPlotArgs,
          customStatArgs = customStatTableArgs, heatMapArgs = heatMapPlotArgs,
          initialPanels = initialPanels)
@@ -803,8 +832,9 @@ We will first show how to create a custom panel that performs dimension reductio
 
 ```{r}
 library(scater)
-CUSTOM_PCA <- function(se, rows, columns, 
-                       colour_by = NULL, scale_features = TRUE) {
+CUSTOM_PCA <- function(se, rows, columns,
+                       colour_by = NULL, scale_features = TRUE
+) {
     if (!is.null(columns)) {
         kept <- se[, columns]
     } else {
