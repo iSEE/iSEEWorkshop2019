@@ -766,8 +766,6 @@ In the first panel, we draw a Shiny brush to indicate an area of interest in the
 We preconfigure the second panel to display only that area.
 In both panels, we color data points by cluster label using the same color map, to help visualize the zoom relationship between the two panels.
 
-Note that in this case, the two panels are independent of each other (i.e., there is no transmission of data points between them).
-
 ```{r}
 redDimArgs <- redDimPlotDefaults(sce, 2)
 redDimArgs[["Type"]] <- "TSNE"
