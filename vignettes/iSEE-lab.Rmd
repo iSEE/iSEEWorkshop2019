@@ -809,11 +809,33 @@ colStatArgs[["SearchColumns"]][[1]] <- c("[\"3\", \"5\"]", "5000 ... 15844", "")
 colStatArgs[["Selected"]] <- match("Cell684", colnames(sce1))
 initialPanels <- DataFrame(
     Name=c("Column statistics table 1"),
-    Width=rep(12L, 1L),
-    Height=rep(600, 1L)
+    Width=c(12L),
+    Height=c(600)
 )
 if (interactive()) {
     iSEE(sce1, colStatArgs = colStatArgs, initialPanels = initialPanels)
+}
+```
+
+Notably the preselected cell can be used to immediately establish a relationship with another panel and highlighted the selection in a different panel [as demonstrated earlier](#transmit-point-selections).
+
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to launch an application that includes a _Reduced dimension plot_ panel dynamically higlighting the cell selected in the _Column statistics table_.
+Select different rows of the cell to see the _Reduced dimension plot_ panel update accordingly.
+
+```{r}
+redDimArgs <- redDimPlotDefaults(sce1, 1)
+redDimArgs[["Type"]] <- "TSNE"
+redDimArgs$VisualBoxOpen <- TRUE
+redDimArgs$ColorBy <- "Sample name"
+redDimArgs$ColorByColTable <- "Column statistics table 1"
+initialPanels <- DataFrame(
+    Name=c("Column statistics table 1", "Reduced dimension plot 1"),
+    Width=c(6L, 6L),
+    Height=c(600, 400)
+)
+if (interactive()) {
+    iSEE(sce1, redDimArgs = redDimArgs, colStatArgs = colStatArgs,
+        initialPanels = initialPanels)
 }
 ```
 
