@@ -706,6 +706,8 @@ For the other two panels, pay particular attention to the `"SelectByPlot"` instr
 In addition, we specify that the _Reduced dimension plot_ should highlight the selection by applying a transparency effect to _unselected_ data points.
 Alternatively, we use the _Column data plot_ to demonstrate how the selection can also be highlighted by applying a given color (here, red) to the selected data points.
 
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to launch the example application described above.
+
 ```{r}
 featAssayArgs <- featAssayPlotDefaults(sce, 2)
 featAssayArgs[1, "YAxisFeatName"] <- match("CD3D", rownames(sce))
@@ -759,12 +761,12 @@ Visible panels that do not send or receive a selection are also shown.
 iSEE allows you to zoom into a subregion of a plot, by simply drawing a rectangle around the area of interest and double-clicking inside the rectangle.
 To zoom back out to the full plot, double-click anywhere in the plot.
 
-<!-- Describe how and add a code chunk -->
-
 To demonstrate the feature, we set up two _Reduced dimension plot_ panels.
 In the first panel, we draw a Shiny brush to indicate an area of interest in the reduced dimension plot.
 We preconfigure the second panel to display only that area.
 In both panels, we color data points by cluster label using the same color map, to help visualize the zoom relationship between the two panels.
+
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to launch the example application described above.
 
 ```{r}
 redDimArgs <- redDimPlotDefaults(sce, 2)
@@ -777,12 +779,12 @@ redDimArgs[["BrushData"]][[1]] <- list(
     xmin = 3.4, xmax = 27.3, ymin = 0.8, ymax = 30.0, 
     log = list(x = NULL, y = NULL), mapping = list(x = "X", y = "Y", colour = "ColorBy"),
     direction = "xy", brushId = "redDimPlot1_Brush", outputId = "redDimPlot1")
+redDimArgs[["ZoomData"]] [[2]] <- c(xmin = 3.4, xmax = 27.3, ymin = 0.8, ymax = 30.0)
 initialPanels <- DataFrame(
     Name=c("Reduced dimension plot 1", "Reduced dimension plot 2"),
     Width=rep(6L, 2L),
     Height=rep(400, 2L)
 )
-redDimArgs[["ZoomData"]] [[2]] <- c(xmin = 3.4, xmax = 27.3, ymin = 0.8, ymax = 30.0)
 if (interactive()) {
     iSEE(sce, redDimArgs = redDimArgs, initialPanels = initialPanels)
 }
@@ -790,7 +792,30 @@ if (interactive()) {
 
 ### Filtering tables {#filter-table}
 
-<!-- Give a code chunk that shows how to preconfigure tables with filters -->
+Tables may also be preconfigured to immediately display a subset of rows according to their filters or select a row different from the first one when the app is launched.
+
+For simplicity, we demonstrate this feature using a subset of 3 column metadata--namely "Cluster", "total_counts", and "pct_counts_MT"--out of the set of `r ncol(colData(sce))` column metadata computed by the [workflow above](#prepare-scrnaseq-data).
+
+In the example below, we preconfigure a _Column statistics table_ to display only cells with cluster labels "3" and "5", and a library size between 5,000 and 15,844 (the maximum library size in the dataset).
+In addition, we also preselect the cell named "Cell684".
+
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to launch the example application described above.
+
+```{r}
+sce1 <- sce
+colData(sce1) <- colData(sce1)[, c("Cluster", "total_counts", "pct_counts_MT")]
+colStatArgs <- colStatTableDefaults(sce1, 1)
+colStatArgs[["SearchColumns"]][[1]] <- c("[\"3\", \"5\"]", "5000 ... 15844", "")
+colStatArgs[["Selected"]] <- match("Cell684", colnames(sce1))
+initialPanels <- DataFrame(
+    Name=c("Column statistics table 1"),
+    Width=rep(12L, 1L),
+    Height=rep(600, 1L)
+)
+if (interactive()) {
+    iSEE(sce1, colStatArgs = colStatArgs, initialPanels = initialPanels)
+}
+```
 
 ## Saving and restoring the state of the application {#save-and-restore-user-interface}
 
