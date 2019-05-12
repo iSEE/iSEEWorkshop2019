@@ -790,6 +790,8 @@ if (interactive()) {
 }
 ```
 
+![](img/Zoom.png)
+
 ### Filtering tables {#filter-table}
 
 Tables may also be preconfigured to immediately display a subset of rows according to their filters or select a row different from the first one when the app is launched.
@@ -817,6 +819,8 @@ if (interactive()) {
 }
 ```
 
+![](img/FilteredTable.png)
+
 Notably the preselected cell can be used to immediately establish a relationship with another panel and highlighted the selection in a different panel [as demonstrated earlier](#transmit-point-selections).
 
 > <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to launch an application that includes a _Reduced dimension plot_ panel dynamically higlighting the cell selected in the _Column statistics table_.
@@ -838,6 +842,8 @@ if (interactive()) {
         initialPanels = initialPanels)
 }
 ```
+
+![](img/LinkTableToPlot.png)
 
 ## Saving and restoring the state of the application {#save-and-restore-user-interface}
 
