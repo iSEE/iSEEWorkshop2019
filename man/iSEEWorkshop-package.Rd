@@ -11,6 +11,14 @@
 This workshop covers basic usage of iSEE for 
     interactive visualization of SummarizedExperiment objects.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/kevinrue/Bioc2019-iSEE-workshop}
+  \item \url{https://kevinrue.github.io/Bioc2019-iSEE-workshop}
+}
+
+}
 \author{
 \strong{Maintainer}: Kevin Rue-Albrecht \email{kevin.rue-albrecht@kennedy.ox.ac.uk} (0000-0003-3899-3872)
 

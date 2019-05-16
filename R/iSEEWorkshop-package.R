@@ -5,4 +5,7 @@
 # roxygen namespace tags. Modify with care!
 ## usethis namespace: start
 ## usethis namespace: end
+#' @import iSEE
+#' @import SingleCellExperiment
+#' @import SummarizedExperiment
 NULL
