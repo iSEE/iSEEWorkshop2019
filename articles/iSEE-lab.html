@@ -83,7 +83,7 @@
       <h1>Workflow for interactive visualization of SummarizedExperiment objects with iSEE</h1>
                         <h4 class="author">Kevin Rue-Albrecht, Charlotte Soneson, Federico Marini, and Aaron Lun</h4>
             
-            <h4 class="date">May 15, 2019</h4>
+            <h4 class="date">May 18, 2019</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/kevinrue/Bioc2019-iSEE-workshop/blob/master/vignettes/iSEE-lab.Rmd"><code>vignettes/iSEE-lab.Rmd</code></a></small>
       <div class="hidden name"><code>iSEE-lab.Rmd</code></div>
@@ -1030,12 +1030,21 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Run the code below to generate a data frame configuring a tour for the app generated in the previous step. Then launch a new instance, providing the data frame to the <code>tour</code> argument.</p>
 </blockquote>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1">tour &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/data.frame">data.frame</a></span>(<span class="dt">element =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"#Welcome"</span>, <span class="st">"#redDimPlot1"</span>, <span class="st">"#redDimPlot2"</span>, <span class="st">"#Conclusion"</span>), </a>
-<a class="sourceLine" id="cb31-2" data-line-number="2">                       <span class="dt">intro =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Welcome to this tour!"</span>, <span class="st">"This is the first reduced dimension plot"</span>, <span class="st">"And here is the second one"</span>, <span class="st">"Thank you for taking this tour!"</span>),</a>
-<a class="sourceLine" id="cb31-3" data-line-number="3">                       <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb31-4" data-line-number="4"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb31-5" data-line-number="5">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels, <span class="dt">tour =</span> tour)</a>
-<a class="sourceLine" id="cb31-6" data-line-number="6">}</a></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1">tour &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/data.frame">data.frame</a></span>(</a>
+<a class="sourceLine" id="cb31-2" data-line-number="2">    <span class="dt">element =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(</a>
+<a class="sourceLine" id="cb31-3" data-line-number="3">        <span class="st">"#Welcome"</span>,</a>
+<a class="sourceLine" id="cb31-4" data-line-number="4">        <span class="st">"#redDimPlot1"</span>,</a>
+<a class="sourceLine" id="cb31-5" data-line-number="5">        <span class="st">"#redDimPlot2"</span>,</a>
+<a class="sourceLine" id="cb31-6" data-line-number="6">        <span class="st">"#Conclusion"</span>),</a>
+<a class="sourceLine" id="cb31-7" data-line-number="7">    <span class="dt">intro =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(</a>
+<a class="sourceLine" id="cb31-8" data-line-number="8">        <span class="st">"Welcome to this tour!"</span>,</a>
+<a class="sourceLine" id="cb31-9" data-line-number="9">        <span class="st">"This is the first reduced dimension plot"</span>,</a>
+<a class="sourceLine" id="cb31-10" data-line-number="10">        <span class="st">"And here is the second one"</span>,</a>
+<a class="sourceLine" id="cb31-11" data-line-number="11">        <span class="st">"Thank you for taking this tour!"</span>),</a>
+<a class="sourceLine" id="cb31-12" data-line-number="12">    <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb31-13" data-line-number="13"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb31-14" data-line-number="14">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels, <span class="dt">tour =</span> tour)</a>
+<a class="sourceLine" id="cb31-15" data-line-number="15">}</a></code></pre></div>
 <p>To see an example of a more complex tour in action, visit <a href="https://marionilab.cruk.cam.ac.uk/iSEE_pbmc4k/" class="uri">https://marionilab.cruk.cam.ac.uk/iSEE_pbmc4k/</a>. The code used to create this app and the associated tour is available from <a href="https://github.com/LTLA/iSEE2018/tree/master/tours/pbmc4k" class="uri">https://github.com/LTLA/iSEE2018/tree/master/tours/pbmc4k</a>.</p>
 <!-- If there is enough time: draft a mini tour live (challenging: anchors might be tricky - rewarding: once it works, it is surely a OOOH thing) -->
 </div>
@@ -1066,7 +1075,7 @@ I added a few sentences to the introduction of this section to try to address th
 <h1 class="hasAnchor">
 <a href="#session-info" class="anchor"></a>Session info</h1>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/sessionInfo">sessionInfo</a></span>()</a>
-<a class="sourceLine" id="cb32-2" data-line-number="2"><span class="co">#&gt; R Under development (unstable) (2019-05-15 r76505)</span></a>
+<a class="sourceLine" id="cb32-2" data-line-number="2"><span class="co">#&gt; R Under development (unstable) (2019-05-18 r76527)</span></a>
 <a class="sourceLine" id="cb32-3" data-line-number="3"><span class="co">#&gt; Platform: x86_64-pc-linux-gnu (64-bit)</span></a>
 <a class="sourceLine" id="cb32-4" data-line-number="4"><span class="co">#&gt; Running under: Ubuntu 14.04.5 LTS</span></a>
 <a class="sourceLine" id="cb32-5" data-line-number="5"><span class="co">#&gt; </span></a>
@@ -1088,13 +1097,13 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb32-21" data-line-number="21"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb32-22" data-line-number="22"><span class="co">#&gt; other attached packages:</span></a>
 <a class="sourceLine" id="cb32-23" data-line-number="23"><span class="co">#&gt;  [1] iSEE_1.5.1                  BiocSingular_1.1.1         </span></a>
-<a class="sourceLine" id="cb32-24" data-line-number="24"><span class="co">#&gt;  [3] scran_1.13.1                scater_1.13.1              </span></a>
+<a class="sourceLine" id="cb32-24" data-line-number="24"><span class="co">#&gt;  [3] scran_1.13.1                scater_1.13.3              </span></a>
 <a class="sourceLine" id="cb32-25" data-line-number="25"><span class="co">#&gt;  [5] ggplot2_3.1.1               TENxPBMCData_1.3.0         </span></a>
 <a class="sourceLine" id="cb32-26" data-line-number="26"><span class="co">#&gt;  [7] HDF5Array_1.13.1            rhdf5_2.29.0               </span></a>
-<a class="sourceLine" id="cb32-27" data-line-number="27"><span class="co">#&gt;  [9] SingleCellExperiment_1.7.0  SummarizedExperiment_1.15.0</span></a>
+<a class="sourceLine" id="cb32-27" data-line-number="27"><span class="co">#&gt;  [9] SingleCellExperiment_1.7.0  SummarizedExperiment_1.15.1</span></a>
 <a class="sourceLine" id="cb32-28" data-line-number="28"><span class="co">#&gt; [11] DelayedArray_0.11.0         BiocParallel_1.19.0        </span></a>
 <a class="sourceLine" id="cb32-29" data-line-number="29"><span class="co">#&gt; [13] matrixStats_0.54.0          Biobase_2.45.0             </span></a>
-<a class="sourceLine" id="cb32-30" data-line-number="30"><span class="co">#&gt; [15] GenomicRanges_1.37.4        GenomeInfoDb_1.21.0        </span></a>
+<a class="sourceLine" id="cb32-30" data-line-number="30"><span class="co">#&gt; [15] GenomicRanges_1.37.4        GenomeInfoDb_1.21.1        </span></a>
 <a class="sourceLine" id="cb32-31" data-line-number="31"><span class="co">#&gt; [17] IRanges_2.19.3              S4Vectors_0.23.3           </span></a>
 <a class="sourceLine" id="cb32-32" data-line-number="32"><span class="co">#&gt; [19] BiocGenerics_0.31.2         BiocStyle_2.13.0           </span></a>
 <a class="sourceLine" id="cb32-33" data-line-number="33"><span class="co">#&gt; </span></a>
@@ -1106,54 +1115,53 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb32-39" data-line-number="39"><span class="co">#&gt;   [9] roxygen2_6.1.1                DT_0.6                       </span></a>
 <a class="sourceLine" id="cb32-40" data-line-number="40"><span class="co">#&gt;  [11] bit64_0.9-7                   interactiveDisplayBase_1.23.0</span></a>
 <a class="sourceLine" id="cb32-41" data-line-number="41"><span class="co">#&gt;  [13] AnnotationDbi_1.47.0          xml2_1.2.0                   </span></a>
-<a class="sourceLine" id="cb32-42" data-line-number="42"><span class="co">#&gt;  [15] splines_3.7.0                 codetools_0.2-16             </span></a>
-<a class="sourceLine" id="cb32-43" data-line-number="43"><span class="co">#&gt;  [17] knitr_1.22                    jsonlite_1.6                 </span></a>
-<a class="sourceLine" id="cb32-44" data-line-number="44"><span class="co">#&gt;  [19] dbplyr_1.4.0                  shinydashboard_0.7.1         </span></a>
-<a class="sourceLine" id="cb32-45" data-line-number="45"><span class="co">#&gt;  [21] shiny_1.3.2                   rentrez_1.2.2                </span></a>
-<a class="sourceLine" id="cb32-46" data-line-number="46"><span class="co">#&gt;  [23] BiocManager_1.30.4            compiler_3.7.0               </span></a>
-<a class="sourceLine" id="cb32-47" data-line-number="47"><span class="co">#&gt;  [25] httr_1.4.0                    dqrng_0.2.0                  </span></a>
-<a class="sourceLine" id="cb32-48" data-line-number="48"><span class="co">#&gt;  [27] backports_1.1.4               assertthat_0.2.1             </span></a>
-<a class="sourceLine" id="cb32-49" data-line-number="49"><span class="co">#&gt;  [29] Matrix_1.2-17                 lazyeval_0.2.2               </span></a>
-<a class="sourceLine" id="cb32-50" data-line-number="50"><span class="co">#&gt;  [31] limma_3.41.0                  later_0.8.0                  </span></a>
-<a class="sourceLine" id="cb32-51" data-line-number="51"><span class="co">#&gt;  [33] htmltools_0.3.6               tools_3.7.0                  </span></a>
-<a class="sourceLine" id="cb32-52" data-line-number="52"><span class="co">#&gt;  [35] rsvd_1.0.0                    igraph_1.2.4.1               </span></a>
-<a class="sourceLine" id="cb32-53" data-line-number="53"><span class="co">#&gt;  [37] gtable_0.3.0                  glue_1.3.1                   </span></a>
-<a class="sourceLine" id="cb32-54" data-line-number="54"><span class="co">#&gt;  [39] GenomeInfoDbData_1.2.1        reshape2_1.4.3               </span></a>
-<a class="sourceLine" id="cb32-55" data-line-number="55"><span class="co">#&gt;  [41] dplyr_0.8.1                   rappdirs_0.3.1               </span></a>
-<a class="sourceLine" id="cb32-56" data-line-number="56"><span class="co">#&gt;  [43] Rcpp_1.0.1                    pkgdown_1.3.0                </span></a>
-<a class="sourceLine" id="cb32-57" data-line-number="57"><span class="co">#&gt;  [45] nlme_3.1-140                  ExperimentHub_1.11.1         </span></a>
-<a class="sourceLine" id="cb32-58" data-line-number="58"><span class="co">#&gt;  [47] rintrojs_0.2.0                DelayedMatrixStats_1.7.0     </span></a>
-<a class="sourceLine" id="cb32-59" data-line-number="59"><span class="co">#&gt;  [49] xfun_0.7                      stringr_1.4.0                </span></a>
-<a class="sourceLine" id="cb32-60" data-line-number="60"><span class="co">#&gt;  [51] beachmat_2.1.1                mime_0.6                     </span></a>
-<a class="sourceLine" id="cb32-61" data-line-number="61"><span class="co">#&gt;  [53] miniUI_0.1.1.1                irlba_2.3.3                  </span></a>
-<a class="sourceLine" id="cb32-62" data-line-number="62"><span class="co">#&gt;  [55] XML_3.98-1.19                 statmod_1.4.30               </span></a>
-<a class="sourceLine" id="cb32-63" data-line-number="63"><span class="co">#&gt;  [57] shinyAce_0.3.3                AnnotationHub_2.17.3         </span></a>
-<a class="sourceLine" id="cb32-64" data-line-number="64"><span class="co">#&gt;  [59] edgeR_3.27.1                  zlibbioc_1.31.0              </span></a>
-<a class="sourceLine" id="cb32-65" data-line-number="65"><span class="co">#&gt;  [61] MASS_7.3-51.4                 scales_1.0.0                 </span></a>
-<a class="sourceLine" id="cb32-66" data-line-number="66"><span class="co">#&gt;  [63] colourpicker_1.0              promises_1.0.1               </span></a>
-<a class="sourceLine" id="cb32-67" data-line-number="67"><span class="co">#&gt;  [65] yaml_2.2.0                    curl_3.3                     </span></a>
-<a class="sourceLine" id="cb32-68" data-line-number="68"><span class="co">#&gt;  [67] memoise_1.1.0                 gridExtra_2.3                </span></a>
-<a class="sourceLine" id="cb32-69" data-line-number="69"><span class="co">#&gt;  [69] stringi_1.4.3                 RSQLite_2.1.1                </span></a>
-<a class="sourceLine" id="cb32-70" data-line-number="70"><span class="co">#&gt;  [71] desc_1.2.0                    rlang_0.3.4                  </span></a>
-<a class="sourceLine" id="cb32-71" data-line-number="71"><span class="co">#&gt;  [73] pkgconfig_2.0.2               commonmark_1.7               </span></a>
-<a class="sourceLine" id="cb32-72" data-line-number="72"><span class="co">#&gt;  [75] bitops_1.0-6                  evaluate_0.13                </span></a>
-<a class="sourceLine" id="cb32-73" data-line-number="73"><span class="co">#&gt;  [77] lattice_0.20-38               purrr_0.3.2                  </span></a>
-<a class="sourceLine" id="cb32-74" data-line-number="74"><span class="co">#&gt;  [79] Rhdf5lib_1.7.0                labeling_0.3                 </span></a>
-<a class="sourceLine" id="cb32-75" data-line-number="75"><span class="co">#&gt;  [81] htmlwidgets_1.3               cowplot_0.9.4                </span></a>
-<a class="sourceLine" id="cb32-76" data-line-number="76"><span class="co">#&gt;  [83] bit_1.1-14                    tidyselect_0.2.5             </span></a>
-<a class="sourceLine" id="cb32-77" data-line-number="77"><span class="co">#&gt;  [85] plyr_1.8.4                    magrittr_1.5                 </span></a>
-<a class="sourceLine" id="cb32-78" data-line-number="78"><span class="co">#&gt;  [87] bookdown_0.10                 R6_2.4.0                     </span></a>
-<a class="sourceLine" id="cb32-79" data-line-number="79"><span class="co">#&gt;  [89] DBI_1.0.0                     mgcv_1.8-28                  </span></a>
-<a class="sourceLine" id="cb32-80" data-line-number="80"><span class="co">#&gt;  [91] pillar_1.4.0                  withr_2.1.2                  </span></a>
-<a class="sourceLine" id="cb32-81" data-line-number="81"><span class="co">#&gt;  [93] RCurl_1.95-4.12               tibble_2.1.1                 </span></a>
-<a class="sourceLine" id="cb32-82" data-line-number="82"><span class="co">#&gt;  [95] crayon_1.3.4                  BiocFileCache_1.9.0          </span></a>
-<a class="sourceLine" id="cb32-83" data-line-number="83"><span class="co">#&gt;  [97] rmarkdown_1.12                viridis_0.5.1                </span></a>
-<a class="sourceLine" id="cb32-84" data-line-number="84"><span class="co">#&gt;  [99] locfit_1.5-9.1                grid_3.7.0                   </span></a>
-<a class="sourceLine" id="cb32-85" data-line-number="85"><span class="co">#&gt; [101] blob_1.1.1                    digest_0.6.18                </span></a>
-<a class="sourceLine" id="cb32-86" data-line-number="86"><span class="co">#&gt; [103] xtable_1.8-4                  httpuv_1.5.1                 </span></a>
-<a class="sourceLine" id="cb32-87" data-line-number="87"><span class="co">#&gt; [105] munsell_0.5.0                 beeswarm_0.2.3               </span></a>
-<a class="sourceLine" id="cb32-88" data-line-number="88"><span class="co">#&gt; [107] viridisLite_0.3.0             vipor_0.4.5                  </span></a>
-<a class="sourceLine" id="cb32-89" data-line-number="89"><span class="co">#&gt; [109] shinyjs_1.0</span></a></code></pre></div>
+<a class="sourceLine" id="cb32-42" data-line-number="42"><span class="co">#&gt;  [15] splines_3.7.0                 knitr_1.23                   </span></a>
+<a class="sourceLine" id="cb32-43" data-line-number="43"><span class="co">#&gt;  [17] jsonlite_1.6                  dbplyr_1.4.0                 </span></a>
+<a class="sourceLine" id="cb32-44" data-line-number="44"><span class="co">#&gt;  [19] shinydashboard_0.7.1          shiny_1.3.2                  </span></a>
+<a class="sourceLine" id="cb32-45" data-line-number="45"><span class="co">#&gt;  [21] rentrez_1.2.2                 BiocManager_1.30.4           </span></a>
+<a class="sourceLine" id="cb32-46" data-line-number="46"><span class="co">#&gt;  [23] compiler_3.7.0                httr_1.4.0                   </span></a>
+<a class="sourceLine" id="cb32-47" data-line-number="47"><span class="co">#&gt;  [25] dqrng_0.2.1                   backports_1.1.4              </span></a>
+<a class="sourceLine" id="cb32-48" data-line-number="48"><span class="co">#&gt;  [27] assertthat_0.2.1              Matrix_1.2-17                </span></a>
+<a class="sourceLine" id="cb32-49" data-line-number="49"><span class="co">#&gt;  [29] lazyeval_0.2.2                limma_3.41.1                 </span></a>
+<a class="sourceLine" id="cb32-50" data-line-number="50"><span class="co">#&gt;  [31] later_0.8.0                   htmltools_0.3.6              </span></a>
+<a class="sourceLine" id="cb32-51" data-line-number="51"><span class="co">#&gt;  [33] tools_3.7.0                   rsvd_1.0.0                   </span></a>
+<a class="sourceLine" id="cb32-52" data-line-number="52"><span class="co">#&gt;  [35] igraph_1.2.4.1                gtable_0.3.0                 </span></a>
+<a class="sourceLine" id="cb32-53" data-line-number="53"><span class="co">#&gt;  [37] glue_1.3.1                    GenomeInfoDbData_1.2.1       </span></a>
+<a class="sourceLine" id="cb32-54" data-line-number="54"><span class="co">#&gt;  [39] reshape2_1.4.3                dplyr_0.8.1                  </span></a>
+<a class="sourceLine" id="cb32-55" data-line-number="55"><span class="co">#&gt;  [41] rappdirs_0.3.1                Rcpp_1.0.1                   </span></a>
+<a class="sourceLine" id="cb32-56" data-line-number="56"><span class="co">#&gt;  [43] pkgdown_1.3.0                 nlme_3.1-140                 </span></a>
+<a class="sourceLine" id="cb32-57" data-line-number="57"><span class="co">#&gt;  [45] ExperimentHub_1.11.1          rintrojs_0.2.0               </span></a>
+<a class="sourceLine" id="cb32-58" data-line-number="58"><span class="co">#&gt;  [47] DelayedMatrixStats_1.7.0      xfun_0.7                     </span></a>
+<a class="sourceLine" id="cb32-59" data-line-number="59"><span class="co">#&gt;  [49] stringr_1.4.0                 beachmat_2.1.1               </span></a>
+<a class="sourceLine" id="cb32-60" data-line-number="60"><span class="co">#&gt;  [51] mime_0.6                      miniUI_0.1.1.1               </span></a>
+<a class="sourceLine" id="cb32-61" data-line-number="61"><span class="co">#&gt;  [53] irlba_2.3.3                   XML_3.98-1.19                </span></a>
+<a class="sourceLine" id="cb32-62" data-line-number="62"><span class="co">#&gt;  [55] statmod_1.4.30                shinyAce_0.3.3               </span></a>
+<a class="sourceLine" id="cb32-63" data-line-number="63"><span class="co">#&gt;  [57] AnnotationHub_2.17.3          edgeR_3.27.2                 </span></a>
+<a class="sourceLine" id="cb32-64" data-line-number="64"><span class="co">#&gt;  [59] zlibbioc_1.31.0               MASS_7.3-51.4                </span></a>
+<a class="sourceLine" id="cb32-65" data-line-number="65"><span class="co">#&gt;  [61] scales_1.0.0                  colourpicker_1.0             </span></a>
+<a class="sourceLine" id="cb32-66" data-line-number="66"><span class="co">#&gt;  [63] promises_1.0.1                yaml_2.2.0                   </span></a>
+<a class="sourceLine" id="cb32-67" data-line-number="67"><span class="co">#&gt;  [65] curl_3.3                      memoise_1.1.0                </span></a>
+<a class="sourceLine" id="cb32-68" data-line-number="68"><span class="co">#&gt;  [67] gridExtra_2.3                 stringi_1.4.3                </span></a>
+<a class="sourceLine" id="cb32-69" data-line-number="69"><span class="co">#&gt;  [69] RSQLite_2.1.1                 desc_1.2.0                   </span></a>
+<a class="sourceLine" id="cb32-70" data-line-number="70"><span class="co">#&gt;  [71] rlang_0.3.4                   pkgconfig_2.0.2              </span></a>
+<a class="sourceLine" id="cb32-71" data-line-number="71"><span class="co">#&gt;  [73] commonmark_1.7                bitops_1.0-6                 </span></a>
+<a class="sourceLine" id="cb32-72" data-line-number="72"><span class="co">#&gt;  [75] evaluate_0.13                 lattice_0.20-38              </span></a>
+<a class="sourceLine" id="cb32-73" data-line-number="73"><span class="co">#&gt;  [77] purrr_0.3.2                   Rhdf5lib_1.7.1               </span></a>
+<a class="sourceLine" id="cb32-74" data-line-number="74"><span class="co">#&gt;  [79] labeling_0.3                  htmlwidgets_1.3              </span></a>
+<a class="sourceLine" id="cb32-75" data-line-number="75"><span class="co">#&gt;  [81] cowplot_0.9.4                 bit_1.1-14                   </span></a>
+<a class="sourceLine" id="cb32-76" data-line-number="76"><span class="co">#&gt;  [83] tidyselect_0.2.5              plyr_1.8.4                   </span></a>
+<a class="sourceLine" id="cb32-77" data-line-number="77"><span class="co">#&gt;  [85] magrittr_1.5                  bookdown_0.10                </span></a>
+<a class="sourceLine" id="cb32-78" data-line-number="78"><span class="co">#&gt;  [87] R6_2.4.0                      DBI_1.0.0                    </span></a>
+<a class="sourceLine" id="cb32-79" data-line-number="79"><span class="co">#&gt;  [89] mgcv_1.8-28                   pillar_1.4.0                 </span></a>
+<a class="sourceLine" id="cb32-80" data-line-number="80"><span class="co">#&gt;  [91] withr_2.1.2                   RCurl_1.95-4.12              </span></a>
+<a class="sourceLine" id="cb32-81" data-line-number="81"><span class="co">#&gt;  [93] tibble_2.1.1                  crayon_1.3.4                 </span></a>
+<a class="sourceLine" id="cb32-82" data-line-number="82"><span class="co">#&gt;  [95] BiocFileCache_1.9.0           rmarkdown_1.12               </span></a>
+<a class="sourceLine" id="cb32-83" data-line-number="83"><span class="co">#&gt;  [97] viridis_0.5.1                 locfit_1.5-9.1               </span></a>
+<a class="sourceLine" id="cb32-84" data-line-number="84"><span class="co">#&gt;  [99] grid_3.7.0                    blob_1.1.1                   </span></a>
+<a class="sourceLine" id="cb32-85" data-line-number="85"><span class="co">#&gt; [101] digest_0.6.18                 xtable_1.8-4                 </span></a>
+<a class="sourceLine" id="cb32-86" data-line-number="86"><span class="co">#&gt; [103] httpuv_1.5.1                  munsell_0.5.0                </span></a>
+<a class="sourceLine" id="cb32-87" data-line-number="87"><span class="co">#&gt; [105] beeswarm_0.2.3                viridisLite_0.3.0            </span></a>
+<a class="sourceLine" id="cb32-88" data-line-number="88"><span class="co">#&gt; [107] vipor_0.4.5                   shinyjs_1.0</span></a></code></pre></div>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1 class="hasAnchor">
