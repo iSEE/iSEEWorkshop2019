@@ -17,7 +17,7 @@ bibliography: bib/iSEE-lab.bib
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   echo = TRUE,
-  cache = TRUE,
+  cache = FALSE,
   collapse = TRUE,
   comment = "#>"
 )
@@ -1014,9 +1014,18 @@ To configure a tour, you need to create a text file with two columns; named `ele
 Then launch a new instance, providing the data frame to the `tour` argument.
 
 ```{r}
-tour <- data.frame(element = c("#Welcome", "#redDimPlot1", "#redDimPlot2", "#Conclusion"), 
-                       intro = c("Welcome to this tour!", "This is the first reduced dimension plot", "And here is the second one", "Thank you for taking this tour!"),
-                       stringsAsFactors = FALSE)
+tour <- data.frame(
+    element = c(
+        "#Welcome",
+        "#redDimPlot1",
+        "#redDimPlot2",
+        "#Conclusion"),
+    intro = c(
+        "Welcome to this tour!",
+        "This is the first reduced dimension plot",
+        "And here is the second one",
+        "Thank you for taking this tour!"),
+    stringsAsFactors = FALSE)
 if (interactive()) {
     iSEE(sce, redDimArgs = redDimArgs, initialPanels = initialPanels, tour = tour)
 }
