@@ -288,7 +288,9 @@ The creation and configuration of custom panels is discussed later, in a [dedica
 But it's nice to show the capabilities of the panels too, not just the default settings.
 I added a few sentences to the introduction of this section to try to address this. --> 
 
-![](img/iSEEinterface.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "iSEEinterface.png"))`
+
+<!-- ![](img/iSEEinterface.png) -->
 
 ### Reduced dimension plot {#reddimplot}
 
@@ -296,60 +298,78 @@ The reduced dimension plot can display any reduced dimension representation that
 
 Note that this slot is not defined for the base `SummarizedExperiment` class, in which case the user interface does not allow the inclusion of panels of this type.
  
-![](img/redDimPlot.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "redDimPlot.png"))`
+
+<!-- ![](img/redDimPlot.png) -->
 
 ### Column data plot {#coldataplot}
 
 The column data plot can display one or two of the provided column annotations (from the `colData` slot).
 Depending on the class of the selected annotations, the panel shows either a Hinton diagram [@Hinton1991-hintondiagram; @Bremner1994-hintonplots], a violin plot, or a scatter plot.
 
-![](img/colDataPlot.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "colDataPlot.png"))`
+
+<!-- ![](img/colDataPlot.png) -->
 
 ### Row data plot {#rowdataplot}
 
 Analogous to the [column data plot](#coldataplot) above, the row data plot displays one or two of the provided row annotations (from the `rowData` slot).
 Depending on the class of the selected annotations, the panel displays either a Hinton plot, a violin plot, or a scatter plot.
 
-![](img/rowDataPlot.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "rowDataPlot.png"))`
+
+<!-- ![](img/rowDataPlot.png) -->
 
 ### Heat map {#heatmap}
 
 The heat map panel displays, for any assay, the observed values for a subset of the features across the samples.
 
-![](img/heatMap.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "heatMap.png"))`
+
+<!-- ![](img/heatMap.png) -->
 
 ### Feature assay plot {#featassayplot}
 
 The feature assay plot displays the observed values for one feature across the samples.
 It is also possible to plot the observed values for two features, in a scatter plot.
 
-![](img/featAssayPlot.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "featAssayPlot.png"))`
+
+<!-- ![](img/featAssayPlot.png) -->
 
 ### Sample assay plot {#sampassayplot}
 
 Analogous to the [feature assay plot](#featassayplot) above, the sample assay plot shows the observed values for all features, for one of the samples.
 It is also possible to plot the observed values for two samples, in a scatter plot.
 
-![](img/sampAssayPlot.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "sampAssayPlot.png"))`
+
+<!-- ![](img/sampAssayPlot.png) -->
 
 ### Row statistics table {#rowstattable}
 
 The row statistics table displays all information provided in the `rowData` slot of the `SummarizedExperiment` object, leveraging the interactivity provided by the `r CRANpkg("DT")` package.
 
-![](img/rowStatTable.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "rowStatTable.png"))`
+
+<!-- ![](img/rowStatTable.png) -->
 
 ### Column statistics table {#colstattable}
 
 Analogous to the [row statistics table](#rowstattable) above, the column statistics table displays all information provided in the `colData` slot of the `SummarizedExperiment` object.
 
-![](img/colStatTable.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "colStatTable.png"))`
+
+<!-- ![](img/colStatTable.png) -->
 
 ### 'Data parameters' collapsible box {#data-parameters-box}
 
 Each plot panel type has a `Data parameters` collapsible box.
 This box has different content for the each panel types, but in all cases it lets the user control the data that is displayed in the plot.
 
-![](img/colDataPlotDataParams.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "colDataPlotDataParams.png"))`
+
+<!-- ![](img/colDataPlotDataParams.png) -->
 
 ### 'Visual parameters' collapsible box {#visual-parameters-box}
 
@@ -357,7 +377,9 @@ In contrast to the `Data parameters` collapsible box that lets users control _wh
 
 This collapsible box contains the controls to change the size, shape, opacity, and color of the points, to facet the plot by any available categorical annotation, to subsample points for increased speed of plot rendering, and to control how legends are displayed.
 
-![](img/colDataPlotVisualParams.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "colDataPlotVisualParams.png"))`
+
+<!-- ![](img/colDataPlotVisualParams.png) -->
 
 ### 'Selection parameters' collapsible box {#selection-parameter-box}
 
@@ -367,19 +389,30 @@ We discuss point transmission in more detail [later in this workshop](#transmit-
 
 <!-- TODO: Link "later" to the appropriate section when it exists -->
 
-![](img/redDimPlotSelectionParams.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "redDimPlotSelectionParams.png"))`
+
+<!-- ![](img/redDimPlotSelectionParams.png) -->
 
 ### Additional controls {#additional-controls}
 
 At the top-right corner of the iSEE application, users can find additional controls for reproducibility, configuration, and help.
 Each of these is discussed in more detail later in this workshop.
 
-|                    |                                                                     |                                        |
+
+<!-- |                    |                                                                     |                                        |
 |--------------------|:-------------------------------------------------------------------:|----------------------------------------|
 | Panel organization | <img width="275" src="img/PanelOrganization.png"/> | [Organize panels](#configuration-ui) |
 | Diagnostics        | <img width="275" src="img/Diagnostics.png"/>       | [Examine panel chart](#transmit-point-selections), [Extract R code](#reproducibility), [Display panel settings](#configuration-ui) |
 | Documentation      | <img width="275" src="img/Documentation.png"/>     | [Quick tour](#sharing-tours), [Open the vignette](#more-resources) |
-| Additional info    | <img width="275" src="img/additionalInfo.png"/>    | [About this session](#reproducibility), [About iSEE](#more-resources) |
+| Additional info    | <img width="275" src="img/additionalInfo.png"/>    | [About this session](#reproducibility), [About iSEE](#more-resources) | -->
+
+|                    |                                                                     |                                        |
+|--------------------|:-------------------------------------------------------------------:|----------------------------------------|
+| Panel organization | `r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "PanelOrganization.png"))` | [Organize panels](#configuration-ui) |
+| Diagnostics        | `r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "Diagnostics.png"))`       | [Examine panel chart](#transmit-point-selections), [Extract R code](#reproducibility), [Display panel settings](#configuration-ui) |
+| Documentation      | `r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "Documentation.png"))`     | [Quick tour](#sharing-tours), [Open the vignette](#more-resources) |
+| Additional info    | `r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "additionalInfo.png"))`    | [About this session](#reproducibility), [About iSEE](#more-resources) |
+
 
 <!-- Show how to change what is plotted, faceting, changing appearance/color -->
 <!-- Transmit selections -->
@@ -460,7 +493,9 @@ if (interactive()) {
 }
 ```
 
-![](img/ReducedDimensionType.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "ReducedDimensionType.png"))`
+
+<!-- ![](img/ReducedDimensionType.png) -->
 
 ### Coloring points by row/column annotation {#color-by-annotation}
 
@@ -496,7 +531,9 @@ if (interactive()) {
 }
 ```
 
-![](img/ColorByColData.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "ColorByColData.png"))`
+
+<!-- ![](img/ColorByColData.png) -->
 
 `r Biocpkg("iSEE")` allows precise control over the color schemes used.
 More information about this can be found in the `r Biocpkg("iSEE", "ecm.html", "ExperimentColorMap")` vignette.
@@ -536,7 +573,9 @@ if (interactive()) {
 }
 ```
 
-![](img/ColorByFeature.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "ColorByFeature.png"))`
+
+<!-- ![](img/ColorByFeature.png) -->
 
 ### Highlighting a single point {#highlight}
 
@@ -565,7 +604,9 @@ if (interactive()) {
 }
 ```
 
-![](img/ColorBySample.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "ColorBySample.png"))`
+
+<!-- ![](img/ColorBySample.png) -->
 
 ### Changing the size, shape and opacity of points {#change-shape-opacity}
 
@@ -597,7 +638,9 @@ if (interactive()) {
 }
 ```
 
-![](img/ConfigureVisualParameters.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "ConfigureVisualParameters.png"))`
+
+<!-- ![](img/ConfigureVisualParameters.png) -->
 
 ### Changing the displayed metadata {#change-metadata-displayed}
 
@@ -641,7 +684,9 @@ if (interactive()) {
 }
 ```
 
-![](img/ConfigureDataPlotPanels.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "ConfigureDataPlotPanels.png"))`
+
+<!-- ![](img/ConfigureDataPlotPanels.png) -->
 
 ### Displaying gene expression {#display-gene-expression}
 
@@ -685,7 +730,9 @@ if (interactive()) {
 }
 ```
 
-![](img/featAssayPlotDataParams.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "featAssayPlotDataParams.png"))`
+
+<!-- ![](img/featAssayPlotDataParams.png) -->
 
 ### Linking panels and transmitting point selections {#transmit-point-selections}
 
@@ -754,7 +801,9 @@ if (interactive()) {
 Notably, iSEE can display active links transmitting point selections between panel using the "[Examine panel chart](#additional-controls)" menu.
 Visible panels that do not send or receive a selection are also shown.
 
-![](img/GraphSelectionLinks.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "GraphSelectionLinks.png"))`
+
+<!-- ![](img/GraphSelectionLinks.png) -->
 
 ### Zooming into a plot subregion {#zoom-subregion}
 
@@ -790,7 +839,9 @@ if (interactive()) {
 }
 ```
 
-![](img/Zoom.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "Zoom.png"))`
+
+<!-- ![](img/Zoom.png) -->
 
 ### Filtering tables {#filter-table}
 
@@ -819,7 +870,9 @@ if (interactive()) {
 }
 ```
 
-![](img/FilteredTable.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "FilteredTable.png"))`
+
+<!-- ![](img/FilteredTable.png) -->
 
 Notably the preselected cell can be used to immediately establish a relationship with another panel and highlighted the selection in a different panel [as demonstrated earlier](#transmit-point-selections).
 
@@ -843,7 +896,9 @@ if (interactive()) {
 }
 ```
 
-![](img/LinkTableToPlot.png)
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "LinkTableToPlot.png"))`
+
+<!-- ![](img/LinkTableToPlot.png) -->
 
 ## Saving and restoring the state of the application {#save-and-restore-user-interface}
 
