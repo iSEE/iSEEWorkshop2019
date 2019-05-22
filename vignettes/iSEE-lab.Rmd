@@ -27,6 +27,15 @@ suppressPackageStartupMessages({
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
+<!-- Fix until BiocStyle is updated with this style. -->
+<style>
+td > img {
+  padding: 0px;
+  max-width: 100%;
+  display: inline;
+}
+</style>
+
 # Instructor names and contact information
 
 * Kevin Rue-Albrecht^[University of Oxford, Oxford, UK] (<kevin.rue-albrecht@kennedy.ox.ac.uk>)
