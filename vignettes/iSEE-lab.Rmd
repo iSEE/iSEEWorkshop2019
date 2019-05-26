@@ -11,7 +11,7 @@ output:
     keep_md: true
     number_sections: yes
     toc: true
-bibliography: bib/iSEE-lab.bib
+bibliography: "`r file.path(system.file(package='iSEEWorkshop', 'vignettes/bib'), 'iSEE-lab.bib')`"
 ---
 
 ```{r setup, include=FALSE}
