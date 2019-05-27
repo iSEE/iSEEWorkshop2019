@@ -1,5 +1,5 @@
 Package: iSEEWorkshop
-Title: A workshop on the iSEE package
+Title: Interactive Visualization of SummarizedExperiment Objects with iSEE
 Description: This workshop covers basic usage of iSEE for 
     interactive visualization of SummarizedExperiment objects.
 Version: 0.0.2
