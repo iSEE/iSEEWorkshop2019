@@ -936,7 +936,7 @@ if (interactive()) {
 
 ### Custom panels {#custom-panels}
 
-In addition to the standard panel types, `R Biocpkg("iSEE")` allows the user to create _custom_ panels, displaying any type of plot or table. 
+In addition to the standard panel types, `r Biocpkg("iSEE")` allows the user to create _custom_ panels, displaying any type of plot or table. 
 The custom panels can receive row and column selections from the standard panels. 
 In order to create a custom panel, we need to define a function that generates the desired output. 
 This function must receive a `SummarizedExperiment` object as it first input. 
