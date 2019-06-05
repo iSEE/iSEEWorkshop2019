@@ -942,6 +942,9 @@ In order to create a custom panel, we need to define a function that generates t
 This function must receive a `SummarizedExperiment` object as it first input. 
 In addition, if only one selection is to be transmitted (i.e., if `iSEE(..., customSendAll=FALSE)`) it should take a vector of row names as the second argument, and a vector of column names as the third argument.
 If `iSEE(..., customSendAll=TRUE)`, all selections (active and saved) are transmitted.
+
+#### Example: Custom PCA plot
+
 We will first show how to create a custom panel that performs dimension reduction (here, PCA) on a subset of the rows and columns, selected in and transmitted from other panels in the interface.
 
 > <i class="fa fa-wrench fa-2x"></i> **Action:** Copy the code below in your R session in order to define the custom function.
@@ -1007,11 +1010,85 @@ if (interactive()) {
 
 <!-- ![](img/customPCA.png) -->
 
-More examples of custom panels can be found at [https://github.com/kevinrue/iSEE_custom](https://github.com/kevinrue/iSEE_custom) and in the [Custom panels vignette](https://bioconductor.org/packages/release/bioc/vignettes/iSEE/inst/doc/custom.html).
-
 <!-- Here we could mention the custom coverage plot, and link to bulk RNA-seq data -->
+
+#### Example: Multiple selections and differential expression
+
 <!-- Multiple selections -> DE -->
+
+In the example below, we demonstrate the use of `iSEE(..., customSendAll=TRUE)` to transmit all selections (active and saved).
+This information is used to compute the log-fold change between the active selection and each of the other saved selections.
+
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Copy the code below in your R session in order to define the custom function.
+
+```{r}
+CUSTOM_DIFFEXP <- function(se, ri, ci, assay="logcounts") {
+    ri <- ri$active
+    if (is.null(ri)) { # ignoring saved gene selections for now.
+        ri <- rownames(se)
+    }
+    if (is.null(ci$active) || length(ci$saved)==0L) {
+        return(data.frame(row.names=character(0), LogFC=integer(0))) # dummy value.
+    }
+
+    assayMatrix <- assay(se, assay)[ri, , drop=FALSE]
+    active <- rowMeans(assayMatrix[,ci$active,drop=FALSE])
+
+    lfcs <- vector("list", length(ci$saved))
+    for (i in seq_along(lfcs)) {
+        saved <- rowMeans(assayMatrix[,ci$saved[[i]],drop=FALSE])
+        lfcs[[i]] <- active - saved
+    }
+    names(lfcs) <- sprintf("LogFC/%i", seq_along(lfcs))
+
+    output <- do.call(data.frame, lfcs)
+    rownames(output) <- ri
+    output
+}
+```
+
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Next, launch an iSEE session with the custom table panel, as well as a Reduced dimension plot and a Row data plot, from which the column and row selections for the custom table are obtained.
+Select multiple subsets of the points in the reduced dimension plot (e.g., clusters) and note how the DE table in the custom panel is updated. 
+
+```{r}
+customStatArgs <- customStatTableDefaults(sce, 1)
+customStatArgs$Function <- "CUSTOM_DIFFEXP"
+customStatArgs$Arguments <- ""
+customStatArgs$ColumnSource <- "Reduced dimension plot 1"
+customStatArgs$RowSource <- "Row data plot 1"
+customStatArgs$DataBoxOpen <- TRUE
+rowDataArgs <- rowDataPlotDefaults(sce, 1)
+rowDataArgs$YAxis <- "pct_dropout_by_counts"
+rowDataArgs$XAxis <- "Row data"
+rowDataArgs$XAxisRowData <- "log10_mean_counts"
+redDimArgs <- redDimPlotDefaults(sce, 1)
+redDimArgs$Type <- "TSNE"
+redDimArgs$ColorBy <- "Column data"
+redDimArgs$ColorByColData <- "Cluster"
+redDimArgs$SelectBoxOpen <- TRUE
+initialPanels <- DataFrame(
+    Name = c("Reduced dimension plot 1", "Row data plot 1", "Custom statistics table 1"),
+    Width = c(4L, 4L, 4L)
+)
+if (interactive()) {
+  iSEE(
+      sce,
+      customStatArgs = customStatArgs,
+      rowDataArgs = rowDataArgs, redDimArgs = redDimArgs,
+      initialPanels = initialPanels,
+      customStatFun = list(CUSTOM_DIFFEXP = CUSTOM_DIFFEXP),
+    customSendAll = TRUE
+  )
+}
+```
+
+`r knitr::include_graphics(file.path(system.file(package="iSEEWorkshop", "vignettes/img"), "customMultipleDifferentialExpression.png"))`
+
+<!-- ![](img/customMultipleDifferentialExpression.png) -->
+
 <!-- If time is enough: Kev's comparison of reduced dimensionality could be also nice - just to show, maybe, and then link to the iSEE_custom repo -->
+
+More examples of custom panels can be found at [https://github.com/kevinrue/iSEE_custom](https://github.com/kevinrue/iSEE_custom) and in the [Custom panels vignette](https://bioconductor.org/packages/release/bioc/vignettes/iSEE/inst/doc/custom.html).
 
 ### Reproducibility {#reproducibility}
 
