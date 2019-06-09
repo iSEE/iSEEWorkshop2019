@@ -204,7 +204,6 @@ Next, we calculate size factors and normalized and log-transformed expression va
 
 ```{r, message=FALSE}
 library(scran)
-library(BiocSingular)
 sce <- scran::computeSumFactors(sce, min.mean = 0.1)
 summary(sizeFactors(sce))
 sce <- scater::normalize(sce)
@@ -225,7 +224,8 @@ head(top.dec)
 Next, we apply Principal Components Analysis (PCA) and t-distributed Stochastic Neighbor Embedding (t-SNE) to generate low-dimensional representations of the cells in our data set.
 These low-dimensional representations are added to the `reducedDim` slot of the `SingleCellExperiment` object.
 
-```{r}
+```{r, message=FALSE}
+library(BiocSingular)
 set.seed(1000)
 sce <- scran::denoisePCA(sce, technical = new.trend, BSPARAM = IrlbaParam())
 ncol(reducedDim(sce, "PCA"))
