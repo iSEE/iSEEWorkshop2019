@@ -2,16 +2,17 @@
 title: "Interactive visualization of SummarizedExperiment objects with iSEE"
 author: "Kevin Rue-Albrecht, Charlotte Soneson, Federico Marini, and Aaron Lun"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  rmarkdown::html_document:
+    highlight: pygments
+    toc: true
+    toc_depth: 3
+    fig_width: 5
+bibliography: "`r file.path(system.file(package='iSEEWorkshop', 'vignettes/bib'), 'iSEE-lab.bib')`"
 vignette: >
   %\VignetteIndexEntry{Demonstration of iSEE functionality}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
-output:
-  BiocStyle::html_document:
-    keep_md: true
-    number_sections: yes
-    toc: true
-bibliography: "`r file.path(system.file(package='iSEEWorkshop', 'vignettes/bib'), 'iSEE-lab.bib')`"
 ---
 
 ```{r setup, include=FALSE}
