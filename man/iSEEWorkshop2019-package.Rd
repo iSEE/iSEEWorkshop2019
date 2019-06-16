@@ -14,9 +14,9 @@ This workshop covers basic usage of iSEE for
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/kevinrue/Bioc2019-iSEE-workshop}
-  \item \url{https://kevinrue.github.io/Bioc2019-iSEE-workshop}
-  \item Report bugs at \url{https://github.com/kevinrue/Bioc2019-iSEE-workshop/issues}
+  \item \url{https://github.com/kevinrue/iSEEWorkshop2019}
+  \item \url{https://kevinrue.github.io/iSEEWorkshop2019}
+  \item Report bugs at \url{https://github.com/kevinrue/iSEEWorkshop2019/issues}
 }
 
 }
