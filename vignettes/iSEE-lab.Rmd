@@ -445,9 +445,9 @@ However, in some cases it is desirable to have multiple panels of the same type,
 
 In order to accommodate such situations, users can add, remove, change the order of and resize all panels via the `Panel organization` menu in the top-right corner.
 
-> <i class="fa fa-wrench fa-2x"></i> **Action:** Using your open `r Biocpkg("iSEE")` instance, open the `Organization` menu and click on the `Organize panels` button.
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Using your open `r Biocpkg("iSEE")` instance, open the `Organization` menu (<i class="fa fa-object-group"></i>) and click on the `Organize panels` (<i class="fa fa-object-ungroup"></i>) button.
 Try to add and remove panels, and resize the existing ones.
-Remember to click on `Apply settings` to apply the changes you have made to the interface. 
+Remember to click on `Apply settings` (<i class="fa fa-object-ungroup"></i>) to apply the changes you have made to the interface. 
 
 Clicking in the selectize box listing all current panels will present you with a drop-down menu from which you can choose additional panels to add. 
 Similarly, panels can be removed by clicking on the <i class="fa fa-times"></i> icon associated with the panel name.
