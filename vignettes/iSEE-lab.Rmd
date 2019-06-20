@@ -838,6 +838,8 @@ We preconfigure the second panel to display only that area.
 In both panels, we color data points by cluster label using the same color map, to help visualize the zoom relationship between the two panels.
 
 > <i class="fa fa-wrench fa-2x"></i> **Action:** Close the app and run the following block of code to launch the example application described above.
+Double-click on the area selected in the first panel to zoom and display the same view as the second panel.
+Double click again anywhere in the panel to zoom out.
 
 ```{r}
 redDimArgs <- redDimPlotDefaults(sce, 2)
