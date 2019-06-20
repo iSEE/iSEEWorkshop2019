@@ -83,7 +83,7 @@
       <h1>Interactive visualization of SummarizedExperiment objects with iSEE</h1>
                         <h4 class="author">Kevin Rue-Albrecht, Charlotte Soneson, Federico Marini, and Aaron Lun</h4>
             
-            <h4 class="date">June 19, 2019</h4>
+            <h4 class="date">June 20, 2019</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/kevinrue/iSEEWorkshop2019/blob/master/vignettes/iSEE-lab.Rmd"><code>vignettes/iSEE-lab.Rmd</code></a></small>
       <div class="hidden name"><code>iSEE-lab.Rmd</code></div>
@@ -861,7 +861,7 @@ I added a few sentences to the introduction of this section to try to address th
 <p>iSEE allows you to zoom into a subregion of a plot, by simply drawing a rectangle around the area of interest and double-clicking inside the rectangle. To zoom back out to the full plot, double-click anywhere in the plot.</p>
 <p>To demonstrate the feature, we set up two <em>Reduced dimension plot</em> panels. In the first panel, we draw a Shiny brush to indicate an area of interest in the reduced dimension plot. We preconfigure the second panel to display only that area. In both panels, we color data points by cluster label using the same color map, to help visualize the zoom relationship between the two panels.</p>
 <blockquote>
-<p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to launch the example application described above.</p>
+<p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to launch the example application described above. Double-click on the area selected in the first panel to zoom and display the same view as the second panel. Double click again anywhere in the panel to zoom out.</p>
 </blockquote>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
 <a class="sourceLine" id="cb24-2" data-line-number="2">redDimArgs[[<span class="st">"Type"</span>]] &lt;-<span class="st"> "TSNE"</span></a>
