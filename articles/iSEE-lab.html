@@ -6,9 +6,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interactive visualization of SummarizedExperiment objects with iSEE • iSEEWorkshop2019</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Interactive visualization of SummarizedExperiment objects with iSEE">
 <meta property="og:description" content="">
 <meta property="og:image" content="/logo.png">
@@ -39,7 +46,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -62,7 +69,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/kevinrue/iSEEWorkshop2019">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -75,6 +82,7 @@
 <!--/.navbar -->
 
       
+
       </header><link href="iSEE-lab_files/font-awesome-5.1.0/css/all.css" rel="stylesheet">
 <link href="iSEE-lab_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet">
 <div class="row">
@@ -83,7 +91,7 @@
       <h1>Interactive visualization of SummarizedExperiment objects with iSEE</h1>
                         <h4 class="author">Kevin Rue-Albrecht, Charlotte Soneson, Federico Marini, and Aaron Lun</h4>
             
-            <h4 class="date">August 28, 2019</h4>
+            <h4 class="date">September 04, 2019</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/kevinrue/iSEEWorkshop2019/blob/master/vignettes/iSEE-lab.Rmd"><code>vignettes/iSEE-lab.Rmd</code></a></small>
       <div class="hidden name"><code>iSEE-lab.Rmd</code></div>
@@ -239,11 +247,11 @@ td > img {
 <h2 class="hasAnchor">
 <a href="#prepare-scrnaseq-data" class="anchor"></a>Preparation of example scRNAseq data</h2>
 <p>In this workshop, we use example data from the <em><a href="https://bioconductor.org/packages/3.10/TENxPBMCData">TENxPBMCData</a></em> package. This package provides an <em>R / Bioconductor</em> resource for representing and manipulating different single-cell RNA-seq data sets profiling peripheral blood mononuclear cells (PBMC) generated by 10X Genomics (<a href="https://support.10xgenomics.com/single-cell-gene-expression/datasets" class="uri">https://support.10xgenomics.com/single-cell-gene-expression/datasets</a>).</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(TENxPBMCData)</a></code></pre></div>
-<p>The man page for the <code><a href="https://www.rdocumentation.org/packages/TENxPBMCData/topics/TENxPBMCData">TENxPBMCData()</a></code> function gives an idea of the datasets that are available from this package. It can be opened with the following command.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/help">help</a></span>(TENxPBMCData)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(TENxPBMCData)</a></code></pre></div>
+<p>The man page for the <code><a href="https://rdrr.io/pkg/TENxPBMCData/man/TENxPBMCData.html">TENxPBMCData()</a></code> function gives an idea of the datasets that are available from this package. It can be opened with the following command.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/help.html">help</a></span>(TENxPBMCData)</a></code></pre></div>
 <p>Here, we use the <code>"pbmc3k"</code> dataset, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. The first time this dataset is loaded, this command downloads the dataset to a local cache, which takes some time, depending on the speed of your internet connection. Subsequent times, the same command loads the dataset directly from the local cache.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">sce &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/TENxPBMCData/topics/TENxPBMCData">TENxPBMCData</a></span>(<span class="dt">dataset =</span> <span class="st">"pbmc3k"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">sce &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/TENxPBMCData/man/TENxPBMCData.html">TENxPBMCData</a></span>(<span class="dt">dataset =</span> <span class="st">"pbmc3k"</span>)</a></code></pre></div>
 <p>At this point we can inspect the dataset in the console.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">sce</a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; class: SingleCellExperiment </span></a>
@@ -268,22 +276,22 @@ td > img {
 </li>
 <li>Column metadata include diverse information for each cell, including the cell barcode (<code>"Barcode"</code>) and the donor identifier (<code>"Individual"</code>).</li>
 </ul>
-<p>Note that a <code>SingleCellExperiment</code> object (or, more generally, any <code>SummarizedExperiment</code> object) like this one already contains sufficient information to launch an interactive application instance to visualize the available data and metadata, using the <code><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE()</a></code> function.</p>
+<p>Note that a <code>SingleCellExperiment</code> object (or, more generally, any <code>SummarizedExperiment</code> object) like this one already contains sufficient information to launch an interactive application instance to visualize the available data and metadata, using the <code><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE()</a></code> function.</p>
 <p>For the purpose of this workshop, we first apply some preprocessing to the <code>SingleCellExperiment</code> object, in order to populate it with more information that can be visualized with <code>iSEE</code>. The steps below roughly follow those outlined in the <em><a href="https://bioconductor.org/packages/3.10/simpleSingleCell">simpleSingleCell</a></em> Bioconductor workflow.</p>
-<p>We start by adding column names to the object, and use gene symbols instead of Ensembl IDs as row names. In the case where multiple Ensembl identifiers correspond to the same gene symbol, the <code><a href="https://www.rdocumentation.org/packages/scater/topics/uniquifyFeatureNames">scater::uniquifyFeatureNames</a></code> function concatenates the Ensembl ID and the gene symbol in order to generate unique feature names.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(scater)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">colnames</a></span>(sce) &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/paste">paste0</a></span>(<span class="st">"Cell"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq_len</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">ncol</a></span>(sce)))</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce) &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scater/topics/uniquifyFeatureNames">uniquifyFeatureNames</a></span>(</a>
+<p>We start by adding column names to the object, and use gene symbols instead of Ensembl IDs as row names. In the case where multiple Ensembl identifiers correspond to the same gene symbol, the <code><a href="https://rdrr.io/pkg/scater/man/uniquifyFeatureNames.html">scater::uniquifyFeatureNames</a></code> function concatenates the Ensembl ID and the gene symbol in order to generate unique feature names.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(scater)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span>(sce) &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="st">"Cell"</span>, <span class="kw"><a href="https://rdrr.io/r/base/seq.html">seq_len</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span>(sce)))</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce) &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scater/man/uniquifyFeatureNames.html">uniquifyFeatureNames</a></span>(</a>
 <a class="sourceLine" id="cb5-4" data-line-number="4">    <span class="dt">ID =</span> <span class="kw">rowData</span>(sce)<span class="op">$</span>ENSEMBL_ID,</a>
 <a class="sourceLine" id="cb5-5" data-line-number="5">    <span class="dt">names =</span> <span class="kw">rowData</span>(sce)<span class="op">$</span>Symbol_TENx</a>
 <a class="sourceLine" id="cb5-6" data-line-number="6">)</a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce))</a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce))</a>
 <a class="sourceLine" id="cb5-8" data-line-number="8"><span class="co">#&gt; [1] "MIR1302-10"   "FAM138A"      "OR4F5"        "RP11-34P13.7"</span></a>
 <a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co">#&gt; [5] "RP11-34P13.8" "AL627309.1"</span></a></code></pre></div>
 <p>Next, we use the <em><a href="https://bioconductor.org/packages/3.10/scater">scater</a></em> package to calculate gene- and cell-level quality metrics. These metrics are added as columns to the <code>rowData</code> and <code>colData</code> slots of the <code>SingleCellExperiment</code> object, respectively.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">MT &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce)[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/grep">grep</a></span>(<span class="st">"^MT-"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce))]</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2">sce &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scater/topics/calculateQCMetrics">calculateQCMetrics</a></span>(<span class="dt">object =</span> sce, </a>
-<a class="sourceLine" id="cb6-3" data-line-number="3">                                  <span class="dt">feature_controls =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">MT =</span> MT))</a>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">MT &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce)[<span class="kw"><a href="https://rdrr.io/r/base/grep.html">grep</a></span>(<span class="st">"^MT-"</span>, <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce))]</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2">sce &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scater/man/calculateQCMetrics.html">calculateQCMetrics</a></span>(<span class="dt">object =</span> sce, </a>
+<a class="sourceLine" id="cb6-3" data-line-number="3">                                  <span class="dt">feature_controls =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">MT =</span> MT))</a>
 <a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt; Warning: 'calculateQCMetrics' is deprecated.</span></a>
 <a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; Use 'perCellQCMetrics' or 'perFeatureQCMetrics' instead.</span></a>
 <a class="sourceLine" id="cb6-6" data-line-number="6">sce</a>
@@ -322,30 +330,30 @@ td > img {
 <a class="sourceLine" id="cb8-2" data-line-number="2"><span class="co"># clusters &lt;- scran::quickCluster(sce, BSPARAM = IrlbaParam())</span></a>
 <a class="sourceLine" id="cb8-3" data-line-number="3"><span class="co"># sce &lt;- scran::computeSumFactors(sce, cluster = clusters, min.mean = 0.1)</span></a></code></pre></div>
 <p>However, for time reasons, we will skip the pre-clustering step in this workshop.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(scran)</a>
-<a class="sourceLine" id="cb9-2" data-line-number="2">sce &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scran/topics/computeSumFactors">computeSumFactors</a></span>(sce, <span class="dt">min.mean =</span> <span class="fl">0.1</span>)</a>
-<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/summary">summary</a></span>(<span class="kw">sizeFactors</span>(sce))</a>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(scran)</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2">sce &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scran/man/computeSumFactors.html">computeSumFactors</a></span>(sce, <span class="dt">min.mean =</span> <span class="fl">0.1</span>)</a>
+<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/r/base/summary.html">summary</a></span>(<span class="kw">sizeFactors</span>(sce))</a>
 <a class="sourceLine" id="cb9-4" data-line-number="4"><span class="co">#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></a>
 <a class="sourceLine" id="cb9-5" data-line-number="5"><span class="co">#&gt;  0.1164  0.7309  0.9004  1.0000  1.1635  9.8580</span></a>
-<a class="sourceLine" id="cb9-6" data-line-number="6">sce &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scater/topics/normalize">normalize</a></span>(sce)</a>
+<a class="sourceLine" id="cb9-6" data-line-number="6">sce &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scater/man/normalize.html">normalize</a></span>(sce)</a>
 <a class="sourceLine" id="cb9-7" data-line-number="7"><span class="co">#&gt; Warning: 'centreSizeFactors' is deprecated.</span></a>
 <a class="sourceLine" id="cb9-8" data-line-number="8"><span class="co">#&gt; See help("Deprecated")</span></a></code></pre></div>
 <p>In order to extract the most informative genes, we first model the mean-variance trend and decompose the variance into biological and technical components.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">logcounts</span>(sce) &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/matrix">as.matrix</a></span>(<span class="kw">logcounts</span>(sce))</a>
-<a class="sourceLine" id="cb10-2" data-line-number="2">new.trend &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scran/topics/makeTechTrend">makeTechTrend</a></span>(<span class="dt">x =</span> sce)</a>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">logcounts</span>(sce) &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span>(<span class="kw">logcounts</span>(sce))</a>
+<a class="sourceLine" id="cb10-2" data-line-number="2">new.trend &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scran/man/makeTechTrend.html">makeTechTrend</a></span>(<span class="dt">x =</span> sce)</a>
 <a class="sourceLine" id="cb10-3" data-line-number="3"><span class="co">#&gt; Warning: 'sizeFactorNames' is deprecated.</span></a>
 <a class="sourceLine" id="cb10-4" data-line-number="4"><span class="co">#&gt; See help("Deprecated")</span></a>
-<a class="sourceLine" id="cb10-5" data-line-number="5">fit &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scran/topics/trendVar">trendVar</a></span>(sce, <span class="dt">use.spikes =</span> <span class="ot">FALSE</span>, <span class="dt">loess.args =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">span =</span> <span class="fl">0.05</span>))</a>
+<a class="sourceLine" id="cb10-5" data-line-number="5">fit &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scran/man/trendVar.html">trendVar</a></span>(sce, <span class="dt">use.spikes =</span> <span class="ot">FALSE</span>, <span class="dt">loess.args =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">span =</span> <span class="fl">0.05</span>))</a>
 <a class="sourceLine" id="cb10-6" data-line-number="6"><span class="co">#&gt; Warning: 'sizeFactorNames' is deprecated.</span></a>
 <a class="sourceLine" id="cb10-7" data-line-number="7"><span class="co">#&gt; See help("Deprecated")</span></a>
 <a class="sourceLine" id="cb10-8" data-line-number="8"><span class="co">#&gt; Warning: 'isSpike' is deprecated.</span></a>
 <a class="sourceLine" id="cb10-9" data-line-number="9"><span class="co">#&gt; See help("Deprecated")</span></a>
 <a class="sourceLine" id="cb10-10" data-line-number="10">fit<span class="op">$</span>trend &lt;-<span class="st"> </span>new.trend</a>
-<a class="sourceLine" id="cb10-11" data-line-number="11">dec &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scran/topics/decomposeVar">decomposeVar</a></span>(<span class="dt">fit =</span> fit)</a>
+<a class="sourceLine" id="cb10-11" data-line-number="11">dec &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scran/man/decomposeVar.html">decomposeVar</a></span>(<span class="dt">fit =</span> fit)</a>
 <a class="sourceLine" id="cb10-12" data-line-number="12"><span class="co">#&gt; Warning: 'testVar' is deprecated.</span></a>
 <a class="sourceLine" id="cb10-13" data-line-number="13"><span class="co">#&gt; See help("Deprecated")</span></a>
-<a class="sourceLine" id="cb10-14" data-line-number="14">top.dec &lt;-<span class="st"> </span>dec[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/order">order</a></span>(dec<span class="op">$</span>bio, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>), ] </a>
-<a class="sourceLine" id="cb10-15" data-line-number="15"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(top.dec)</a>
+<a class="sourceLine" id="cb10-14" data-line-number="14">top.dec &lt;-<span class="st"> </span>dec[<span class="kw"><a href="https://rdrr.io/r/base/order.html">order</a></span>(dec<span class="op">$</span>bio, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>), ] </a>
+<a class="sourceLine" id="cb10-15" data-line-number="15"><span class="kw"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(top.dec)</a>
 <a class="sourceLine" id="cb10-16" data-line-number="16"><span class="co">#&gt; DataFrame with 6 rows and 6 columns</span></a>
 <a class="sourceLine" id="cb10-17" data-line-number="17"><span class="co">#&gt;                     mean            total              bio</span></a>
 <a class="sourceLine" id="cb10-18" data-line-number="18"><span class="co">#&gt;                &lt;numeric&gt;        &lt;numeric&gt;        &lt;numeric&gt;</span></a>
@@ -447,13 +455,13 @@ td > img {
 <a class="sourceLine" id="cb10-114" data-line-number="114"></a>
 <a class="sourceLine" id="cb10-115" data-line-number="115"><span class="co">#&gt; 0</span></a></code></pre></div>
 <p>Next, we apply Principal Components Analysis (PCA) and t-distributed Stochastic Neighbor Embedding (t-SNE) to generate low-dimensional representations of the cells in our data set. These low-dimensional representations are added to the <code>reducedDim</code> slot of the <code>SingleCellExperiment</code> object.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(BiocSingular)</a>
-<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">1000</span>)</a>
-<a class="sourceLine" id="cb11-3" data-line-number="3">sce &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scran/topics/denoisePCA">denoisePCA</a></span>(sce, <span class="dt">technical =</span> new.trend, <span class="dt">BSPARAM =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/BiocSingular/topics/BiocSingularParam">IrlbaParam</a></span>())</a>
-<a class="sourceLine" id="cb11-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/nrow">ncol</a></span>(<span class="kw">reducedDim</span>(sce, <span class="st">"PCA"</span>))</a>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(BiocSingular)</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span>(<span class="dv">1000</span>)</a>
+<a class="sourceLine" id="cb11-3" data-line-number="3">sce &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scran/man/denoisePCA.html">denoisePCA</a></span>(sce, <span class="dt">technical =</span> new.trend, <span class="dt">BSPARAM =</span> <span class="kw"><a href="https://rdrr.io/pkg/BiocSingular/man/BiocSingularParam.html">IrlbaParam</a></span>())</a>
+<a class="sourceLine" id="cb11-4" data-line-number="4"><span class="kw"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span>(<span class="kw">reducedDim</span>(sce, <span class="st">"PCA"</span>))</a>
 <a class="sourceLine" id="cb11-5" data-line-number="5"><span class="co">#&gt; [1] 32</span></a>
-<a class="sourceLine" id="cb11-6" data-line-number="6"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">1000</span>)</a>
-<a class="sourceLine" id="cb11-7" data-line-number="7">sce &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scater/topics/runTSNE">runTSNE</a></span>(sce, <span class="dt">use_dimred =</span> <span class="st">"PCA"</span>, <span class="dt">perplexity =</span> <span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb11-6" data-line-number="6"><span class="kw"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span>(<span class="dv">1000</span>)</a>
+<a class="sourceLine" id="cb11-7" data-line-number="7">sce &lt;-<span class="st"> </span>scater<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scater/man/runTSNE.html">runTSNE</a></span>(sce, <span class="dt">use_dimred =</span> <span class="st">"PCA"</span>, <span class="dt">perplexity =</span> <span class="dv">30</span>)</a>
 <a class="sourceLine" id="cb11-8" data-line-number="8"><span class="co">#&gt; Warning: 'use_dimred' is deprecated.</span></a>
 <a class="sourceLine" id="cb11-9" data-line-number="9"><span class="co">#&gt; Use 'dimred' instead.</span></a>
 <a class="sourceLine" id="cb11-10" data-line-number="10"><span class="co">#&gt; See help("Deprecated")</span></a>
@@ -473,20 +481,20 @@ td > img {
 <a class="sourceLine" id="cb11-24" data-line-number="24"><span class="co">#&gt; spikeNames(0):</span></a>
 <a class="sourceLine" id="cb11-25" data-line-number="25"><span class="co">#&gt; altExpNames(0):</span></a></code></pre></div>
 <p>Finally, we cluster the cells using a graph-based algorithm, and find ‘marker genes’ for each cluster as the genes that are significantly upregulated in the cluster compared to each of the other inferred clusters. The adjusted p-values from this test, for each cluster, are added to the <code>rowData</code> slot of the object.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">snn.gr &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scran/topics/buildSNNGraph">buildSNNGraph</a></span>(sce, <span class="dt">use.dimred =</span> <span class="st">"PCA"</span>)</a>
-<a class="sourceLine" id="cb12-2" data-line-number="2">clusters &lt;-<span class="st"> </span>igraph<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/igraph/topics/cluster_walktrap">cluster_walktrap</a></span>(snn.gr)</a>
-<a class="sourceLine" id="cb12-3" data-line-number="3">sce<span class="op">$</span>Cluster &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/factor">factor</a></span>(clusters<span class="op">$</span>membership)</a>
-<a class="sourceLine" id="cb12-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/table">table</a></span>(sce<span class="op">$</span>Cluster)</a>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">snn.gr &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scran/man/buildSNNGraph.html">buildSNNGraph</a></span>(sce, <span class="dt">use.dimred =</span> <span class="st">"PCA"</span>)</a>
+<a class="sourceLine" id="cb12-2" data-line-number="2">clusters &lt;-<span class="st"> </span>igraph<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/igraph/man/cluster_walktrap.html">cluster_walktrap</a></span>(snn.gr)</a>
+<a class="sourceLine" id="cb12-3" data-line-number="3">sce<span class="op">$</span>Cluster &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/factor.html">factor</a></span>(clusters<span class="op">$</span>membership)</a>
+<a class="sourceLine" id="cb12-4" data-line-number="4"><span class="kw"><a href="https://rdrr.io/r/base/table.html">table</a></span>(sce<span class="op">$</span>Cluster)</a>
 <a class="sourceLine" id="cb12-5" data-line-number="5"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb12-6" data-line-number="6"><span class="co">#&gt;   1   2   3   4   5   6   7   8   9  10  11  12 </span></a>
 <a class="sourceLine" id="cb12-7" data-line-number="7"><span class="co">#&gt; 197 692 161  31 150 331 162 339 137 422  10  11</span></a>
 <a class="sourceLine" id="cb12-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb12-9" data-line-number="9">markers &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/scran/topics/findMarkers">findMarkers</a></span>(sce, <span class="dt">clusters =</span> sce<span class="op">$</span>Cluster, </a>
+<a class="sourceLine" id="cb12-9" data-line-number="9">markers &lt;-<span class="st"> </span>scran<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/scran/man/findMarkers.html">findMarkers</a></span>(sce, <span class="dt">clusters =</span> sce<span class="op">$</span>Cluster, </a>
 <a class="sourceLine" id="cb12-10" data-line-number="10">                              <span class="dt">direction =</span> <span class="st">"up"</span>, <span class="dt">pval.type =</span> <span class="st">"all"</span>)</a>
-<a class="sourceLine" id="cb12-11" data-line-number="11"><span class="cf">for</span> (i <span class="cf">in</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/names">names</a></span>(markers)) {</a>
-<a class="sourceLine" id="cb12-12" data-line-number="12">    <span class="kw">rowData</span>(sce)[, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/paste">paste0</a></span>(<span class="st">"FDR_cluster"</span>, i)] &lt;-<span class="st"> </span></a>
-<a class="sourceLine" id="cb12-13" data-line-number="13"><span class="st">        </span>markers[[i]]<span class="op">$</span>FDR[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce), </a>
-<a class="sourceLine" id="cb12-14" data-line-number="14">                               <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(markers[[i]]))]</a>
+<a class="sourceLine" id="cb12-11" data-line-number="11"><span class="cf">for</span> (i <span class="cf">in</span> <span class="kw"><a href="https://rdrr.io/r/base/names.html">names</a></span>(markers)) {</a>
+<a class="sourceLine" id="cb12-12" data-line-number="12">    <span class="kw">rowData</span>(sce)[, <span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="st">"FDR_cluster"</span>, i)] &lt;-<span class="st"> </span></a>
+<a class="sourceLine" id="cb12-13" data-line-number="13"><span class="st">        </span>markers[[i]]<span class="op">$</span>FDR[<span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce), </a>
+<a class="sourceLine" id="cb12-14" data-line-number="14">                               <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(markers[[i]]))]</a>
 <a class="sourceLine" id="cb12-15" data-line-number="15">}</a>
 <a class="sourceLine" id="cb12-16" data-line-number="16">sce</a>
 <a class="sourceLine" id="cb12-17" data-line-number="17"><span class="co">#&gt; class: SingleCellExperiment </span></a>
@@ -503,12 +511,12 @@ td > img {
 <a class="sourceLine" id="cb12-28" data-line-number="28"><span class="co">#&gt; spikeNames(0):</span></a>
 <a class="sourceLine" id="cb12-29" data-line-number="29"><span class="co">#&gt; altExpNames(0):</span></a></code></pre></div>
 <p>This concludes the preparation of the data. We have now a <code>SingleCellExperiment</code> object that contains different types of abundance values, representations in reduced dimensions, as well as a range of row (feature) and column (cell) metadata.</p>
-<p>We can launch an <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> instance for exploring this data set using the <code><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE()</a></code> function:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(iSEE)</a>
-<a class="sourceLine" id="cb13-2" data-line-number="2"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb13-3" data-line-number="3">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce)</a>
+<p>We can launch an <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> instance for exploring this data set using the <code><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE()</a></code> function:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(iSEE)</a>
+<a class="sourceLine" id="cb13-2" data-line-number="2"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb13-3" data-line-number="3">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce)</a>
 <a class="sourceLine" id="cb13-4" data-line-number="4">}</a></code></pre></div>
-<p>The main argument to the <code><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE()</a></code> function is a <code>SummarizedExperiment</code> object, or an object of any class extending <code>SummarizedExperiment</code> (such as <code>SingleCellExperiment</code>, in this case). No other restrictions are made on the type of data stored in the object, and <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> can be used for interactive visualization of many different types of data. It is also worth noting that for various types of data, Bioconductor packages provides functionality for directly importing quantifications generated by external software packages into a <code>SummarizedExperiment</code> object. For example, the <em><a href="https://bioconductor.org/packages/3.10/DropletUtils">DropletUtils</a></em> package can read quantifications from the 10x Genomics CellRanger pipeline for single-cell RNA-seq data, and the <em><a href="https://bioconductor.org/packages/3.10/tximeta">tximeta</a></em> package can be used to read data from transcript quantification pipelines into a <code>SummarizedExperiment</code> object.</p>
+<p>The main argument to the <code><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE()</a></code> function is a <code>SummarizedExperiment</code> object, or an object of any class extending <code>SummarizedExperiment</code> (such as <code>SingleCellExperiment</code>, in this case). No other restrictions are made on the type of data stored in the object, and <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> can be used for interactive visualization of many different types of data. It is also worth noting that for various types of data, Bioconductor packages provides functionality for directly importing quantifications generated by external software packages into a <code>SummarizedExperiment</code> object. For example, the <em><a href="https://bioconductor.org/packages/3.10/DropletUtils">DropletUtils</a></em> package can read quantifications from the 10x Genomics CellRanger pipeline for single-cell RNA-seq data, and the <em><a href="https://bioconductor.org/packages/3.10/tximeta">tximeta</a></em> package can be used to read data from transcript quantification pipelines into a <code>SummarizedExperiment</code> object.</p>
 </div>
 <div id="isee-overview" class="section level2">
 <h2 class="hasAnchor">
@@ -658,7 +666,7 @@ I added a few sentences to the introduction of this section to try to address th
 <div id="configuration-ui" class="section level3">
 <h3 class="hasAnchor">
 <a href="#configuration-ui" class="anchor"></a>Configuration of the app interface</h3>
-<p>As mentioned above, the default behaviour of the <code><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE()</a></code> function is to launch an instance of the user interface that displays one panel of each of the standard types (provided the underlying data is available, e.g. for reduced dimension plots the <code>reducedDim</code> slot is required). However, in some cases it is desirable to have multiple panels of the same type, and/or exclude some panel types.</p>
+<p>As mentioned above, the default behaviour of the <code><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE()</a></code> function is to launch an instance of the user interface that displays one panel of each of the standard types (provided the underlying data is available, e.g. for reduced dimension plots the <code>reducedDim</code> slot is required). However, in some cases it is desirable to have multiple panels of the same type, and/or exclude some panel types.</p>
 <p>In order to accommodate such situations, users can add, remove, change the order of and resize all panels via the <code>Panel organization</code> menu in the top-right corner.</p>
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Using your open <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> instance, open the <code>Organization</code> menu (<i class="fa fa-object-group"></i>) and click on the <code>Organize panels</code> (<i class="fa fa-object-ungroup"></i>) button. Try to add and remove panels, and resize the existing ones. Remember to click on <code>Apply settings</code> (<i class="fa fa-object-ungroup"></i>) to apply the changes you have made to the interface.</p>
@@ -671,19 +679,19 @@ I added a few sentences to the introduction of this section to try to address th
 </blockquote>
 <p>For example:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb14-2" data-line-number="2">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Column data plot 1"</span>, </a>
+<a class="sourceLine" id="cb14-2" data-line-number="2">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Column data plot 1"</span>, </a>
 <a class="sourceLine" id="cb14-3" data-line-number="3">           <span class="st">"Row data plot 1"</span>, <span class="st">"Heat map 1"</span>, </a>
 <a class="sourceLine" id="cb14-4" data-line-number="4">           <span class="st">"Feature assay plot 1"</span>, <span class="st">"Sample assay plot 1"</span>, </a>
 <a class="sourceLine" id="cb14-5" data-line-number="5">           <span class="st">"Row statistics table 1"</span>, <span class="st">"Column statistics table 1"</span></a>
 <a class="sourceLine" id="cb14-6" data-line-number="6">        ),</a>
-<a class="sourceLine" id="cb14-7" data-line-number="7">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L),</a>
-<a class="sourceLine" id="cb14-8" data-line-number="8">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(460L, 460L, 460L, 460L, 460L, 460L, 460L, 460L)</a>
+<a class="sourceLine" id="cb14-7" data-line-number="7">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L),</a>
+<a class="sourceLine" id="cb14-8" data-line-number="8">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(460L, 460L, 460L, 460L, 460L, 460L, 460L, 460L)</a>
 <a class="sourceLine" id="cb14-9" data-line-number="9">)</a></code></pre></div>
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the application, run the code that you just copied in your <em>R</em> session, and relaunch the application, now with the additional argument <code>initialPanels</code> set:</p>
 </blockquote>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb15-2" data-line-number="2">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">initialPanels =</span> initialPanels)</a>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb15-2" data-line-number="2">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb15-3" data-line-number="3">}</a></code></pre></div>
 <p>Notice how the panel configuration at startup is now identical to the one you saw just before displaying the panel settings.</p>
 <p>Now that we have an application consisting of a suitable collection of panels for our data set, we’ll explore the collapsible boxes below each plot, which lets us control their appearance.</p>
@@ -698,16 +706,16 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the application and run the following block of code to show two <em>Reduced dimension plot</em> panels; one showing the PCA representation, one showing the t-SNE representation.</p>
 </blockquote>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
 <a class="sourceLine" id="cb16-2" data-line-number="2">redDimArgs[<span class="dv">1</span>, <span class="st">"Type"</span>] &lt;-<span class="st"> "PCA"</span></a>
 <a class="sourceLine" id="cb16-3" data-line-number="3">redDimArgs[<span class="dv">2</span>, <span class="st">"Type"</span>] &lt;-<span class="st"> "TSNE"</span></a>
 <a class="sourceLine" id="cb16-4" data-line-number="4">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb16-5" data-line-number="5">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Reduced dimension plot 2"</span>),</a>
-<a class="sourceLine" id="cb16-6" data-line-number="6">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(4L, 4L),</a>
-<a class="sourceLine" id="cb16-7" data-line-number="7">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">400</span>, <span class="dv">400</span>)</a>
+<a class="sourceLine" id="cb16-5" data-line-number="5">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Reduced dimension plot 2"</span>),</a>
+<a class="sourceLine" id="cb16-6" data-line-number="6">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(4L, 4L),</a>
+<a class="sourceLine" id="cb16-7" data-line-number="7">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dv">400</span>, <span class="dv">400</span>)</a>
 <a class="sourceLine" id="cb16-8" data-line-number="8">)</a>
-<a class="sourceLine" id="cb16-9" data-line-number="9"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb16-10" data-line-number="10">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb16-9" data-line-number="9"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb16-10" data-line-number="10">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb16-11" data-line-number="11">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/ReducedDimensionType.png"><!-- --></p>
 <!-- ![](img/ReducedDimensionType.png) -->
@@ -733,12 +741,12 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb17-2" data-line-number="2">redDimArgs[<span class="dv">1</span>, <span class="st">"ColorByColData"</span>] &lt;-<span class="st"> "log10_total_features_by_counts"</span></a>
 <a class="sourceLine" id="cb17-3" data-line-number="3">redDimArgs[<span class="dv">2</span>, <span class="st">"ColorByColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb17-4" data-line-number="4">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb17-5" data-line-number="5">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Reduced dimension plot 2"</span>),</a>
-<a class="sourceLine" id="cb17-6" data-line-number="6">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(4L, 4L),</a>
-<a class="sourceLine" id="cb17-7" data-line-number="7">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">400</span>, <span class="dv">400</span>)</a>
+<a class="sourceLine" id="cb17-5" data-line-number="5">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Reduced dimension plot 2"</span>),</a>
+<a class="sourceLine" id="cb17-6" data-line-number="6">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(4L, 4L),</a>
+<a class="sourceLine" id="cb17-7" data-line-number="7">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dv">400</span>, <span class="dv">400</span>)</a>
 <a class="sourceLine" id="cb17-8" data-line-number="8">)</a>
-<a class="sourceLine" id="cb17-9" data-line-number="9"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb17-10" data-line-number="10">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb17-9" data-line-number="9"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb17-10" data-line-number="10">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb17-11" data-line-number="11">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/ColorByColData.png"><!-- --></p>
 <!-- ![](img/ColorByColData.png) -->
@@ -756,10 +764,10 @@ I added a few sentences to the introduction of this section to try to address th
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the application and run the following block of code to set up 3 panels, all displaying the t-SNE representation. In the first panel, we color cells by their <code>Cluster</code> label. In the second and third panel, we display <em>CD79A</em> and <em>CD74</em>, a combination of gene markers typically observed in B cells.</p>
 </blockquote>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1">## The displayed features IDs must be row names of the object</a>
-<a class="sourceLine" id="cb18-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"CD79A"</span>, <span class="st">"CD74"</span>) <span class="op">%in%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce)</a>
+<a class="sourceLine" id="cb18-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"CD79A"</span>, <span class="st">"CD74"</span>) <span class="op">%in%</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce)</a>
 <a class="sourceLine" id="cb18-3" data-line-number="3"><span class="co">#&gt; [1] TRUE TRUE</span></a>
 <a class="sourceLine" id="cb18-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb18-5" data-line-number="5">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb18-5" data-line-number="5">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce, <span class="dv">3</span>)</a>
 <a class="sourceLine" id="cb18-6" data-line-number="6">redDimArgs[[<span class="st">"Type"</span>]] &lt;-<span class="st"> "TSNE"</span></a>
 <a class="sourceLine" id="cb18-7" data-line-number="7">redDimArgs[<span class="dv">1</span>, <span class="st">"ColorBy"</span>] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb18-8" data-line-number="8">redDimArgs[<span class="dv">1</span>, <span class="st">"ColorByColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
@@ -767,12 +775,12 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb18-10" data-line-number="10">redDimArgs[<span class="dv">2</span>, <span class="st">"ColorByFeatName"</span>] &lt;-<span class="st"> "CD79A"</span></a>
 <a class="sourceLine" id="cb18-11" data-line-number="11">redDimArgs[<span class="dv">3</span>, <span class="st">"ColorByFeatName"</span>] &lt;-<span class="st"> "CD74"</span></a>
 <a class="sourceLine" id="cb18-12" data-line-number="12">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb18-13" data-line-number="13">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/paste">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb18-14" data-line-number="14">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(4L, 3L),</a>
-<a class="sourceLine" id="cb18-15" data-line-number="15">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 3L)</a>
+<a class="sourceLine" id="cb18-13" data-line-number="13">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
+<a class="sourceLine" id="cb18-14" data-line-number="14">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(4L, 3L),</a>
+<a class="sourceLine" id="cb18-15" data-line-number="15">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 3L)</a>
 <a class="sourceLine" id="cb18-16" data-line-number="16">)</a>
-<a class="sourceLine" id="cb18-17" data-line-number="17"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb18-18" data-line-number="18">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb18-17" data-line-number="17"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb18-18" data-line-number="18">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb18-19" data-line-number="19">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/ColorByFeature.png"><!-- --></p>
 <!-- ![](img/ColorByFeature.png) -->
@@ -789,16 +797,16 @@ I added a few sentences to the introduction of this section to try to address th
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to continue editing the configuration of the two <em>Reduced dimension plot</em> panels prepared in the <a href="#color-by-feature">previous section</a>. We also open the <em>Visual parameters</em> collapsible box to highlight the preconfigured options.</p>
 </blockquote>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1">redDimArgs[<span class="dv">2</span><span class="op">:</span><span class="dv">3</span>, <span class="st">"ColorBy"</span>] &lt;-<span class="st"> "Sample name"</span></a>
-<a class="sourceLine" id="cb19-2" data-line-number="2">redDimArgs[<span class="dv">2</span>, <span class="st">"ColorBySampName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="st">"Cell2439"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">colnames</a></span>(sce))</a>
-<a class="sourceLine" id="cb19-3" data-line-number="3">redDimArgs[<span class="dv">3</span>, <span class="st">"ColorBySampName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="st">"Cell673"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">colnames</a></span>(sce))</a>
+<a class="sourceLine" id="cb19-2" data-line-number="2">redDimArgs[<span class="dv">2</span>, <span class="st">"ColorBySampName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="st">"Cell2439"</span>, <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span>(sce))</a>
+<a class="sourceLine" id="cb19-3" data-line-number="3">redDimArgs[<span class="dv">3</span>, <span class="st">"ColorBySampName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="st">"Cell673"</span>, <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span>(sce))</a>
 <a class="sourceLine" id="cb19-4" data-line-number="4">redDimArgs[[<span class="st">"VisualBoxOpen"</span>]] &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb19-5" data-line-number="5">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb19-6" data-line-number="6">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/paste">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb19-7" data-line-number="7">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(4L, 3L),</a>
-<a class="sourceLine" id="cb19-8" data-line-number="8">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 3L)</a>
+<a class="sourceLine" id="cb19-6" data-line-number="6">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
+<a class="sourceLine" id="cb19-7" data-line-number="7">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(4L, 3L),</a>
+<a class="sourceLine" id="cb19-8" data-line-number="8">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 3L)</a>
 <a class="sourceLine" id="cb19-9" data-line-number="9">)</a>
-<a class="sourceLine" id="cb19-10" data-line-number="10"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb19-11" data-line-number="11">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb19-10" data-line-number="10"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb19-11" data-line-number="11">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb19-12" data-line-number="12">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/ColorBySample.png"><!-- --></p>
 <!-- ![](img/ColorBySample.png) -->
@@ -815,15 +823,15 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb20-3" data-line-number="3">redDimArgs[[<span class="st">"VisualBoxOpen"</span>]] &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb20-4" data-line-number="4">redDimArgs[[<span class="st">"Downsample"</span>]] &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb20-5" data-line-number="5">redDimArgs[[<span class="st">"SampleRes"</span>]] &lt;-<span class="st"> </span><span class="dv">200</span></a>
-<a class="sourceLine" id="cb20-6" data-line-number="6">redDimArgs[[<span class="st">"VisualChoices"</span>]][[<span class="dv">2</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="st">"Shape"</span>, <span class="st">"Points"</span>)</a>
-<a class="sourceLine" id="cb20-7" data-line-number="7">redDimArgs[[<span class="st">"VisualChoices"</span>]][[<span class="dv">3</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="st">"Shape"</span>, <span class="st">"Points"</span>)</a>
+<a class="sourceLine" id="cb20-6" data-line-number="6">redDimArgs[[<span class="st">"VisualChoices"</span>]][[<span class="dv">2</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="st">"Shape"</span>, <span class="st">"Points"</span>)</a>
+<a class="sourceLine" id="cb20-7" data-line-number="7">redDimArgs[[<span class="st">"VisualChoices"</span>]][[<span class="dv">3</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="st">"Shape"</span>, <span class="st">"Points"</span>)</a>
 <a class="sourceLine" id="cb20-8" data-line-number="8">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb20-9" data-line-number="9">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/paste">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb20-10" data-line-number="10">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(4L, 3L),</a>
-<a class="sourceLine" id="cb20-11" data-line-number="11">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 3L)</a>
+<a class="sourceLine" id="cb20-9" data-line-number="9">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
+<a class="sourceLine" id="cb20-10" data-line-number="10">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(4L, 3L),</a>
+<a class="sourceLine" id="cb20-11" data-line-number="11">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 3L)</a>
 <a class="sourceLine" id="cb20-12" data-line-number="12">)</a>
-<a class="sourceLine" id="cb20-13" data-line-number="13"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb20-14" data-line-number="14">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb20-13" data-line-number="13"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb20-14" data-line-number="14">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb20-15" data-line-number="15">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/ConfigureVisualParameters.png"><!-- --></p>
 <!-- ![](img/ConfigureVisualParameters.png) -->
@@ -838,7 +846,7 @@ I added a few sentences to the introduction of this section to try to address th
 <li>For a single continuous variable, or one continuous and one categorical variable, <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> uses violin plot(s).</li>
 <li>If two continuous variables are chosen, <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> displays a scatter plot.</li>
 </ul>
-<p>As a side note, categorical variables with “too many” unique values (which is typically the case for sample IDs, for instance) are represented as numeric variables, by replacing each value by an index. The limit for what is considered “too many” unique values can be set using <code><a href="https://www.rdocumentation.org/packages/base/topics/options">options(iSEE.maxlevels = 30)</a></code>.</p>
+<p>As a side note, categorical variables with “too many” unique values (which is typically the case for sample IDs, for instance) are represented as numeric variables, by replacing each value by an index. The limit for what is considered “too many” unique values can be set using <code><a href="https://rdrr.io/r/base/options.html">options(iSEE.maxlevels = 30)</a></code>.</p>
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Explore the different types of plots provided in the Column data or Row data plot panels by selecting different annotations as the <code>Column of interest (Y-axis)</code> and/or setting <code>X-axis:</code> to <code>Column data</code> and selecting an additional annotation.</p>
 </blockquote>
@@ -846,21 +854,21 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to set up one <em>Column data plot</em> and one <em>Row data plot</em> panel. We set up the <em>Column data plot</em> panel to immediately examine the proportion of counts assigned to mitochondrial features in each cluster. We set up the <em>Row data plot</em> panel to examine the proportion of cells with detectable expression against the log-transformed total counts for each gene.</p>
 </blockquote>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1">colDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/colDataPlotDefaults">colDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1">colDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/colDataPlotDefaults.html">colDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb21-2" data-line-number="2">colDataArgs[<span class="dv">1</span>, <span class="st">"YAxis"</span>] &lt;-<span class="st"> "pct_counts_MT"</span></a>
 <a class="sourceLine" id="cb21-3" data-line-number="3">colDataArgs<span class="op">$</span>XAxis &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb21-4" data-line-number="4">colDataArgs[<span class="dv">1</span>, <span class="st">"XAxisColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
-<a class="sourceLine" id="cb21-5" data-line-number="5">rowDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/rowDataPlotDefaults">rowDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb21-5" data-line-number="5">rowDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/rowDataPlotDefaults.html">rowDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb21-6" data-line-number="6">rowDataArgs[<span class="dv">1</span>, <span class="st">"YAxis"</span>] &lt;-<span class="st"> "n_cells_by_counts"</span></a>
 <a class="sourceLine" id="cb21-7" data-line-number="7">rowDataArgs<span class="op">$</span>XAxis &lt;-<span class="st"> "Row data"</span></a>
 <a class="sourceLine" id="cb21-8" data-line-number="8">rowDataArgs[<span class="dv">1</span>, <span class="st">"XAxisRowData"</span>] &lt;-<span class="st"> "log10_total_counts"</span></a>
 <a class="sourceLine" id="cb21-9" data-line-number="9">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb21-10" data-line-number="10">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Column data plot 1"</span>, <span class="st">"Row data plot 1"</span>),</a>
-<a class="sourceLine" id="cb21-11" data-line-number="11">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(4L, 2L),</a>
-<a class="sourceLine" id="cb21-12" data-line-number="12">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 2L)</a>
+<a class="sourceLine" id="cb21-10" data-line-number="10">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Column data plot 1"</span>, <span class="st">"Row data plot 1"</span>),</a>
+<a class="sourceLine" id="cb21-11" data-line-number="11">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(4L, 2L),</a>
+<a class="sourceLine" id="cb21-12" data-line-number="12">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 2L)</a>
 <a class="sourceLine" id="cb21-13" data-line-number="13">)</a>
-<a class="sourceLine" id="cb21-14" data-line-number="14"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb21-15" data-line-number="15">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">colDataArgs =</span> colDataArgs, <span class="dt">rowDataArgs =</span> rowDataArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb21-14" data-line-number="14"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb21-15" data-line-number="15">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">colDataArgs =</span> colDataArgs, <span class="dt">rowDataArgs =</span> rowDataArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb21-16" data-line-number="16">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/ConfigureDataPlotPanels.png"><!-- --></p>
 <!-- ![](img/ConfigureDataPlotPanels.png) -->
@@ -879,24 +887,24 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to set up three <em>Feature assay plot</em> panels demonstrating different configurations. All three panels display the same gene on the Y-axis and color data points according to their cluster label. On the X-axis, the first panel displays a discrete sample metadata variable, the cluster label; the second panel display a continuous sample metadata variable, the log-transformed library size; the third panel displays the expression of a second gene.</p>
 </blockquote>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1">featAssayArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/featAssayPlotDefaults">featAssayPlotDefaults</a></span>(sce, <span class="dv">3</span>)</a>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1">featAssayArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/featAssayPlotDefaults.html">featAssayPlotDefaults</a></span>(sce, <span class="dv">3</span>)</a>
 <a class="sourceLine" id="cb22-2" data-line-number="2">featAssayArgs[[<span class="st">"ColorBy"</span>]] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb22-3" data-line-number="3">featAssayArgs[[<span class="st">"ColorByColData"</span>]] &lt;-<span class="st"> "Cluster"</span></a>
-<a class="sourceLine" id="cb22-4" data-line-number="4">featAssayArgs[[<span class="st">"YAxisFeatName"</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="st">"CD3D"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce))</a>
+<a class="sourceLine" id="cb22-4" data-line-number="4">featAssayArgs[[<span class="st">"YAxisFeatName"</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="st">"CD3D"</span>, <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce))</a>
 <a class="sourceLine" id="cb22-5" data-line-number="5">featAssayArgs[<span class="dv">1</span>, <span class="st">"XAxis"</span>] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb22-6" data-line-number="6">featAssayArgs[<span class="dv">1</span>, <span class="st">"XAxisColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb22-7" data-line-number="7">featAssayArgs[<span class="dv">2</span>, <span class="st">"XAxis"</span>] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb22-8" data-line-number="8">featAssayArgs[<span class="dv">2</span>, <span class="st">"XAxisColData"</span>] &lt;-<span class="st"> "log10_total_counts"</span></a>
 <a class="sourceLine" id="cb22-9" data-line-number="9">featAssayArgs[<span class="dv">3</span>, <span class="st">"XAxis"</span>] &lt;-<span class="st"> "Feature name"</span></a>
-<a class="sourceLine" id="cb22-10" data-line-number="10">featAssayArgs[<span class="dv">3</span>, <span class="st">"XAxisFeatName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="st">"CD40LG"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce))</a>
+<a class="sourceLine" id="cb22-10" data-line-number="10">featAssayArgs[<span class="dv">3</span>, <span class="st">"XAxisFeatName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="st">"CD40LG"</span>, <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce))</a>
 <a class="sourceLine" id="cb22-11" data-line-number="11">featAssayArgs[[<span class="st">"DataBoxOpen"</span>]] &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb22-12" data-line-number="12">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb22-13" data-line-number="13">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/paste">paste</a></span>(<span class="st">"Feature assay plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb22-14" data-line-number="14">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(4L, 3L),</a>
-<a class="sourceLine" id="cb22-15" data-line-number="15">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 3L)</a>
+<a class="sourceLine" id="cb22-13" data-line-number="13">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="st">"Feature assay plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
+<a class="sourceLine" id="cb22-14" data-line-number="14">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(4L, 3L),</a>
+<a class="sourceLine" id="cb22-15" data-line-number="15">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 3L)</a>
 <a class="sourceLine" id="cb22-16" data-line-number="16">)</a>
-<a class="sourceLine" id="cb22-17" data-line-number="17"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb22-18" data-line-number="18">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">featAssayArgs =</span> featAssayArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb22-17" data-line-number="17"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb22-18" data-line-number="18">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">featAssayArgs =</span> featAssayArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb22-19" data-line-number="19">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/featAssayPlotDataParams.png"><!-- --></p>
 <!-- ![](img/featAssayPlotDataParams.png) -->
@@ -913,24 +921,24 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to launch the example application described above.</p>
 </blockquote>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1">featAssayArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/featAssayPlotDefaults">featAssayPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb23-2" data-line-number="2">featAssayArgs[<span class="dv">1</span>, <span class="st">"YAxisFeatName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="st">"CD3D"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(sce))</a>
-<a class="sourceLine" id="cb23-3" data-line-number="3">featAssayArgs<span class="op">$</span>BrushData[[<span class="dv">1</span>]] &lt;-<span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(</a>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1">featAssayArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/featAssayPlotDefaults.html">featAssayPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb23-2" data-line-number="2">featAssayArgs[<span class="dv">1</span>, <span class="st">"YAxisFeatName"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="st">"CD3D"</span>, <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(sce))</a>
+<a class="sourceLine" id="cb23-3" data-line-number="3">featAssayArgs<span class="op">$</span>BrushData[[<span class="dv">1</span>]] &lt;-<span class="st">  </span><span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(</a>
 <a class="sourceLine" id="cb23-4" data-line-number="4">    <span class="dt">xmin =</span> <span class="fl">0.5</span>, <span class="dt">xmax =</span> <span class="fl">12.5</span>, <span class="dt">ymin =</span> <span class="fl">0.5</span>, <span class="dt">ymax =</span> <span class="fl">5.7</span>,</a>
-<a class="sourceLine" id="cb23-5" data-line-number="5">    <span class="dt">mapping =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">x =</span> <span class="st">"X"</span>, <span class="dt">y =</span> <span class="st">"Y"</span>, <span class="dt">group =</span> <span class="st">"GroupBy"</span>),</a>
+<a class="sourceLine" id="cb23-5" data-line-number="5">    <span class="dt">mapping =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">x =</span> <span class="st">"X"</span>, <span class="dt">y =</span> <span class="st">"Y"</span>, <span class="dt">group =</span> <span class="st">"GroupBy"</span>),</a>
 <a class="sourceLine" id="cb23-6" data-line-number="6">    <span class="dt">direction =</span> <span class="st">"xy"</span>, </a>
 <a class="sourceLine" id="cb23-7" data-line-number="7">    <span class="dt">brushId =</span> <span class="st">"featAssayPlot1_Brush"</span>, <span class="dt">outputId =</span> <span class="st">"featAssayPlot1"</span>)</a>
 <a class="sourceLine" id="cb23-8" data-line-number="8">featAssayArgs[<span class="dv">1</span>, <span class="st">"XAxis"</span>] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb23-9" data-line-number="9">featAssayArgs[<span class="dv">1</span>, <span class="st">"XAxisColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb23-10" data-line-number="10">featAssayArgs[<span class="dv">1</span>, <span class="st">"ColorBy"</span>] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb23-11" data-line-number="11">featAssayArgs[<span class="dv">1</span>, <span class="st">"ColorByColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
-<a class="sourceLine" id="cb23-12" data-line-number="12">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb23-12" data-line-number="12">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
 <a class="sourceLine" id="cb23-13" data-line-number="13">redDimArgs[<span class="dv">1</span>, <span class="st">"SelectByPlot"</span>] &lt;-<span class="st"> "Feature assay plot 1"</span></a>
-<a class="sourceLine" id="cb23-14" data-line-number="14">redDimArgs[<span class="dv">1</span>, <span class="st">"Type"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="st">"TSNE"</span>, <span class="kw">reducedDimNames</span>(sce))</a>
+<a class="sourceLine" id="cb23-14" data-line-number="14">redDimArgs[<span class="dv">1</span>, <span class="st">"Type"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="st">"TSNE"</span>, <span class="kw">reducedDimNames</span>(sce))</a>
 <a class="sourceLine" id="cb23-15" data-line-number="15">redDimArgs[<span class="dv">1</span>, <span class="st">"ColorBy"</span>] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb23-16" data-line-number="16">redDimArgs[<span class="dv">1</span>, <span class="st">"ColorByColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb23-17" data-line-number="17">redDimArgs[<span class="dv">1</span>, <span class="st">"SelectBoxOpen"</span>] &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
-<a class="sourceLine" id="cb23-18" data-line-number="18">colDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/colDataPlotDefaults">colDataPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb23-18" data-line-number="18">colDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/colDataPlotDefaults.html">colDataPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
 <a class="sourceLine" id="cb23-19" data-line-number="19">colDataArgs[<span class="dv">1</span>, <span class="st">"SelectByPlot"</span>] &lt;-<span class="st"> "Feature assay plot 1"</span></a>
 <a class="sourceLine" id="cb23-20" data-line-number="20">colDataArgs[<span class="dv">1</span>, <span class="st">"SelectEffect"</span>] &lt;-<span class="st"> "Color"</span></a>
 <a class="sourceLine" id="cb23-21" data-line-number="21">colDataArgs[<span class="dv">1</span>, <span class="st">"YAxis"</span>] &lt;-<span class="st"> "log10_total_counts"</span></a>
@@ -940,14 +948,14 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb23-25" data-line-number="25">colDataArgs[<span class="dv">1</span>, <span class="st">"ColorByColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb23-26" data-line-number="26">colDataArgs[<span class="dv">1</span>, <span class="st">"SelectBoxOpen"</span>] &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb23-27" data-line-number="27">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb23-28" data-line-number="28">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(</a>
+<a class="sourceLine" id="cb23-28" data-line-number="28">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(</a>
 <a class="sourceLine" id="cb23-29" data-line-number="29">        <span class="st">"Feature assay plot 1"</span>, <span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Column data plot 1"</span>,</a>
 <a class="sourceLine" id="cb23-30" data-line-number="30">        <span class="st">"Feature assay plot 2"</span>, <span class="st">"Reduced dimension plot 2"</span>, <span class="st">"Column data plot 2"</span>),</a>
-<a class="sourceLine" id="cb23-31" data-line-number="31">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(4L, 3L),</a>
-<a class="sourceLine" id="cb23-32" data-line-number="32">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 3L)</a>
+<a class="sourceLine" id="cb23-31" data-line-number="31">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(4L, 3L),</a>
+<a class="sourceLine" id="cb23-32" data-line-number="32">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 3L)</a>
 <a class="sourceLine" id="cb23-33" data-line-number="33">)</a>
-<a class="sourceLine" id="cb23-34" data-line-number="34"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb23-35" data-line-number="35">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(</a>
+<a class="sourceLine" id="cb23-34" data-line-number="34"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb23-35" data-line-number="35">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(</a>
 <a class="sourceLine" id="cb23-36" data-line-number="36">        sce,</a>
 <a class="sourceLine" id="cb23-37" data-line-number="37">        <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">colDataArgs =</span> colDataArgs, <span class="dt">featAssayArgs =</span> featAssayArgs,</a>
 <a class="sourceLine" id="cb23-38" data-line-number="38">        <span class="dt">initialPanels =</span> initialPanels</a>
@@ -966,24 +974,24 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to launch the example application described above. Double-click on the area selected in the first panel to zoom and display the same view as the second panel. Double click again anywhere in the panel to zoom out.</p>
 </blockquote>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce, <span class="dv">2</span>)</a>
 <a class="sourceLine" id="cb24-2" data-line-number="2">redDimArgs[[<span class="st">"Type"</span>]] &lt;-<span class="st"> "TSNE"</span></a>
 <a class="sourceLine" id="cb24-3" data-line-number="3">redDimArgs[[<span class="st">"ColorBy"</span>]] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb24-4" data-line-number="4">redDimArgs[[<span class="st">"ColorByColData"</span>]] &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb24-5" data-line-number="5">redDimArgs[<span class="dv">1</span>, <span class="st">"PointSize"</span>] &lt;-<span class="st"> </span><span class="dv">1</span></a>
 <a class="sourceLine" id="cb24-6" data-line-number="6">redDimArgs[<span class="dv">2</span>, <span class="st">"PointSize"</span>] &lt;-<span class="st"> </span><span class="dv">2</span></a>
-<a class="sourceLine" id="cb24-7" data-line-number="7">redDimArgs[[<span class="st">"BrushData"</span>]][[<span class="dv">1</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(</a>
+<a class="sourceLine" id="cb24-7" data-line-number="7">redDimArgs[[<span class="st">"BrushData"</span>]][[<span class="dv">1</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(</a>
 <a class="sourceLine" id="cb24-8" data-line-number="8">    <span class="dt">xmin =</span> <span class="fl">3.4</span>, <span class="dt">xmax =</span> <span class="fl">27.3</span>, <span class="dt">ymin =</span> <span class="fl">0.8</span>, <span class="dt">ymax =</span> <span class="fl">30.0</span>, </a>
-<a class="sourceLine" id="cb24-9" data-line-number="9">    <span class="dt">log =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">x =</span> <span class="ot">NULL</span>, <span class="dt">y =</span> <span class="ot">NULL</span>), <span class="dt">mapping =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">x =</span> <span class="st">"X"</span>, <span class="dt">y =</span> <span class="st">"Y"</span>, <span class="dt">colour =</span> <span class="st">"ColorBy"</span>),</a>
+<a class="sourceLine" id="cb24-9" data-line-number="9">    <span class="dt">log =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">x =</span> <span class="ot">NULL</span>, <span class="dt">y =</span> <span class="ot">NULL</span>), <span class="dt">mapping =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">x =</span> <span class="st">"X"</span>, <span class="dt">y =</span> <span class="st">"Y"</span>, <span class="dt">colour =</span> <span class="st">"ColorBy"</span>),</a>
 <a class="sourceLine" id="cb24-10" data-line-number="10">    <span class="dt">direction =</span> <span class="st">"xy"</span>, <span class="dt">brushId =</span> <span class="st">"redDimPlot1_Brush"</span>, <span class="dt">outputId =</span> <span class="st">"redDimPlot1"</span>)</a>
-<a class="sourceLine" id="cb24-11" data-line-number="11">redDimArgs[[<span class="st">"ZoomData"</span>]] [[<span class="dv">2</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dt">xmin =</span> <span class="fl">3.4</span>, <span class="dt">xmax =</span> <span class="fl">27.3</span>, <span class="dt">ymin =</span> <span class="fl">0.8</span>, <span class="dt">ymax =</span> <span class="fl">30.0</span>)</a>
+<a class="sourceLine" id="cb24-11" data-line-number="11">redDimArgs[[<span class="st">"ZoomData"</span>]] [[<span class="dv">2</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dt">xmin =</span> <span class="fl">3.4</span>, <span class="dt">xmax =</span> <span class="fl">27.3</span>, <span class="dt">ymin =</span> <span class="fl">0.8</span>, <span class="dt">ymax =</span> <span class="fl">30.0</span>)</a>
 <a class="sourceLine" id="cb24-12" data-line-number="12">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb24-13" data-line-number="13">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Reduced dimension plot 2"</span>),</a>
-<a class="sourceLine" id="cb24-14" data-line-number="14">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(6L, 2L),</a>
-<a class="sourceLine" id="cb24-15" data-line-number="15">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 2L)</a>
+<a class="sourceLine" id="cb24-13" data-line-number="13">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Reduced dimension plot 2"</span>),</a>
+<a class="sourceLine" id="cb24-14" data-line-number="14">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(6L, 2L),</a>
+<a class="sourceLine" id="cb24-15" data-line-number="15">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 2L)</a>
 <a class="sourceLine" id="cb24-16" data-line-number="16">)</a>
-<a class="sourceLine" id="cb24-17" data-line-number="17"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb24-18" data-line-number="18">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb24-17" data-line-number="17"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb24-18" data-line-number="18">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb24-19" data-line-number="19">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/Zoom.png"><!-- --></p>
 <!-- ![](img/Zoom.png) -->
@@ -998,17 +1006,17 @@ I added a few sentences to the introduction of this section to try to address th
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to launch the example application described above.</p>
 </blockquote>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1">sce1 &lt;-<span class="st"> </span>sce</a>
-<a class="sourceLine" id="cb25-2" data-line-number="2"><span class="kw">colData</span>(sce1) &lt;-<span class="st"> </span><span class="kw">colData</span>(sce1)[, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Cluster"</span>, <span class="st">"total_counts"</span>, <span class="st">"pct_counts_MT"</span>)]</a>
-<a class="sourceLine" id="cb25-3" data-line-number="3">colStatArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/colStatTableDefaults">colStatTableDefaults</a></span>(sce1, <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb25-4" data-line-number="4">colStatArgs[[<span class="st">"SearchColumns"</span>]][[<span class="dv">1</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"[</span><span class="ch">\"</span><span class="st">3</span><span class="ch">\"</span><span class="st">, </span><span class="ch">\"</span><span class="st">5</span><span class="ch">\"</span><span class="st">]"</span>, <span class="st">"5000 ... 15844"</span>, <span class="st">""</span>)</a>
-<a class="sourceLine" id="cb25-5" data-line-number="5">colStatArgs[[<span class="st">"Selected"</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/match">match</a></span>(<span class="st">"Cell684"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">colnames</a></span>(sce1))</a>
+<a class="sourceLine" id="cb25-2" data-line-number="2"><span class="kw">colData</span>(sce1) &lt;-<span class="st"> </span><span class="kw">colData</span>(sce1)[, <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Cluster"</span>, <span class="st">"total_counts"</span>, <span class="st">"pct_counts_MT"</span>)]</a>
+<a class="sourceLine" id="cb25-3" data-line-number="3">colStatArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/colStatTableDefaults.html">colStatTableDefaults</a></span>(sce1, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb25-4" data-line-number="4">colStatArgs[[<span class="st">"SearchColumns"</span>]][[<span class="dv">1</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"[</span><span class="ch">\"</span><span class="st">3</span><span class="ch">\"</span><span class="st">, </span><span class="ch">\"</span><span class="st">5</span><span class="ch">\"</span><span class="st">]"</span>, <span class="st">"5000 ... 15844"</span>, <span class="st">""</span>)</a>
+<a class="sourceLine" id="cb25-5" data-line-number="5">colStatArgs[[<span class="st">"Selected"</span>]] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/match.html">match</a></span>(<span class="st">"Cell684"</span>, <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span>(sce1))</a>
 <a class="sourceLine" id="cb25-6" data-line-number="6">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb25-7" data-line-number="7">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Column statistics table 1"</span>),</a>
-<a class="sourceLine" id="cb25-8" data-line-number="8">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(12L),</a>
-<a class="sourceLine" id="cb25-9" data-line-number="9">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">600</span>)</a>
+<a class="sourceLine" id="cb25-7" data-line-number="7">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Column statistics table 1"</span>),</a>
+<a class="sourceLine" id="cb25-8" data-line-number="8">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(12L),</a>
+<a class="sourceLine" id="cb25-9" data-line-number="9">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dv">600</span>)</a>
 <a class="sourceLine" id="cb25-10" data-line-number="10">)</a>
-<a class="sourceLine" id="cb25-11" data-line-number="11"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb25-12" data-line-number="12">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce1, <span class="dt">colStatArgs =</span> colStatArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb25-11" data-line-number="11"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb25-12" data-line-number="12">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce1, <span class="dt">colStatArgs =</span> colStatArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb25-13" data-line-number="13">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/FilteredTable.png"><!-- --></p>
 <!-- ![](img/FilteredTable.png) -->
@@ -1016,18 +1024,18 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the app and run the following block of code to launch an application that includes a <em>Reduced dimension plot</em> panel dynamically higlighting the cell selected in the <em>Column statistics table</em>. Select different rows of the cell to see the <em>Reduced dimension plot</em> panel update accordingly.</p>
 </blockquote>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce1, <span class="dv">1</span>)</a>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce1, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb26-2" data-line-number="2">redDimArgs[[<span class="st">"Type"</span>]] &lt;-<span class="st"> "TSNE"</span></a>
 <a class="sourceLine" id="cb26-3" data-line-number="3">redDimArgs<span class="op">$</span>VisualBoxOpen &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb26-4" data-line-number="4">redDimArgs<span class="op">$</span>ColorBy &lt;-<span class="st"> "Sample name"</span></a>
 <a class="sourceLine" id="cb26-5" data-line-number="5">redDimArgs<span class="op">$</span>ColorByColTable &lt;-<span class="st"> "Column statistics table 1"</span></a>
 <a class="sourceLine" id="cb26-6" data-line-number="6">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb26-7" data-line-number="7">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Column statistics table 1"</span>, <span class="st">"Reduced dimension plot 1"</span>),</a>
-<a class="sourceLine" id="cb26-8" data-line-number="8">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(6L, 6L),</a>
-<a class="sourceLine" id="cb26-9" data-line-number="9">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">600</span>, <span class="dv">400</span>)</a>
+<a class="sourceLine" id="cb26-7" data-line-number="7">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Column statistics table 1"</span>, <span class="st">"Reduced dimension plot 1"</span>),</a>
+<a class="sourceLine" id="cb26-8" data-line-number="8">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(6L, 6L),</a>
+<a class="sourceLine" id="cb26-9" data-line-number="9">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dv">600</span>, <span class="dv">400</span>)</a>
 <a class="sourceLine" id="cb26-10" data-line-number="10">)</a>
-<a class="sourceLine" id="cb26-11" data-line-number="11"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb26-12" data-line-number="12">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce1, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">colStatArgs =</span> colStatArgs,</a>
+<a class="sourceLine" id="cb26-11" data-line-number="11"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb26-12" data-line-number="12">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce1, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">colStatArgs =</span> colStatArgs,</a>
 <a class="sourceLine" id="cb26-13" data-line-number="13">        <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb26-14" data-line-number="14">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/LinkTableToPlot.png"><!-- --></p>
@@ -1041,8 +1049,8 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Click on the wrench icon (<i class="fa fa-wrench"></i>) in the top-right corner, and select ‘Display panel settings’. Copy all the code shown in the pop-up window. Close the app and paste this code in your R session. Then launch a new instance using the following code. Note how the app starts in the same configuration as it was before closing. Of course, it is still possible to continue exploring the data interactively - we have only changed the starting configuration.</p>
 </blockquote>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb27-2" data-line-number="2">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimPlotArgs, <span class="dt">colDataArgs =</span> colDataPlotArgs,</a>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb27-2" data-line-number="2">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimPlotArgs, <span class="dt">colDataArgs =</span> colDataPlotArgs,</a>
 <a class="sourceLine" id="cb27-3" data-line-number="3">         <span class="dt">featAssayArgs =</span> featAssayPlotArgs, <span class="dt">rowStatArgs =</span> rowStatTableArgs,</a>
 <a class="sourceLine" id="cb27-4" data-line-number="4">         <span class="dt">rowDataArgs =</span> rowDataPlotArgs, <span class="dt">sampAssayArgs =</span> sampAssayPlotArgs,</a>
 <a class="sourceLine" id="cb27-5" data-line-number="5">         <span class="dt">colStatArgs =</span> colStatTableArgs, <span class="dt">customDataArgs =</span> customDataPlotArgs,</a>
@@ -1053,7 +1061,7 @@ I added a few sentences to the introduction of this section to try to address th
 <div id="custom-panels" class="section level3">
 <h3 class="hasAnchor">
 <a href="#custom-panels" class="anchor"></a>Custom panels</h3>
-<p>In addition to the standard panel types, <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> allows the user to create <em>custom</em> panels, displaying any type of plot or table. The custom panels can receive row and column selections from the standard panels. In order to create a custom panel, we need to define a function that generates the desired output. This function must receive a <code>SummarizedExperiment</code> object as it first input. In addition, if only one selection is to be transmitted (i.e., if <code><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE(..., customSendAll=FALSE)</a></code>) it should take a vector of row names as the second argument, and a vector of column names as the third argument. If <code><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE(..., customSendAll=TRUE)</a></code>, all selections (active and saved) are transmitted.</p>
+<p>In addition to the standard panel types, <em><a href="https://bioconductor.org/packages/3.10/iSEE">iSEE</a></em> allows the user to create <em>custom</em> panels, displaying any type of plot or table. The custom panels can receive row and column selections from the standard panels. In order to create a custom panel, we need to define a function that generates the desired output. This function must receive a <code>SummarizedExperiment</code> object as it first input. In addition, if only one selection is to be transmitted (i.e., if <code><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE(..., customSendAll=FALSE)</a></code>) it should take a vector of row names as the second argument, and a vector of column names as the third argument. If <code><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE(..., customSendAll=TRUE)</a></code>, all selections (active and saved) are transmitted.</p>
 <div id="example-custom-pca-plot" class="section level4">
 <h4 class="hasAnchor">
 <a href="#example-custom-pca-plot" class="anchor"></a>Example: Custom PCA plot</h4>
@@ -1061,53 +1069,53 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Copy the code below in your R session in order to define the custom function.</p>
 </blockquote>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(scater)</a>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(scater)</a>
 <a class="sourceLine" id="cb28-2" data-line-number="2">CUSTOM_PCA &lt;-<span class="st"> </span><span class="cf">function</span>(se, rows, columns,</a>
 <a class="sourceLine" id="cb28-3" data-line-number="3">                       <span class="dt">colour_by =</span> <span class="ot">NULL</span>, <span class="dt">scale_features =</span> <span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb28-4" data-line-number="4">) {</a>
-<a class="sourceLine" id="cb28-5" data-line-number="5">    <span class="cf">if</span> (<span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/NULL">is.null</a></span>(columns)) {</a>
+<a class="sourceLine" id="cb28-5" data-line-number="5">    <span class="cf">if</span> (<span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/NULL.html">is.null</a></span>(columns)) {</a>
 <a class="sourceLine" id="cb28-6" data-line-number="6">        kept &lt;-<span class="st"> </span>se[, columns]</a>
 <a class="sourceLine" id="cb28-7" data-line-number="7">    } <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb28-8" data-line-number="8">        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/function">return</a></span>(</a>
+<a class="sourceLine" id="cb28-8" data-line-number="8">        <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span>(</a>
 <a class="sourceLine" id="cb28-9" data-line-number="9">            <span class="kw">ggplot</span>() <span class="op">+</span><span class="st"> </span><span class="kw">theme_void</span>() <span class="op">+</span><span class="st"> </span><span class="kw">geom_text</span>(</a>
 <a class="sourceLine" id="cb28-10" data-line-number="10">                <span class="kw">aes</span>(x, y, <span class="dt">label =</span> label),</a>
-<a class="sourceLine" id="cb28-11" data-line-number="11">                <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/data.frame">data.frame</a></span>(<span class="dt">x =</span> <span class="dv">0</span>, <span class="dt">y =</span> <span class="dv">0</span>, <span class="dt">label =</span> <span class="st">"No column data selected."</span>),</a>
+<a class="sourceLine" id="cb28-11" data-line-number="11">                <span class="kw"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span>(<span class="dt">x =</span> <span class="dv">0</span>, <span class="dt">y =</span> <span class="dv">0</span>, <span class="dt">label =</span> <span class="st">"No column data selected."</span>),</a>
 <a class="sourceLine" id="cb28-12" data-line-number="12">                <span class="dt">size =</span> <span class="dv">5</span>)</a>
 <a class="sourceLine" id="cb28-13" data-line-number="13">            )</a>
 <a class="sourceLine" id="cb28-14" data-line-number="14">    }</a>
 <a class="sourceLine" id="cb28-15" data-line-number="15"></a>
-<a class="sourceLine" id="cb28-16" data-line-number="16">    scale_features &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/logical">as.logical</a></span>(scale_features)</a>
-<a class="sourceLine" id="cb28-17" data-line-number="17">    kept &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/scater/topics/runPCA">runPCA</a></span>(kept, <span class="dt">feature_set =</span> rows, <span class="dt">scale_features =</span> scale_features)</a>
-<a class="sourceLine" id="cb28-18" data-line-number="18">    <span class="kw"><a href="https://www.rdocumentation.org/packages/scater/topics/plot_reddim">plotPCA</a></span>(kept, <span class="dt">colour_by =</span> colour_by)</a>
+<a class="sourceLine" id="cb28-16" data-line-number="16">    scale_features &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/logical.html">as.logical</a></span>(scale_features)</a>
+<a class="sourceLine" id="cb28-17" data-line-number="17">    kept &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/scater/man/runPCA.html">runPCA</a></span>(kept, <span class="dt">feature_set =</span> rows, <span class="dt">scale_features =</span> scale_features)</a>
+<a class="sourceLine" id="cb28-18" data-line-number="18">    <span class="kw"><a href="https://rdrr.io/pkg/scater/man/plot_reddim.html">plotPCA</a></span>(kept, <span class="dt">colour_by =</span> colour_by)</a>
 <a class="sourceLine" id="cb28-19" data-line-number="19">}</a></code></pre></div>
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Next, launch an iSEE session with the custom PCA plot panel, as well as a Reduced dimension plot and a Row data plot, from which the column and row selections for the custom PCA are obtained. Select subsets of the points in each of these two panels and note how the PCA plot in the custom panel is updated. Then, in the Data parameters box in the custom panel, use the ‘Custom arguments’ field to select another annotation (or a feature name) to color the points by. Note how iSEE detects that the input arguments were changed, and prompts you to update the plot.</p>
 </blockquote>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" data-line-number="1">customDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/customDataPlotDefaults">customDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" data-line-number="1">customDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/customDataPlotDefaults.html">customDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb29-2" data-line-number="2">customDataArgs<span class="op">$</span>Function &lt;-<span class="st"> "CUSTOM_PCA"</span></a>
 <a class="sourceLine" id="cb29-3" data-line-number="3">customDataArgs<span class="op">$</span>Arguments &lt;-<span class="st"> "colour_by Cluster</span><span class="ch">\n</span><span class="st">scale_features FALSE"</span></a>
 <a class="sourceLine" id="cb29-4" data-line-number="4">customDataArgs<span class="op">$</span>ColumnSource &lt;-<span class="st"> "Reduced dimension plot 1"</span></a>
 <a class="sourceLine" id="cb29-5" data-line-number="5">customDataArgs<span class="op">$</span>RowSource &lt;-<span class="st"> "Row data plot 1"</span></a>
 <a class="sourceLine" id="cb29-6" data-line-number="6">customDataArgs<span class="op">$</span>DataBoxOpen &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
-<a class="sourceLine" id="cb29-7" data-line-number="7">rowDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/rowDataPlotDefaults">rowDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb29-7" data-line-number="7">rowDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/rowDataPlotDefaults.html">rowDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb29-8" data-line-number="8">rowDataArgs<span class="op">$</span>YAxis &lt;-<span class="st"> "pct_dropout_by_counts"</span></a>
 <a class="sourceLine" id="cb29-9" data-line-number="9">rowDataArgs<span class="op">$</span>XAxis &lt;-<span class="st"> "Row data"</span></a>
 <a class="sourceLine" id="cb29-10" data-line-number="10">rowDataArgs<span class="op">$</span>XAxisRowData &lt;-<span class="st"> "log10_mean_counts"</span></a>
-<a class="sourceLine" id="cb29-11" data-line-number="11">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb29-11" data-line-number="11">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb29-12" data-line-number="12">redDimArgs<span class="op">$</span>Type &lt;-<span class="st"> "TSNE"</span></a>
 <a class="sourceLine" id="cb29-13" data-line-number="13">redDimArgs<span class="op">$</span>ColorBy &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb29-14" data-line-number="14">redDimArgs<span class="op">$</span>ColorByColData &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb29-15" data-line-number="15">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb29-16" data-line-number="16">    <span class="dt">Name =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Row data plot 1"</span>, <span class="st">"Custom data plot 1"</span>),</a>
-<a class="sourceLine" id="cb29-17" data-line-number="17">    <span class="dt">Width =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(4L, 4L, 4L)</a>
+<a class="sourceLine" id="cb29-16" data-line-number="16">    <span class="dt">Name =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Row data plot 1"</span>, <span class="st">"Custom data plot 1"</span>),</a>
+<a class="sourceLine" id="cb29-17" data-line-number="17">    <span class="dt">Width =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(4L, 4L, 4L)</a>
 <a class="sourceLine" id="cb29-18" data-line-number="18">)</a>
-<a class="sourceLine" id="cb29-19" data-line-number="19"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb29-20" data-line-number="20">  <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(</a>
+<a class="sourceLine" id="cb29-19" data-line-number="19"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb29-20" data-line-number="20">  <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(</a>
 <a class="sourceLine" id="cb29-21" data-line-number="21">      sce,</a>
 <a class="sourceLine" id="cb29-22" data-line-number="22">      <span class="dt">customDataArgs =</span> customDataArgs,</a>
 <a class="sourceLine" id="cb29-23" data-line-number="23">      <span class="dt">rowDataArgs =</span> rowDataArgs, <span class="dt">redDimArgs =</span> redDimArgs,</a>
 <a class="sourceLine" id="cb29-24" data-line-number="24">      <span class="dt">initialPanels =</span> initialPanels,</a>
-<a class="sourceLine" id="cb29-25" data-line-number="25">      <span class="dt">customDataFun =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">CUSTOM_PCA =</span> CUSTOM_PCA)</a>
+<a class="sourceLine" id="cb29-25" data-line-number="25">      <span class="dt">customDataFun =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">CUSTOM_PCA =</span> CUSTOM_PCA)</a>
 <a class="sourceLine" id="cb29-26" data-line-number="26">  )</a>
 <a class="sourceLine" id="cb29-27" data-line-number="27">}</a></code></pre></div>
 <p><img src="../../../../R/Library/iSEEWorkshop2019/vignettes/img/customPCA.png"><!-- --></p>
@@ -1118,62 +1126,62 @@ I added a few sentences to the introduction of this section to try to address th
 <h4 class="hasAnchor">
 <a href="#example-multiple-selections-and-differential-expression" class="anchor"></a>Example: Multiple selections and differential expression</h4>
 <!-- Multiple selections -> DE -->
-<p>In the example below, we demonstrate the use of <code><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE(..., customSendAll=TRUE)</a></code> to transmit all selections (active and saved). This information is used to compute the log-fold change between the active selection and each of the other saved selections.</p>
+<p>In the example below, we demonstrate the use of <code><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE(..., customSendAll=TRUE)</a></code> to transmit all selections (active and saved). This information is used to compute the log-fold change between the active selection and each of the other saved selections.</p>
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Copy the code below in your R session in order to define the custom function.</p>
 </blockquote>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" data-line-number="1">CUSTOM_DIFFEXP &lt;-<span class="st"> </span><span class="cf">function</span>(se, ri, ci, <span class="dt">assay=</span><span class="st">"logcounts"</span>) {</a>
 <a class="sourceLine" id="cb30-2" data-line-number="2">    ri &lt;-<span class="st"> </span>ri<span class="op">$</span>active</a>
-<a class="sourceLine" id="cb30-3" data-line-number="3">    <span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/NULL">is.null</a></span>(ri)) { <span class="co"># ignoring saved gene selections for now.</span></a>
-<a class="sourceLine" id="cb30-4" data-line-number="4">        ri &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(se)</a>
+<a class="sourceLine" id="cb30-3" data-line-number="3">    <span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/NULL.html">is.null</a></span>(ri)) { <span class="co"># ignoring saved gene selections for now.</span></a>
+<a class="sourceLine" id="cb30-4" data-line-number="4">        ri &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(se)</a>
 <a class="sourceLine" id="cb30-5" data-line-number="5">    }</a>
-<a class="sourceLine" id="cb30-6" data-line-number="6">    <span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/NULL">is.null</a></span>(ci<span class="op">$</span>active) <span class="op">||</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/length">length</a></span>(ci<span class="op">$</span>saved)<span class="op">==</span>0L) {</a>
-<a class="sourceLine" id="cb30-7" data-line-number="7">        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/function">return</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/data.frame">data.frame</a></span>(<span class="dt">row.names=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/character">character</a></span>(<span class="dv">0</span>), <span class="dt">LogFC=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/integer">integer</a></span>(<span class="dv">0</span>))) <span class="co"># dummy value.</span></a>
+<a class="sourceLine" id="cb30-6" data-line-number="6">    <span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/NULL.html">is.null</a></span>(ci<span class="op">$</span>active) <span class="op">||</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/length.html">length</a></span>(ci<span class="op">$</span>saved)<span class="op">==</span>0L) {</a>
+<a class="sourceLine" id="cb30-7" data-line-number="7">        <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span>(<span class="dt">row.names=</span><span class="kw"><a href="https://rdrr.io/r/base/character.html">character</a></span>(<span class="dv">0</span>), <span class="dt">LogFC=</span><span class="kw"><a href="https://rdrr.io/r/base/integer.html">integer</a></span>(<span class="dv">0</span>))) <span class="co"># dummy value.</span></a>
 <a class="sourceLine" id="cb30-8" data-line-number="8">    }</a>
 <a class="sourceLine" id="cb30-9" data-line-number="9"></a>
 <a class="sourceLine" id="cb30-10" data-line-number="10">    assayMatrix &lt;-<span class="st"> </span><span class="kw">assay</span>(se, assay)[ri, , drop=<span class="ot">FALSE</span>]</a>
-<a class="sourceLine" id="cb30-11" data-line-number="11">    active &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colSums">rowMeans</a></span>(assayMatrix[,ci<span class="op">$</span>active,<span class="dt">drop=</span><span class="ot">FALSE</span>])</a>
+<a class="sourceLine" id="cb30-11" data-line-number="11">    active &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/colSums.html">rowMeans</a></span>(assayMatrix[,ci<span class="op">$</span>active,<span class="dt">drop=</span><span class="ot">FALSE</span>])</a>
 <a class="sourceLine" id="cb30-12" data-line-number="12"></a>
-<a class="sourceLine" id="cb30-13" data-line-number="13">    lfcs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/vector">vector</a></span>(<span class="st">"list"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/length">length</a></span>(ci<span class="op">$</span>saved))</a>
-<a class="sourceLine" id="cb30-14" data-line-number="14">    <span class="cf">for</span> (i <span class="cf">in</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq_along</a></span>(lfcs)) {</a>
-<a class="sourceLine" id="cb30-15" data-line-number="15">        saved &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colSums">rowMeans</a></span>(assayMatrix[,ci<span class="op">$</span>saved[[i]],<span class="dt">drop=</span><span class="ot">FALSE</span>])</a>
+<a class="sourceLine" id="cb30-13" data-line-number="13">    lfcs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/vector.html">vector</a></span>(<span class="st">"list"</span>, <span class="kw"><a href="https://rdrr.io/r/base/length.html">length</a></span>(ci<span class="op">$</span>saved))</a>
+<a class="sourceLine" id="cb30-14" data-line-number="14">    <span class="cf">for</span> (i <span class="cf">in</span> <span class="kw"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span>(lfcs)) {</a>
+<a class="sourceLine" id="cb30-15" data-line-number="15">        saved &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/colSums.html">rowMeans</a></span>(assayMatrix[,ci<span class="op">$</span>saved[[i]],<span class="dt">drop=</span><span class="ot">FALSE</span>])</a>
 <a class="sourceLine" id="cb30-16" data-line-number="16">        lfcs[[i]] &lt;-<span class="st"> </span>active <span class="op">-</span><span class="st"> </span>saved</a>
 <a class="sourceLine" id="cb30-17" data-line-number="17">    }</a>
-<a class="sourceLine" id="cb30-18" data-line-number="18">    <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/names">names</a></span>(lfcs) &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/sprintf">sprintf</a></span>(<span class="st">"LogFC/%i"</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq_along</a></span>(lfcs))</a>
+<a class="sourceLine" id="cb30-18" data-line-number="18">    <span class="kw"><a href="https://rdrr.io/r/base/names.html">names</a></span>(lfcs) &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span>(<span class="st">"LogFC/%i"</span>, <span class="kw"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span>(lfcs))</a>
 <a class="sourceLine" id="cb30-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb30-20" data-line-number="20">    output &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/do.call">do.call</a></span>(data.frame, lfcs)</a>
-<a class="sourceLine" id="cb30-21" data-line-number="21">    <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">rownames</a></span>(output) &lt;-<span class="st"> </span>ri</a>
+<a class="sourceLine" id="cb30-20" data-line-number="20">    output &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/do.call.html">do.call</a></span>(data.frame, lfcs)</a>
+<a class="sourceLine" id="cb30-21" data-line-number="21">    <span class="kw"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span>(output) &lt;-<span class="st"> </span>ri</a>
 <a class="sourceLine" id="cb30-22" data-line-number="22">    output</a>
 <a class="sourceLine" id="cb30-23" data-line-number="23">}</a></code></pre></div>
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Next, launch an iSEE session with the custom table panel, as well as a Reduced dimension plot and a Row data plot, from which the column and row selections for the custom table are obtained. Select multiple subsets of the points in the reduced dimension plot (e.g., clusters) and note how the DE table in the custom panel is updated.</p>
 </blockquote>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1">customStatArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/customStatTableDefaults">customStatTableDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1">customStatArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/customStatTableDefaults.html">customStatTableDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb31-2" data-line-number="2">customStatArgs<span class="op">$</span>Function &lt;-<span class="st"> "CUSTOM_DIFFEXP"</span></a>
 <a class="sourceLine" id="cb31-3" data-line-number="3">customStatArgs<span class="op">$</span>Arguments &lt;-<span class="st"> ""</span></a>
 <a class="sourceLine" id="cb31-4" data-line-number="4">customStatArgs<span class="op">$</span>ColumnSource &lt;-<span class="st"> "Reduced dimension plot 1"</span></a>
 <a class="sourceLine" id="cb31-5" data-line-number="5">customStatArgs<span class="op">$</span>RowSource &lt;-<span class="st"> "Row data plot 1"</span></a>
 <a class="sourceLine" id="cb31-6" data-line-number="6">customStatArgs<span class="op">$</span>DataBoxOpen &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
-<a class="sourceLine" id="cb31-7" data-line-number="7">rowDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/rowDataPlotDefaults">rowDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb31-7" data-line-number="7">rowDataArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/rowDataPlotDefaults.html">rowDataPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb31-8" data-line-number="8">rowDataArgs<span class="op">$</span>YAxis &lt;-<span class="st"> "pct_dropout_by_counts"</span></a>
 <a class="sourceLine" id="cb31-9" data-line-number="9">rowDataArgs<span class="op">$</span>XAxis &lt;-<span class="st"> "Row data"</span></a>
 <a class="sourceLine" id="cb31-10" data-line-number="10">rowDataArgs<span class="op">$</span>XAxisRowData &lt;-<span class="st"> "log10_mean_counts"</span></a>
-<a class="sourceLine" id="cb31-11" data-line-number="11">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb31-11" data-line-number="11">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce, <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb31-12" data-line-number="12">redDimArgs<span class="op">$</span>Type &lt;-<span class="st"> "TSNE"</span></a>
 <a class="sourceLine" id="cb31-13" data-line-number="13">redDimArgs<span class="op">$</span>ColorBy &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb31-14" data-line-number="14">redDimArgs<span class="op">$</span>ColorByColData &lt;-<span class="st"> "Cluster"</span></a>
 <a class="sourceLine" id="cb31-15" data-line-number="15">redDimArgs<span class="op">$</span>SelectBoxOpen &lt;-<span class="st"> </span><span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb31-16" data-line-number="16">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb31-17" data-line-number="17">    <span class="dt">Name =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Row data plot 1"</span>, <span class="st">"Custom statistics table 1"</span>),</a>
-<a class="sourceLine" id="cb31-18" data-line-number="18">    <span class="dt">Width =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(4L, 4L, 4L)</a>
+<a class="sourceLine" id="cb31-17" data-line-number="17">    <span class="dt">Name =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Reduced dimension plot 1"</span>, <span class="st">"Row data plot 1"</span>, <span class="st">"Custom statistics table 1"</span>),</a>
+<a class="sourceLine" id="cb31-18" data-line-number="18">    <span class="dt">Width =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(4L, 4L, 4L)</a>
 <a class="sourceLine" id="cb31-19" data-line-number="19">)</a>
-<a class="sourceLine" id="cb31-20" data-line-number="20"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb31-21" data-line-number="21">  <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(</a>
+<a class="sourceLine" id="cb31-20" data-line-number="20"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb31-21" data-line-number="21">  <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(</a>
 <a class="sourceLine" id="cb31-22" data-line-number="22">      sce,</a>
 <a class="sourceLine" id="cb31-23" data-line-number="23">      <span class="dt">customStatArgs =</span> customStatArgs,</a>
 <a class="sourceLine" id="cb31-24" data-line-number="24">      <span class="dt">rowDataArgs =</span> rowDataArgs, <span class="dt">redDimArgs =</span> redDimArgs,</a>
 <a class="sourceLine" id="cb31-25" data-line-number="25">      <span class="dt">initialPanels =</span> initialPanels,</a>
-<a class="sourceLine" id="cb31-26" data-line-number="26">      <span class="dt">customStatFun =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(<span class="dt">CUSTOM_DIFFEXP =</span> CUSTOM_DIFFEXP),</a>
+<a class="sourceLine" id="cb31-26" data-line-number="26">      <span class="dt">customStatFun =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">CUSTOM_DIFFEXP =</span> CUSTOM_DIFFEXP),</a>
 <a class="sourceLine" id="cb31-27" data-line-number="27">    <span class="dt">customSendAll =</span> <span class="ot">TRUE</span></a>
 <a class="sourceLine" id="cb31-28" data-line-number="28">  )</a>
 <a class="sourceLine" id="cb31-29" data-line-number="29">}</a></code></pre></div>
@@ -1190,7 +1198,7 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Close the application and run the following block of code to set up 3 panels, all displaying the t-SNE representation.</p>
 </blockquote>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/redDimPlotDefaults">redDimPlotDefaults</a></span>(sce, <span class="dv">3</span>)</a>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1">redDimArgs &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/redDimPlotDefaults.html">redDimPlotDefaults</a></span>(sce, <span class="dv">3</span>)</a>
 <a class="sourceLine" id="cb32-2" data-line-number="2">redDimArgs[[<span class="st">"Type"</span>]] &lt;-<span class="st"> "TSNE"</span></a>
 <a class="sourceLine" id="cb32-3" data-line-number="3">redDimArgs[<span class="dv">1</span>, <span class="st">"ColorBy"</span>] &lt;-<span class="st"> "Column data"</span></a>
 <a class="sourceLine" id="cb32-4" data-line-number="4">redDimArgs[<span class="dv">1</span>, <span class="st">"ColorByColData"</span>] &lt;-<span class="st"> "Cluster"</span></a>
@@ -1198,21 +1206,21 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb32-6" data-line-number="6">redDimArgs[<span class="dv">2</span>, <span class="st">"ColorByFeatName"</span>] &lt;-<span class="st"> "CD79A"</span></a>
 <a class="sourceLine" id="cb32-7" data-line-number="7">redDimArgs[<span class="dv">3</span>, <span class="st">"ColorByFeatName"</span>] &lt;-<span class="st"> "CD74"</span></a>
 <a class="sourceLine" id="cb32-8" data-line-number="8">initialPanels &lt;-<span class="st"> </span><span class="kw">DataFrame</span>(</a>
-<a class="sourceLine" id="cb32-9" data-line-number="9">    <span class="dt">Name=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/paste">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb32-10" data-line-number="10">    <span class="dt">Width=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(4L, 3L),</a>
-<a class="sourceLine" id="cb32-11" data-line-number="11">    <span class="dt">Height=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rep">rep</a></span>(<span class="dv">400</span>, 3L)</a>
+<a class="sourceLine" id="cb32-9" data-line-number="9">    <span class="dt">Name=</span><span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="st">"Reduced dimension plot"</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),</a>
+<a class="sourceLine" id="cb32-10" data-line-number="10">    <span class="dt">Width=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(4L, 3L),</a>
+<a class="sourceLine" id="cb32-11" data-line-number="11">    <span class="dt">Height=</span><span class="kw"><a href="https://rdrr.io/r/base/rep.html">rep</a></span>(<span class="dv">400</span>, 3L)</a>
 <a class="sourceLine" id="cb32-12" data-line-number="12">)</a>
-<a class="sourceLine" id="cb32-13" data-line-number="13"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb32-14" data-line-number="14">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
+<a class="sourceLine" id="cb32-13" data-line-number="13"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb32-14" data-line-number="14">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels)</a>
 <a class="sourceLine" id="cb32-15" data-line-number="15">}</a></code></pre></div>
 <blockquote>
 <p>Then click on the wrench icon (<i class="fa fa-wrench"></i>) in the top-right corner, and select ‘Extract the R code’. Copy the preamble and the code for the first <em>Reduced dimension plot</em> from the pop-up window. Close the app and paste the code in your R session. Note how this recreates the first reduced dimension plot from the app.</p>
 </blockquote>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" data-line-number="1">se &lt;-<span class="st"> </span>sce</a>
 <a class="sourceLine" id="cb33-2" data-line-number="2"><span class="kw">colData</span>(se)[,<span class="st">"sizeFactors(se)"</span>] &lt;-<span class="st"> </span><span class="kw">sizeFactors</span>(se)</a>
-<a class="sourceLine" id="cb33-3" data-line-number="3">colormap &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/ExperimentColorMap-class">ExperimentColorMap</a></span>()</a>
-<a class="sourceLine" id="cb33-4" data-line-number="4">colormap &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/synchronizeAssays">synchronizeAssays</a></span>(colormap, se)</a>
-<a class="sourceLine" id="cb33-5" data-line-number="5">all_coordinates &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>()</a>
+<a class="sourceLine" id="cb33-3" data-line-number="3">colormap &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/ExperimentColorMap-class.html">ExperimentColorMap</a></span>()</a>
+<a class="sourceLine" id="cb33-4" data-line-number="4">colormap &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/synchronizeAssays.html">synchronizeAssays</a></span>(colormap, se)</a>
+<a class="sourceLine" id="cb33-5" data-line-number="5">all_coordinates &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>()</a>
 <a class="sourceLine" id="cb33-6" data-line-number="6">custom_data_fun &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
 <a class="sourceLine" id="cb33-7" data-line-number="7">custom_stat_fun &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
 <a class="sourceLine" id="cb33-8" data-line-number="8"></a>
@@ -1221,9 +1229,9 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb33-11" data-line-number="11">################################################################################</a>
 <a class="sourceLine" id="cb33-12" data-line-number="12"></a>
 <a class="sourceLine" id="cb33-13" data-line-number="13">red.dim &lt;-<span class="st"> </span><span class="kw">reducedDim</span>(se, <span class="dv">2</span>);</a>
-<a class="sourceLine" id="cb33-14" data-line-number="14">plot.data &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/data.frame">data.frame</a></span>(<span class="dt">X =</span> red.dim[, <span class="dv">1</span>], <span class="dt">Y =</span> red.dim[, <span class="dv">2</span>], <span class="dt">row.names=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colnames">colnames</a></span>(se));</a>
+<a class="sourceLine" id="cb33-14" data-line-number="14">plot.data &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span>(<span class="dt">X =</span> red.dim[, <span class="dv">1</span>], <span class="dt">Y =</span> red.dim[, <span class="dv">2</span>], <span class="dt">row.names=</span><span class="kw"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span>(se));</a>
 <a class="sourceLine" id="cb33-15" data-line-number="15">plot.data<span class="op">$</span>ColorBy &lt;-<span class="st"> </span><span class="kw">colData</span>(se)[,<span class="st">"Cluster"</span>];</a>
-<a class="sourceLine" id="cb33-16" data-line-number="16">plot.data &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/subset">subset</a></span>(plot.data, <span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/NA">is.na</a></span>(X) <span class="op">&amp;</span><span class="st"> </span><span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/NA">is.na</a></span>(Y));</a>
+<a class="sourceLine" id="cb33-16" data-line-number="16">plot.data &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/subset.html">subset</a></span>(plot.data, <span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span>(X) <span class="op">&amp;</span><span class="st"> </span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span>(Y));</a>
 <a class="sourceLine" id="cb33-17" data-line-number="17"></a>
 <a class="sourceLine" id="cb33-18" data-line-number="18"><span class="co"># Saving data for transmission</span></a>
 <a class="sourceLine" id="cb33-19" data-line-number="19">all_coordinates[[<span class="st">'redDimPlot1'</span>]] &lt;-<span class="st"> </span>plot.data</a>
@@ -1232,10 +1240,10 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb33-22" data-line-number="22"><span class="kw">ggplot</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb33-23" data-line-number="23"><span class="st">    </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">x =</span> X, <span class="dt">y =</span> Y, <span class="dt">color =</span> ColorBy), <span class="dt">alpha =</span> <span class="dv">1</span>, plot.data, <span class="dt">size=</span><span class="dv">1</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb33-24" data-line-number="24"><span class="st">    </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">"Dimension 1"</span>, <span class="dt">y =</span> <span class="st">"Dimension 2"</span>, <span class="dt">color =</span> <span class="st">"Cluster"</span>, <span class="dt">title =</span> <span class="st">"(2) TSNE"</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb33-25" data-line-number="25"><span class="st">    </span><span class="kw">coord_cartesian</span>(<span class="dt">xlim =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/range">range</a></span>(plot.data<span class="op">$</span>X, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
-<a class="sourceLine" id="cb33-26" data-line-number="26">        <span class="dt">ylim =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/range">range</a></span>(plot.data<span class="op">$</span>Y, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>), <span class="dt">expand =</span> <span class="ot">TRUE</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb33-27" data-line-number="27"><span class="st">    </span><span class="kw">scale_color_manual</span>(<span class="dt">values=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/ExperimentColorMap-class">colDataColorMap</a></span>(colormap, <span class="st">"Cluster"</span>, <span class="dt">discrete=</span><span class="ot">TRUE</span>)(<span class="dv">12</span>), <span class="dt">na.value=</span><span class="st">'grey50'</span>, <span class="dt">drop=</span><span class="ot">FALSE</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb33-28" data-line-number="28"><span class="st">    </span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/ExperimentColorMap-class">colDataColorMap</a></span>(colormap, <span class="st">"Cluster"</span>, <span class="dt">discrete=</span><span class="ot">TRUE</span>)(<span class="dv">12</span>), <span class="dt">na.value=</span><span class="st">'grey50'</span>, <span class="dt">drop=</span><span class="ot">FALSE</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb33-25" data-line-number="25"><span class="st">    </span><span class="kw">coord_cartesian</span>(<span class="dt">xlim =</span> <span class="kw"><a href="https://rdrr.io/r/base/range.html">range</a></span>(plot.data<span class="op">$</span>X, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>),</a>
+<a class="sourceLine" id="cb33-26" data-line-number="26">        <span class="dt">ylim =</span> <span class="kw"><a href="https://rdrr.io/r/base/range.html">range</a></span>(plot.data<span class="op">$</span>Y, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>), <span class="dt">expand =</span> <span class="ot">TRUE</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb33-27" data-line-number="27"><span class="st">    </span><span class="kw">scale_color_manual</span>(<span class="dt">values=</span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/ExperimentColorMap-class.html">colDataColorMap</a></span>(colormap, <span class="st">"Cluster"</span>, <span class="dt">discrete=</span><span class="ot">TRUE</span>)(<span class="dv">12</span>), <span class="dt">na.value=</span><span class="st">'grey50'</span>, <span class="dt">drop=</span><span class="ot">FALSE</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb33-28" data-line-number="28"><span class="st">    </span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/ExperimentColorMap-class.html">colDataColorMap</a></span>(colormap, <span class="st">"Cluster"</span>, <span class="dt">discrete=</span><span class="ot">TRUE</span>)(<span class="dv">12</span>), <span class="dt">na.value=</span><span class="st">'grey50'</span>, <span class="dt">drop=</span><span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb33-29" data-line-number="29"><span class="st">    </span><span class="kw">theme_bw</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb33-30" data-line-number="30"><span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">'bottom'</span>, <span class="dt">legend.box =</span> <span class="st">'vertical'</span>, <span class="dt">legend.text=</span><span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">9</span>), <span class="dt">legend.title=</span><span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">11</span>),</a>
 <a class="sourceLine" id="cb33-31" data-line-number="31">            <span class="dt">axis.text=</span><span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">10</span>), <span class="dt">axis.title=</span><span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">12</span>), <span class="dt">title=</span><span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">12</span>))</a></code></pre></div>
@@ -1248,20 +1256,20 @@ I added a few sentences to the introduction of this section to try to address th
 <blockquote>
 <p><i class="fa fa-wrench fa-2x"></i> <strong>Action:</strong> Run the code below to generate a data frame configuring a tour for the app generated in the previous step. Then launch a new instance, providing the data frame to the <code>tour</code> argument.</p>
 </blockquote>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" data-line-number="1">tour &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/data.frame">data.frame</a></span>(</a>
-<a class="sourceLine" id="cb34-2" data-line-number="2">    <span class="dt">element =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(</a>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" data-line-number="1">tour &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span>(</a>
+<a class="sourceLine" id="cb34-2" data-line-number="2">    <span class="dt">element =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(</a>
 <a class="sourceLine" id="cb34-3" data-line-number="3">        <span class="st">"#Welcome"</span>,</a>
 <a class="sourceLine" id="cb34-4" data-line-number="4">        <span class="st">"#redDimPlot1"</span>,</a>
 <a class="sourceLine" id="cb34-5" data-line-number="5">        <span class="st">"#redDimPlot2"</span>,</a>
 <a class="sourceLine" id="cb34-6" data-line-number="6">        <span class="st">"#Conclusion"</span>),</a>
-<a class="sourceLine" id="cb34-7" data-line-number="7">    <span class="dt">intro =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(</a>
+<a class="sourceLine" id="cb34-7" data-line-number="7">    <span class="dt">intro =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(</a>
 <a class="sourceLine" id="cb34-8" data-line-number="8">        <span class="st">"Welcome to this tour!"</span>,</a>
 <a class="sourceLine" id="cb34-9" data-line-number="9">        <span class="st">"This is the first reduced dimension plot"</span>,</a>
 <a class="sourceLine" id="cb34-10" data-line-number="10">        <span class="st">"And here is the second one"</span>,</a>
 <a class="sourceLine" id="cb34-11" data-line-number="11">        <span class="st">"Thank you for taking this tour!"</span>),</a>
 <a class="sourceLine" id="cb34-12" data-line-number="12">    <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb34-13" data-line-number="13"><span class="cf">if</span> (<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/interactive">interactive</a></span>()) {</a>
-<a class="sourceLine" id="cb34-14" data-line-number="14">    <span class="kw"><a href="https://www.rdocumentation.org/packages/iSEE/topics/iSEE">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels, <span class="dt">tour =</span> tour)</a>
+<a class="sourceLine" id="cb34-13" data-line-number="13"><span class="cf">if</span> (<span class="kw"><a href="https://rdrr.io/r/base/interactive.html">interactive</a></span>()) {</a>
+<a class="sourceLine" id="cb34-14" data-line-number="14">    <span class="kw"><a href="https://rdrr.io/pkg/iSEE/man/iSEE.html">iSEE</a></span>(sce, <span class="dt">redDimArgs =</span> redDimArgs, <span class="dt">initialPanels =</span> initialPanels, <span class="dt">tour =</span> tour)</a>
 <a class="sourceLine" id="cb34-15" data-line-number="15">}</a></code></pre></div>
 <p>To see an example of a more complex tour in action, visit <a href="https://marionilab.cruk.cam.ac.uk/iSEE_pbmc4k/" class="uri">https://marionilab.cruk.cam.ac.uk/iSEE_pbmc4k/</a>. The code used to create this app and the associated tour is available from <a href="https://github.com/LTLA/iSEE2018/tree/master/tours/pbmc4k" class="uri">https://github.com/LTLA/iSEE2018/tree/master/tours/pbmc4k</a>.</p>
 <!-- If there is enough time: draft a mini tour live (challenging: anchors might be tricky - rewarding: once it works, it is surely a OOOH thing) -->
@@ -1292,7 +1300,7 @@ I added a few sentences to the introduction of this section to try to address th
 <div id="session-info" class="section level2 unnumbered">
 <h2 class="hasAnchor">
 <a href="#session-info" class="anchor"></a>Session info</h2>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/sessionInfo">sessionInfo</a></span>()</a>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/sessionInfo.html">sessionInfo</a></span>()</a>
 <a class="sourceLine" id="cb35-2" data-line-number="2"><span class="co">#&gt; R version 3.6.1 (2017-01-27)</span></a>
 <a class="sourceLine" id="cb35-3" data-line-number="3"><span class="co">#&gt; Platform: x86_64-pc-linux-gnu (64-bit)</span></a>
 <a class="sourceLine" id="cb35-4" data-line-number="4"><span class="co">#&gt; Running under: Ubuntu 16.04.6 LTS</span></a>
@@ -1314,8 +1322,8 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb35-20" data-line-number="20"><span class="co">#&gt; [8] methods   base     </span></a>
 <a class="sourceLine" id="cb35-21" data-line-number="21"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb35-22" data-line-number="22"><span class="co">#&gt; other attached packages:</span></a>
-<a class="sourceLine" id="cb35-23" data-line-number="23"><span class="co">#&gt;  [1] iSEE_1.5.7                  BiocSingular_1.1.5         </span></a>
-<a class="sourceLine" id="cb35-24" data-line-number="24"><span class="co">#&gt;  [3] scran_1.13.13               scater_1.13.17             </span></a>
+<a class="sourceLine" id="cb35-23" data-line-number="23"><span class="co">#&gt;  [1] iSEE_1.5.8                  BiocSingular_1.1.5         </span></a>
+<a class="sourceLine" id="cb35-24" data-line-number="24"><span class="co">#&gt;  [3] scran_1.13.16               scater_1.13.18             </span></a>
 <a class="sourceLine" id="cb35-25" data-line-number="25"><span class="co">#&gt;  [5] ggplot2_3.2.1               TENxPBMCData_1.3.0         </span></a>
 <a class="sourceLine" id="cb35-26" data-line-number="26"><span class="co">#&gt;  [7] HDF5Array_1.13.5            rhdf5_2.29.0               </span></a>
 <a class="sourceLine" id="cb35-27" data-line-number="27"><span class="co">#&gt;  [9] SingleCellExperiment_1.7.7  SummarizedExperiment_1.15.8</span></a>
@@ -1329,57 +1337,56 @@ I added a few sentences to the introduction of this section to try to address th
 <a class="sourceLine" id="cb35-35" data-line-number="35"><span class="co">#&gt;   [1] Rtsne_0.15                    ggbeeswarm_0.6.0             </span></a>
 <a class="sourceLine" id="cb35-36" data-line-number="36"><span class="co">#&gt;   [3] colorspace_1.4-1              rprojroot_1.3-2              </span></a>
 <a class="sourceLine" id="cb35-37" data-line-number="37"><span class="co">#&gt;   [5] XVector_0.25.0                BiocNeighbors_1.3.3          </span></a>
-<a class="sourceLine" id="cb35-38" data-line-number="38"><span class="co">#&gt;   [7] fs_1.3.1                      roxygen2_6.1.1               </span></a>
-<a class="sourceLine" id="cb35-39" data-line-number="39"><span class="co">#&gt;   [9] DT_0.8                        bit64_0.9-7                  </span></a>
-<a class="sourceLine" id="cb35-40" data-line-number="40"><span class="co">#&gt;  [11] interactiveDisplayBase_1.23.0 AnnotationDbi_1.47.1         </span></a>
-<a class="sourceLine" id="cb35-41" data-line-number="41"><span class="co">#&gt;  [13] xml2_1.2.0                    splines_3.6.1                </span></a>
-<a class="sourceLine" id="cb35-42" data-line-number="42"><span class="co">#&gt;  [15] knitr_1.24                    zeallot_0.1.0                </span></a>
-<a class="sourceLine" id="cb35-43" data-line-number="43"><span class="co">#&gt;  [17] jsonlite_1.6                  dbplyr_1.4.2                 </span></a>
-<a class="sourceLine" id="cb35-44" data-line-number="44"><span class="co">#&gt;  [19] shinydashboard_0.7.1          shiny_1.3.2                  </span></a>
-<a class="sourceLine" id="cb35-45" data-line-number="45"><span class="co">#&gt;  [21] rentrez_1.2.2                 BiocManager_1.30.4           </span></a>
-<a class="sourceLine" id="cb35-46" data-line-number="46"><span class="co">#&gt;  [23] compiler_3.6.1                httr_1.4.1                   </span></a>
-<a class="sourceLine" id="cb35-47" data-line-number="47"><span class="co">#&gt;  [25] dqrng_0.2.1                   backports_1.1.4              </span></a>
-<a class="sourceLine" id="cb35-48" data-line-number="48"><span class="co">#&gt;  [27] assertthat_0.2.1              Matrix_1.2-17                </span></a>
-<a class="sourceLine" id="cb35-49" data-line-number="49"><span class="co">#&gt;  [29] lazyeval_0.2.2                limma_3.41.15                </span></a>
-<a class="sourceLine" id="cb35-50" data-line-number="50"><span class="co">#&gt;  [31] later_0.8.0                   htmltools_0.3.6              </span></a>
-<a class="sourceLine" id="cb35-51" data-line-number="51"><span class="co">#&gt;  [33] tools_3.6.1                   rsvd_1.0.2                   </span></a>
-<a class="sourceLine" id="cb35-52" data-line-number="52"><span class="co">#&gt;  [35] igraph_1.2.4.1                gtable_0.3.0                 </span></a>
-<a class="sourceLine" id="cb35-53" data-line-number="53"><span class="co">#&gt;  [37] glue_1.3.1                    GenomeInfoDbData_1.2.1       </span></a>
-<a class="sourceLine" id="cb35-54" data-line-number="54"><span class="co">#&gt;  [39] reshape2_1.4.3                dplyr_0.8.3                  </span></a>
-<a class="sourceLine" id="cb35-55" data-line-number="55"><span class="co">#&gt;  [41] rappdirs_0.3.1                Rcpp_1.0.2                   </span></a>
-<a class="sourceLine" id="cb35-56" data-line-number="56"><span class="co">#&gt;  [43] pkgdown_1.3.0                 vctrs_0.2.0                  </span></a>
-<a class="sourceLine" id="cb35-57" data-line-number="57"><span class="co">#&gt;  [45] nlme_3.1-140                  ExperimentHub_1.11.4         </span></a>
-<a class="sourceLine" id="cb35-58" data-line-number="58"><span class="co">#&gt;  [47] rintrojs_0.2.2                DelayedMatrixStats_1.7.1     </span></a>
-<a class="sourceLine" id="cb35-59" data-line-number="59"><span class="co">#&gt;  [49] xfun_0.9                      stringr_1.4.0                </span></a>
-<a class="sourceLine" id="cb35-60" data-line-number="60"><span class="co">#&gt;  [51] beachmat_2.1.2                mime_0.7                     </span></a>
-<a class="sourceLine" id="cb35-61" data-line-number="61"><span class="co">#&gt;  [53] miniUI_0.1.1.1                irlba_2.3.3                  </span></a>
-<a class="sourceLine" id="cb35-62" data-line-number="62"><span class="co">#&gt;  [55] XML_3.98-1.20                 statmod_1.4.32               </span></a>
-<a class="sourceLine" id="cb35-63" data-line-number="63"><span class="co">#&gt;  [57] shinyAce_0.4.0                AnnotationHub_2.17.7         </span></a>
-<a class="sourceLine" id="cb35-64" data-line-number="64"><span class="co">#&gt;  [59] edgeR_3.27.12                 zlibbioc_1.31.0              </span></a>
-<a class="sourceLine" id="cb35-65" data-line-number="65"><span class="co">#&gt;  [61] MASS_7.3-51.4                 scales_1.0.0                 </span></a>
-<a class="sourceLine" id="cb35-66" data-line-number="66"><span class="co">#&gt;  [63] colourpicker_1.0              promises_1.0.1               </span></a>
-<a class="sourceLine" id="cb35-67" data-line-number="67"><span class="co">#&gt;  [65] yaml_2.2.0                    curl_4.0                     </span></a>
-<a class="sourceLine" id="cb35-68" data-line-number="68"><span class="co">#&gt;  [67] memoise_1.1.0                 gridExtra_2.3                </span></a>
-<a class="sourceLine" id="cb35-69" data-line-number="69"><span class="co">#&gt;  [69] stringi_1.4.3                 RSQLite_2.1.2                </span></a>
-<a class="sourceLine" id="cb35-70" data-line-number="70"><span class="co">#&gt;  [71] desc_1.2.0                    rlang_0.4.0                  </span></a>
-<a class="sourceLine" id="cb35-71" data-line-number="71"><span class="co">#&gt;  [73] pkgconfig_2.0.2               commonmark_1.7               </span></a>
-<a class="sourceLine" id="cb35-72" data-line-number="72"><span class="co">#&gt;  [75] bitops_1.0-6                  evaluate_0.14                </span></a>
-<a class="sourceLine" id="cb35-73" data-line-number="73"><span class="co">#&gt;  [77] lattice_0.20-38               purrr_0.3.2                  </span></a>
-<a class="sourceLine" id="cb35-74" data-line-number="74"><span class="co">#&gt;  [79] Rhdf5lib_1.7.4                labeling_0.3                 </span></a>
-<a class="sourceLine" id="cb35-75" data-line-number="75"><span class="co">#&gt;  [81] htmlwidgets_1.3               cowplot_1.0.0                </span></a>
-<a class="sourceLine" id="cb35-76" data-line-number="76"><span class="co">#&gt;  [83] bit_1.1-14                    tidyselect_0.2.5             </span></a>
-<a class="sourceLine" id="cb35-77" data-line-number="77"><span class="co">#&gt;  [85] plyr_1.8.4                    magrittr_1.5                 </span></a>
-<a class="sourceLine" id="cb35-78" data-line-number="78"><span class="co">#&gt;  [87] R6_2.4.0                      DBI_1.0.0                    </span></a>
-<a class="sourceLine" id="cb35-79" data-line-number="79"><span class="co">#&gt;  [89] pillar_1.4.2                  withr_2.1.2                  </span></a>
-<a class="sourceLine" id="cb35-80" data-line-number="80"><span class="co">#&gt;  [91] mgcv_1.8-28                   RCurl_1.95-4.12              </span></a>
-<a class="sourceLine" id="cb35-81" data-line-number="81"><span class="co">#&gt;  [93] tibble_2.1.3                  crayon_1.3.4                 </span></a>
-<a class="sourceLine" id="cb35-82" data-line-number="82"><span class="co">#&gt;  [95] BiocFileCache_1.9.1           rmarkdown_1.15               </span></a>
-<a class="sourceLine" id="cb35-83" data-line-number="83"><span class="co">#&gt;  [97] viridis_0.5.1                 locfit_1.5-9.1               </span></a>
-<a class="sourceLine" id="cb35-84" data-line-number="84"><span class="co">#&gt;  [99] grid_3.6.1                    blob_1.2.0                   </span></a>
-<a class="sourceLine" id="cb35-85" data-line-number="85"><span class="co">#&gt; [101] digest_0.6.20                 xtable_1.8-4                 </span></a>
-<a class="sourceLine" id="cb35-86" data-line-number="86"><span class="co">#&gt; [103] httpuv_1.5.1                  munsell_0.5.0                </span></a>
-<a class="sourceLine" id="cb35-87" data-line-number="87"><span class="co">#&gt; [105] beeswarm_0.2.3                viridisLite_0.3.0            </span></a>
-<a class="sourceLine" id="cb35-88" data-line-number="88"><span class="co">#&gt; [107] vipor_0.4.5                   shinyjs_1.0</span></a></code></pre></div>
+<a class="sourceLine" id="cb35-38" data-line-number="38"><span class="co">#&gt;   [7] fs_1.3.1                      DT_0.8                       </span></a>
+<a class="sourceLine" id="cb35-39" data-line-number="39"><span class="co">#&gt;   [9] bit64_0.9-7                   interactiveDisplayBase_1.23.0</span></a>
+<a class="sourceLine" id="cb35-40" data-line-number="40"><span class="co">#&gt;  [11] AnnotationDbi_1.47.1          splines_3.6.1                </span></a>
+<a class="sourceLine" id="cb35-41" data-line-number="41"><span class="co">#&gt;  [13] knitr_1.24                    zeallot_0.1.0                </span></a>
+<a class="sourceLine" id="cb35-42" data-line-number="42"><span class="co">#&gt;  [15] jsonlite_1.6                  dbplyr_1.4.2                 </span></a>
+<a class="sourceLine" id="cb35-43" data-line-number="43"><span class="co">#&gt;  [17] shinydashboard_0.7.1          shiny_1.3.2                  </span></a>
+<a class="sourceLine" id="cb35-44" data-line-number="44"><span class="co">#&gt;  [19] BiocManager_1.30.4            rentrez_1.2.2                </span></a>
+<a class="sourceLine" id="cb35-45" data-line-number="45"><span class="co">#&gt;  [21] compiler_3.6.1                httr_1.4.1                   </span></a>
+<a class="sourceLine" id="cb35-46" data-line-number="46"><span class="co">#&gt;  [23] dqrng_0.2.1                   backports_1.1.4              </span></a>
+<a class="sourceLine" id="cb35-47" data-line-number="47"><span class="co">#&gt;  [25] assertthat_0.2.1              Matrix_1.2-17                </span></a>
+<a class="sourceLine" id="cb35-48" data-line-number="48"><span class="co">#&gt;  [27] lazyeval_0.2.2                limma_3.41.15                </span></a>
+<a class="sourceLine" id="cb35-49" data-line-number="49"><span class="co">#&gt;  [29] later_0.8.0                   htmltools_0.3.6              </span></a>
+<a class="sourceLine" id="cb35-50" data-line-number="50"><span class="co">#&gt;  [31] tools_3.6.1                   rsvd_1.0.2                   </span></a>
+<a class="sourceLine" id="cb35-51" data-line-number="51"><span class="co">#&gt;  [33] igraph_1.2.4.1                gtable_0.3.0                 </span></a>
+<a class="sourceLine" id="cb35-52" data-line-number="52"><span class="co">#&gt;  [35] glue_1.3.1                    GenomeInfoDbData_1.2.1       </span></a>
+<a class="sourceLine" id="cb35-53" data-line-number="53"><span class="co">#&gt;  [37] reshape2_1.4.3                dplyr_0.8.3                  </span></a>
+<a class="sourceLine" id="cb35-54" data-line-number="54"><span class="co">#&gt;  [39] rappdirs_0.3.1                Rcpp_1.0.2                   </span></a>
+<a class="sourceLine" id="cb35-55" data-line-number="55"><span class="co">#&gt;  [41] pkgdown_1.4.0                 vctrs_0.2.0                  </span></a>
+<a class="sourceLine" id="cb35-56" data-line-number="56"><span class="co">#&gt;  [43] nlme_3.1-140                  ExperimentHub_1.11.4         </span></a>
+<a class="sourceLine" id="cb35-57" data-line-number="57"><span class="co">#&gt;  [45] rintrojs_0.2.2                DelayedMatrixStats_1.7.1     </span></a>
+<a class="sourceLine" id="cb35-58" data-line-number="58"><span class="co">#&gt;  [47] xfun_0.9                      stringr_1.4.0                </span></a>
+<a class="sourceLine" id="cb35-59" data-line-number="59"><span class="co">#&gt;  [49] beachmat_2.1.2                mime_0.7                     </span></a>
+<a class="sourceLine" id="cb35-60" data-line-number="60"><span class="co">#&gt;  [51] miniUI_0.1.1.1                irlba_2.3.3                  </span></a>
+<a class="sourceLine" id="cb35-61" data-line-number="61"><span class="co">#&gt;  [53] XML_3.98-1.20                 statmod_1.4.32               </span></a>
+<a class="sourceLine" id="cb35-62" data-line-number="62"><span class="co">#&gt;  [55] shinyAce_0.4.0                AnnotationHub_2.17.7         </span></a>
+<a class="sourceLine" id="cb35-63" data-line-number="63"><span class="co">#&gt;  [57] edgeR_3.27.13                 zlibbioc_1.31.0              </span></a>
+<a class="sourceLine" id="cb35-64" data-line-number="64"><span class="co">#&gt;  [59] MASS_7.3-51.4                 scales_1.0.0                 </span></a>
+<a class="sourceLine" id="cb35-65" data-line-number="65"><span class="co">#&gt;  [61] colourpicker_1.0              promises_1.0.1               </span></a>
+<a class="sourceLine" id="cb35-66" data-line-number="66"><span class="co">#&gt;  [63] yaml_2.2.0                    curl_4.0                     </span></a>
+<a class="sourceLine" id="cb35-67" data-line-number="67"><span class="co">#&gt;  [65] memoise_1.1.0                 gridExtra_2.3                </span></a>
+<a class="sourceLine" id="cb35-68" data-line-number="68"><span class="co">#&gt;  [67] stringi_1.4.3                 RSQLite_2.1.2                </span></a>
+<a class="sourceLine" id="cb35-69" data-line-number="69"><span class="co">#&gt;  [69] desc_1.2.0                    rlang_0.4.0                  </span></a>
+<a class="sourceLine" id="cb35-70" data-line-number="70"><span class="co">#&gt;  [71] pkgconfig_2.0.2               bitops_1.0-6                 </span></a>
+<a class="sourceLine" id="cb35-71" data-line-number="71"><span class="co">#&gt;  [73] evaluate_0.14                 lattice_0.20-38              </span></a>
+<a class="sourceLine" id="cb35-72" data-line-number="72"><span class="co">#&gt;  [75] purrr_0.3.2                   Rhdf5lib_1.7.4               </span></a>
+<a class="sourceLine" id="cb35-73" data-line-number="73"><span class="co">#&gt;  [77] labeling_0.3                  htmlwidgets_1.3              </span></a>
+<a class="sourceLine" id="cb35-74" data-line-number="74"><span class="co">#&gt;  [79] cowplot_1.0.0                 bit_1.1-14                   </span></a>
+<a class="sourceLine" id="cb35-75" data-line-number="75"><span class="co">#&gt;  [81] tidyselect_0.2.5              plyr_1.8.4                   </span></a>
+<a class="sourceLine" id="cb35-76" data-line-number="76"><span class="co">#&gt;  [83] magrittr_1.5                  R6_2.4.0                     </span></a>
+<a class="sourceLine" id="cb35-77" data-line-number="77"><span class="co">#&gt;  [85] DBI_1.0.0                     pillar_1.4.2                 </span></a>
+<a class="sourceLine" id="cb35-78" data-line-number="78"><span class="co">#&gt;  [87] withr_2.1.2                   mgcv_1.8-28                  </span></a>
+<a class="sourceLine" id="cb35-79" data-line-number="79"><span class="co">#&gt;  [89] RCurl_1.95-4.12               tibble_2.1.3                 </span></a>
+<a class="sourceLine" id="cb35-80" data-line-number="80"><span class="co">#&gt;  [91] crayon_1.3.4                  BiocFileCache_1.9.1          </span></a>
+<a class="sourceLine" id="cb35-81" data-line-number="81"><span class="co">#&gt;  [93] rmarkdown_1.15                viridis_0.5.1                </span></a>
+<a class="sourceLine" id="cb35-82" data-line-number="82"><span class="co">#&gt;  [95] locfit_1.5-9.1                grid_3.6.1                   </span></a>
+<a class="sourceLine" id="cb35-83" data-line-number="83"><span class="co">#&gt;  [97] blob_1.2.0                    digest_0.6.20                </span></a>
+<a class="sourceLine" id="cb35-84" data-line-number="84"><span class="co">#&gt;  [99] xtable_1.8-4                  httpuv_1.5.1                 </span></a>
+<a class="sourceLine" id="cb35-85" data-line-number="85"><span class="co">#&gt; [101] munsell_0.5.0                 beeswarm_0.2.3               </span></a>
+<a class="sourceLine" id="cb35-86" data-line-number="86"><span class="co">#&gt; [103] viridisLite_0.3.0             vipor_0.4.5                  </span></a>
+<a class="sourceLine" id="cb35-87" data-line-number="87"><span class="co">#&gt; [105] shinyjs_1.0</span></a></code></pre></div>
 </div>
 </div>
 <div id="references" class="section level1 unnumbered">
@@ -1433,17 +1440,20 @@ I added a few sentences to the introduction of this section to try to address th
 </div>
 
 
+
       <footer><div class="copyright">
   <p>Developed by Kevin Rue-Albrecht, Federico Marini, Charlotte Soneson, Aaron Lun.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
 </div>
+
       </footer>
 </div>
 
   
+
 
   </body>
 </html>
