@@ -1163,7 +1163,7 @@ ggplot() +
     labs(x = "Dimension 1", y = "Dimension 2", color = "Cluster", title = "(2) TSNE") +
     coord_cartesian(xlim = range(plot.data$X, na.rm = TRUE),
         ylim = range(plot.data$Y, na.rm = TRUE), expand = TRUE) +
-    scale_color_manual(values=colDataColorMap(colormap, "Cluster", discrete=TRUE)(12), na.value='grey50', drop=FALSE) +
+    scale_color_manual(values=colDataColorMap(colormap, "Cluster", discrete=TRUE)(14), na.value='grey50', drop=FALSE) +
     scale_fill_manual(values=colDataColorMap(colormap, "Cluster", discrete=TRUE)(12), na.value='grey50', drop=FALSE) +
     theme_bw() +
     theme(legend.position = 'bottom', legend.box = 'vertical', legend.text=element_text(size=9), legend.title=element_text(size=11),
