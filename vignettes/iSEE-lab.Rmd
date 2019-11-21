@@ -220,17 +220,13 @@ However, for time reasons, we will skip the pre-clustering step in this workshop
 library(scran)
 sce <- scran::computeSumFactors(sce, min.mean = 0.1)
 summary(sizeFactors(sce))
-sce <- scater::normalize(sce)
+sce <- scater::logNormCounts(sce)
 ```
 
 In order to extract the most informative genes, we first model the mean-variance trend and decompose the variance into biological and technical components.
 
 ```{r}
-logcounts(sce) <- as.matrix(logcounts(sce))
-new.trend <- scran::makeTechTrend(x = sce)
-fit <- scran::trendVar(sce, use.spikes = FALSE, loess.args = list(span = 0.05))
-fit$trend <- new.trend
-dec <- scran::decomposeVar(fit = fit)
+dec <- scran::modelGeneVar(sce)
 top.dec <- dec[order(dec$bio, decreasing = TRUE), ] 
 head(top.dec)
 ```
@@ -240,8 +236,9 @@ These low-dimensional representations are added to the `reducedDim` slot of the 
 
 ```{r, message=FALSE}
 library(BiocSingular)
+var.stats <- scran::modelGeneVar(sce)
 set.seed(1000)
-sce <- scran::denoisePCA(sce, technical = new.trend, BSPARAM = IrlbaParam())
+sce <- scran::denoisePCA(sce, technical=var.stats)
 ncol(reducedDim(sce, "PCA"))
 set.seed(1000)
 sce <- scater::runTSNE(sce, use_dimred = "PCA", perplexity = 30)
