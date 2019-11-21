@@ -186,11 +186,15 @@ head(rownames(sce))
 
 Next, we use the `r Biocpkg("scater")` package to calculate gene- and cell-level quality metrics.
 These metrics are added as columns to the `rowData` and `colData` slots of the `SingleCellExperiment` object, respectively.
+We also add some additional metrics that are not automatically computed by the `r Biocpkg("scater")` package.
 
 ```{r, message = FALSE}
 MT <- rownames(sce)[grep("^MT-", rownames(sce))]
-sce <- scater::calculateQCMetrics(object = sce, 
-                                  feature_controls = list(MT = MT))
+sce <- scater::addPerCellQC(sce, subsets = list(MT = MT))
+sce <- scater::addPerFeatureQC(sce)
+sce$log10_total <- log10(sce$total)
+rowData(sce)$n_cells <- as.integer(rowData(sce)$detected * ncol(sce))
+rowData(sce)$log10_total <- log10(rowSums(assay(sce, "counts")))
 sce
 ```
 
@@ -198,7 +202,7 @@ We filter out a few cells with a large fraction of the counts coming from mitoch
 Notice the reduced number of columns in the dataset below.
 
 ```{r}
-(sce <- sce[, sce$pct_counts_MT < 5])
+(sce <- sce[, sce$subsets_MT_percent < 5])
 ```
 
 Next, we calculate size factors and normalized and log-transformed expression values, using the `r Biocpkg("scran")` and `r Biocpkg("scater")` packages.
@@ -253,7 +257,8 @@ clusters <- igraph::cluster_walktrap(snn.gr)
 sce$Cluster <- factor(clusters$membership)
 table(sce$Cluster)
 
-markers <- scran::findMarkers(sce, clusters = sce$Cluster, 
+markers <- scran::findMarkers(sce, groups = sce$Cluster,
+                              test.type = "t",
                               direction = "up", pval.type = "all")
 for (i in names(markers)) {
     rowData(sce)[, paste0("FDR_cluster", i)] <- 
@@ -529,7 +534,7 @@ All these values are taken from the `colData` slot of the provided object.
 > <i class="fa fa-wrench fa-2x"></i> **Action:** First, color the cells by `Cluster`, which contains the cluster labels that were assigned to the cells in the preprocessing step [in a previous section](#prepare-scrnaseq-data).
 Note how a discrete color scheme is selected, since the variable is categorical.
 
-> <i class="fa fa-wrench fa-2x"></i> **Action:** Next, color the cells by the log10-transformed number of detected genes (`log10_total_features_by_counts`).
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Next, color the cells by the log10-transformed number of detected genes (`log10_total`).
 Notice how the color scale is now continuous.
 
 The instance can be preconfigured to control the coloring of data points, to display the same result on startup.
@@ -539,7 +544,7 @@ The instance can be preconfigured to control the coloring of data points, to dis
 
 ```{r}
 redDimArgs[["ColorBy"]] <- "Column data"
-redDimArgs[1, "ColorByColData"] <- "log10_total_features_by_counts"
+redDimArgs[1, "ColorByColData"] <- "log10_total"
 redDimArgs[2, "ColorByColData"] <- "Cluster"
 initialPanels <- DataFrame(
     Name=c("Reduced dimension plot 1", "Reduced dimension plot 2"),
@@ -687,13 +692,13 @@ We set up the _Row data plot_ panel to examine the proportion of cells with dete
 
 ```{r}
 colDataArgs <- colDataPlotDefaults(sce, 1)
-colDataArgs[1, "YAxis"] <- "pct_counts_MT"
+colDataArgs[1, "YAxis"] <- "subsets_MT_percent"
 colDataArgs$XAxis <- "Column data"
 colDataArgs[1, "XAxisColData"] <- "Cluster"
 rowDataArgs <- rowDataPlotDefaults(sce, 1)
-rowDataArgs[1, "YAxis"] <- "n_cells_by_counts"
+rowDataArgs[1, "YAxis"] <- "n_cells"
 rowDataArgs$XAxis <- "Row data"
-rowDataArgs[1, "XAxisRowData"] <- "log10_total_counts"
+rowDataArgs[1, "XAxisRowData"] <- "log10_total"
 initialPanels <- DataFrame(
     Name=c("Column data plot 1", "Row data plot 1"),
     Width=rep(4L, 2L),
@@ -736,7 +741,7 @@ featAssayArgs[["YAxisFeatName"]] <- match("CD3D", rownames(sce))
 featAssayArgs[1, "XAxis"] <- "Column data"
 featAssayArgs[1, "XAxisColData"] <- "Cluster"
 featAssayArgs[2, "XAxis"] <- "Column data"
-featAssayArgs[2, "XAxisColData"] <- "log10_total_counts"
+featAssayArgs[2, "XAxisColData"] <- "log10_total"
 featAssayArgs[3, "XAxis"] <- "Feature name"
 featAssayArgs[3, "XAxisFeatName"] <- match("CD40LG", rownames(sce))
 featAssayArgs[["DataBoxOpen"]] <- TRUE
@@ -796,9 +801,9 @@ redDimArgs[1, "SelectBoxOpen"] <- TRUE
 colDataArgs <- colDataPlotDefaults(sce, 2)
 colDataArgs[1, "SelectByPlot"] <- "Feature assay plot 1"
 colDataArgs[1, "SelectEffect"] <- "Color"
-colDataArgs[1, "YAxis"] <- "log10_total_counts"
+colDataArgs[1, "YAxis"] <- "log10_total"
 colDataArgs[1, "XAxis"] <- "Column data"
-colDataArgs[1, "XAxisColData"] <- "pct_counts_MT"
+colDataArgs[1, "XAxisColData"] <- "subsets_MT_percent"
 colDataArgs[1, "ColorBy"] <- "Column data"
 colDataArgs[1, "ColorByColData"] <- "Cluster"
 colDataArgs[1, "SelectBoxOpen"] <- TRUE
@@ -871,7 +876,7 @@ if (interactive()) {
 
 Tables may also be preconfigured to immediately display a subset of rows according to their filters or select a row different from the first one when the app is launched.
 
-For simplicity, we demonstrate this feature using a subset of 3 column metadata--namely "Cluster", "total_counts", and "pct_counts_MT"--out of the set of `r ncol(colData(sce))` column metadata computed by the [workflow above](#prepare-scrnaseq-data).
+For simplicity, we demonstrate this feature using a subset of 3 column metadata--namely "Cluster", "total", and "subsets_MT_percent"--out of the set of `r ncol(colData(sce))` column metadata computed by the [workflow above](#prepare-scrnaseq-data).
 
 In the example below, we preconfigure a _Column statistics table_ to display only cells with cluster labels "3" and "5", and a library size between 5,000 and 15,844 (the maximum library size in the dataset).
 In addition, we also preselect the cell named "Cell684".
@@ -880,10 +885,10 @@ In addition, we also preselect the cell named "Cell684".
 
 ```{r}
 sce1 <- sce
-colData(sce1) <- colData(sce1)[, c("Cluster", "total_counts", "pct_counts_MT")]
+colData(sce1) <- colData(sce1)[, c("Cluster", "total", "subsets_MT_percent")]
 colStatArgs <- colStatTableDefaults(sce1, 1)
 colStatArgs[["SearchColumns"]][[1]] <- c("[\"3\", \"5\"]", "5000 ... 15844", "")
-colStatArgs[["Selected"]] <- match("Cell684", colnames(sce1))
+colStatArgs[["Selected"]] <- match("Cell384", colnames(sce1))
 initialPanels <- DataFrame(
     Name=c("Column statistics table 1"),
     Width=c(12L),
@@ -980,14 +985,14 @@ CUSTOM_PCA <- function(se, rows, columns,
     }
 
     scale_features <- as.logical(scale_features)
-    kept <- runPCA(kept, feature_set = rows, scale_features = scale_features)
+    kept <- runPCA(kept, subset_row = rows, scale = scale_features)
     plotPCA(kept, colour_by = colour_by)
 }
 ```
 
-> <i class="fa fa-wrench fa-2x"></i> **Action:** Next, launch an iSEE session with the custom PCA plot panel, as well as a Reduced dimension plot and a Row data plot, from which the column and row selections for the custom PCA are obtained. 
+> <i class="fa fa-wrench fa-2x"></i> **Action:** Next, launch an iSEE session with the custom PCA plot panel, as well as a _Reduced dimension plot_ panel and a _Row data plot_ panel, from which the column and row selections for the custom PCA are obtained. 
 Select subsets of the points in each of these two panels and note how the PCA plot in the custom panel is updated. 
-Then, in the Data parameters box in the custom panel, use the 'Custom arguments' field to select another annotation (or a feature name) to color the points by. 
+Then, in the _Data parameters box_ in the custom panel, use the 'Custom arguments' field to select another annotation (or a feature name) to color the points by. 
 Note how iSEE detects that the input arguments were changed, and prompts you to update the plot. 
 
 ```{r}
@@ -998,9 +1003,9 @@ customDataArgs$ColumnSource <- "Reduced dimension plot 1"
 customDataArgs$RowSource <- "Row data plot 1"
 customDataArgs$DataBoxOpen <- TRUE
 rowDataArgs <- rowDataPlotDefaults(sce, 1)
-rowDataArgs$YAxis <- "pct_dropout_by_counts"
+rowDataArgs$YAxis <- "detected"
 rowDataArgs$XAxis <- "Row data"
-rowDataArgs$XAxisRowData <- "log10_mean_counts"
+rowDataArgs$XAxisRowData <- "log10_total"
 redDimArgs <- redDimPlotDefaults(sce, 1)
 redDimArgs$Type <- "TSNE"
 redDimArgs$ColorBy <- "Column data"
@@ -1072,9 +1077,9 @@ customStatArgs$ColumnSource <- "Reduced dimension plot 1"
 customStatArgs$RowSource <- "Row data plot 1"
 customStatArgs$DataBoxOpen <- TRUE
 rowDataArgs <- rowDataPlotDefaults(sce, 1)
-rowDataArgs$YAxis <- "pct_dropout_by_counts"
+rowDataArgs$YAxis <- "detected"
 rowDataArgs$XAxis <- "Row data"
-rowDataArgs$XAxisRowData <- "log10_mean_counts"
+rowDataArgs$XAxisRowData <- "log10_total"
 redDimArgs <- redDimPlotDefaults(sce, 1)
 redDimArgs$Type <- "TSNE"
 redDimArgs$ColorBy <- "Column data"
@@ -1166,7 +1171,6 @@ ggplot() +
     theme_bw() +
     theme(legend.position = 'bottom', legend.box = 'vertical', legend.text=element_text(size=9), legend.title=element_text(size=11),
             axis.text=element_text(size=10), axis.title=element_text(size=12), title=element_text(size=12))
-
 ```
 
 ### Sharing and communication {#sharing-tours}
